@@ -1,86 +1,64 @@
-🎓 Master Class
+# 🎓 Master Class
 
-Master Class est un outil intelligent de révision conçu pour transformer automatiquement des cours de mathématiques (PDF) en quiz interactifs. En utilisant l'intelligence artificielle de Google Gemini, l'application extrait les théorèmes, lemmes et définitions pour générer des questions basées sur les hypothèses nécessaires et des distracteurs (pièges).
+**Master Class** est un outil intelligent de révision conçu pour transformer automatiquement des cours de mathématiques (**PDF**) en **quiz interactifs**.
 
-🚀 Fonctionnalités
+En s'appuyant sur l'intelligence artificielle de **Google Gemini**, l'application extrait avec précision les **théorèmes**, **propositions** et **lemmes**. Elle génère ensuite des questions stimulantes basées sur les **hypothèses nécessaires** et conçoit des **distracteurs** (pièges) pertinents pour valider la compréhension profonde du cours.
 
-Conversion IA : Analyse de fichiers PDF par Gemini AI pour extraire la structure logique des cours.
+## 🚀 Fonctionnalités Clés
 
-Génération de Questions : Création automatique de questions sur les hypothèses mathématiques.
+* **Conversion IA :** Analyse avancée des fichiers PDF par **Gemini AI** pour extraire la structure logique et mathématique des cours.
 
-Interface Desktop : Une application de bureau intuitive pour gérer vos clés API et vos dossiers.
+* **Génération de Questions :** Création automatique de tests portant sur la validité des hypothèses mathématiques.
 
-Quiz Interactif : Une interface web moderne et élégante pour s'entraîner et qui garde la trace de votre progression.
+* **Interface Desktop :** Une application de bureau **intuitive** pour gérer facilement vos clés API et l'organisation de vos dossiers.
 
-Logs en Temps Réel : Suivi détaillé du processus de conversion directement dans l'application.
+* **Quiz Interactif :** Une interface web **élégante** et moderne pour s'entraîner, incluant un suivi de progression.
 
-🛠️ Structure du Projet
+* **Logs en Temps Réel :** Visualisation détaillée du processus de conversion (Upload, Analyse, Sauvegarde) directement dans l'interface.
 
-master_class.py : Le cerveau de l'application de bureau.
+## 🛠️ Structure du Projet
 
-pdf_to_json.py : Le script de traitement qui communique avec l'API Gemini.
+* **`master_class.py` :** Le "cerveau" de l'application de bureau (Interface Tkinter).
 
-quizz.html : L'interface de quiz dynamique.
+* **`pdf_to_json.py` :** Le script de traitement qui assure la communication avec l'API Gemini.
 
-Questions/ : Dossier contenant les fichiers JSON générés.
+* **`quizz.html` :** L'interface utilisateur du quiz, dynamique et responsive.
 
---- Remarques ---
+* **`Questions/` :** Dossier de stockage des fichiers **JSON** générés.
 
-Cette application utilise Gemini mais quelques petites manipulations du fichier pdf_to_json permettent de l'adapter à n'importe quelle API d'autres LLMs ou même à des IA locales.
-Des questions déjà préparées sur mes cours en Prepa, à CentraleSupélec et au Magistère d'Orsay sont disponibles dans le dossier Questions.
+> **Remarques :**
+> Cette application utilise **Gemini**, mais le fichier `pdf_to_json.py` est conçu pour être facilement adaptable à d'autres **LLMs** ou à des **IA locales**.
+> Des questions sont déjà incluses pour les cours de **Prépa**, **CentraleSupélec** et le **Magistère d'Orsay**.
 
-📦 Installation
+## 📦 Installation & Configuration
 
-1. Prérequis
+### 1. Prérequis
 
-Python 3.8 ou supérieur.
+* **Python 3.8** ou supérieur.
 
-Une clé API Google Gemini
+* Une **clé API Google Gemini** (obtenue sur Google AI Studio).
 
-2. Installation des dépendances
+### 2. Installation des dépendances
 
 Ouvrez un terminal dans le dossier du projet et exécutez :
 
-pip install -r requirements.txt
+```ip install -r requirements.txt
 
---- Bibliothèques externes ---
+**`
+# 📋 Utilisationon```# 📋 Utilisationon`# 📋 Utilisationon`# 📋 Utilisationon1. **Lancez l'applicztion :** Exécutez `pytpo2. **Configurez votre Clé API :** Saisissez votre clé Gemini dans le champ dédié et cliquez s3. **Sélectionnez vos PDF :** Choisissez le dossier contenant vos cours de mathématiques.4. **Lancez la conversion :** L'IA générera les fichiers JSON dans le dossier `Questions`.
 
-google-generativeai
+5. **Révisez :** Cliquez sur **"Lancer le Quiz"** pour commencer vos révisions dans votre navigateur.
 
---- Note sur les autres imports ---
+## 🧪 Détails Techniques
 
-os, sys, json, subprocess, threading, webbrowser : Déjà inclus dans Python
+L'application repose sur un ensemble de technologies modernes :
 
-tkinter : Inclus par défaut sur Windows/Mac.
+* **Python :** Pour le moteur de traitement logique et l'interface native.
 
-(Sur Linux, peut nécessiter : sudo apt install python3-tk)
+* **Google Generative AI :** Modèle `gemini-1.5-flash` pour l'analyse sémantique et mathématique.
 
+* **HTML5 / Tailwind CSS :** Pour une interface de quiz fluide et esthétique.
 
-📋 Utilisation
+* **MathJax :** Pour un rendu parfait des formules mathématiques en $\LaTeX$.
 
-Lancez l'application :
-
-python master_class.py (ou python3 master_class.py)
-
-
-Configurez votre Clé API Gemini dans le champ prévu à cet effet et cliquez sur "Sauvegarder".
-
-Sélectionnez votre dossier contenant les cours PDF.
-
-Cliquez sur "Démarrer la Conversion". L'IA va générer les fichiers JSON dans le dossier Questions.
-
-Une fois terminé, cliquez sur "Lancer le Quiz" pour commencer vos révisions dans votre navigateur.
-
-🧪 Détails Techniques
-
-L'application utilise :
-
-Python : Pour le moteur de traitement et l'interface desktop.
-
-Google Generative AI : Modèle gemini-3-flash-preview pour l'analyse sémantique des mathématiques.
-
-HTML5/Tailwind CSS : Pour l'interface de quiz.
-
-MathJax : Pour l'affichage parfait des formules mathématiques $\LaTeX$.
-
-Développé pour faciliter l'apprentissage des mathématiques de haut niveau.
+*Développé pour faciliter l'apprentissage et la maîtrise des mathématiques de haut niveau.*
