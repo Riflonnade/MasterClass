@@ -1,0 +1,132 @@
+{
+    "title": "Calcul différentiel",
+    "color": "blue",
+    "questions": [
+        {
+            "name": "Proposition I.1 - Hyperplan du graphe",
+            "statement": "L'ensemble $H(f) = \\{(x, f(x)), x \\in E\\}$ est un hyperplan de l'espace vectoriel $E \\times \\mathbb{R}$.",
+            "correct": [
+                "$f$ est une forme linéaire sur $E$",
+                "$E$ est un $\\mathbb{R}$-espace vectoriel de dimension finie"
+            ],
+            "distractors": [
+                "$f$ est une application continue",
+                "$f$ est une application de classe $C^1$",
+                "$f$ est une norme sur $E$"
+            ]
+        },
+        {
+            "name": "Définition II.1 - Caractérisation de la négligeabilité",
+            "statement": "Soient $g : \\Omega \\longrightarrow F$ et $h : \\Omega \\longrightarrow F$. On dit que $h(x) = o(g(x))$ au voisinage de $a$.",
+            "correct": [
+                "$\\forall \\varepsilon > 0, \\exists \\eta > 0, \\forall x \\in \\Omega, x \\in B(a, \\eta) \\implies \\|h(x)\\|_F \\leq \\varepsilon \\|g(x)\\|_F$",
+                "$\\exists \\varepsilon(x)$ tel que $h(x) = \\varepsilon(x) \\|g(x)\\|_F$ avec $\\varepsilon(x) \\xrightarrow[x \\to a]{} 0$"
+            ],
+            "distractors": [
+                "$\\frac{\\|h(x)\\|}{\\|g(x)\\|} \\xrightarrow[x \\to a]{} 0$ (vrai seulement si $g$ ne s'annule pas sur un voisinage pointé de $a$)",
+                "$\\exists C \\geq 0, \\|h(x)\\| \\leq C \\|g(x)\\|$ au voisinage de $a$"
+            ]
+        },
+        {
+            "name": "Proposition II.7 - Différentiabilité et Continuité",
+            "statement": "$f$ est continue en $a$.",
+            "correct": [
+                "$f$ est différentiable en $a$"
+            ],
+            "distractors": [
+                "$f$ admet des dérivées directionnelles dans toutes les directions en $a$",
+                "$f$ admet des dérivées partielles en $a$",
+                "$f$ est bornée au voisinage de $a$"
+            ]
+        },
+        {
+            "name": "Proposition II.8 - Règle de la chaîne (Composition)",
+            "statement": "$d(g \\circ f)_a = d g_{f(a)} \\circ d f_a$",
+            "correct": [
+                "$f$ est différentiable en $a$",
+                "$g$ est différentiable en $f(a)$"
+            ],
+            "distractors": [
+                "$f$ et $g$ sont de classe $C^1$ sur leurs ouverts respectifs",
+                "$f$ est une application linéaire",
+                "$E$, $F$ et $G$ sont munis du produit scalaire canonique"
+            ]
+        },
+        {
+            "name": "Proposition III.2 - Différentielle et dérivées directionnelles",
+            "statement": "$df_a(h) = \\sum_{k=1}^n D_{e_k}(f)(a)h_k$ où $h = \\sum h_k e_k$.",
+            "correct": [
+                "$f$ est différentiable en $a$",
+                "$(e_1, \\dots, e_n)$ est une base de $E$"
+            ],
+            "distractors": [
+                "$(e_1, \\dots, e_n)$ est une base orthonormée de $E$ (nécessaire pour le gradient, pas pour la différentielle)",
+                "$f$ admet des dérivées directionnelles suivant tous les vecteurs de la base"
+            ]
+        },
+        {
+            "name": "Proposition III.6 - Condition suffisante de différentiabilité",
+            "statement": "$f$ est différentiable en tout point de $\\Omega$.",
+            "correct": [
+                "$f$ est de classe $C^1$ sur $\\Omega$"
+            ],
+            "distractors": [
+                "$f$ admet des dérivées partielles en tout point de $\\Omega$",
+                "$f$ admet des dérivées directionnelles continues en tout point de $\\Omega$",
+                "$f$ est continue sur $\\Omega$ et admet des dérivées partielles en $a$"
+            ]
+        },
+        {
+            "name": "Théorème IV.1 - Inégalité des accroissements finis",
+            "statement": "$\\|f(b) - f(a)\\|_F \\leq \\sup_{t \\in [0,1]} |||df_{(1-t)a+tb}||| \\times \\|b - a\\|_E$",
+            "correct": [
+                "$f$ est de classe $C^1$ sur $\\Omega$",
+                "Le segment $[a, b]$ est inclus dans $\\Omega$"
+            ],
+            "distractors": [
+                "$\\Omega$ est un ouvert convexe",
+                "$F = \\mathbb{R}$",
+                "$f$ est une application lipschitzienne sur $\\Omega$"
+            ]
+        },
+        {
+            "name": "Théorème IV.5 - Inversion locale",
+            "statement": "Il existe $U$ voisinage de $a$ et $V$ voisinage de $f(a)$ tels que $f_{|U} : U \\to V$ soit un $C^1$-difféomorphisme.",
+            "correct": [
+                "$f$ est de classe $C^1$ sur $\\Omega$",
+                "La matrice jacobienne $J_f(a)$ est inversible ($\\det J_f(a) \\neq 0$)"
+            ],
+            "distractors": [
+                "$f$ est injective sur $\\Omega$",
+                "La matrice jacobienne $J_f(x)$ est inversible pour tout $x \\in \\Omega$",
+                "$f$ est une application de classe $C^2$"
+            ]
+        },
+        {
+            "name": "Proposition IV.7 - Condition nécessaire d'extremum",
+            "statement": "$df_a = 0$ (soit $\\nabla f_a = 0$)",
+            "correct": [
+                "$f$ est différentiable en $a$",
+                "$f$ admet un extremum local en $a$",
+                "$a$ est un point intérieur à l'ensemble de définition"
+            ],
+            "distractors": [
+                "$f$ est de classe $C^1$ au voisinage de $a$",
+                "$f$ est une fonction convexe",
+                "$a$ est un extremum global sur un fermé"
+            ]
+        },
+        {
+            "name": "Lemme V.3 - Théorème de Schwarz",
+            "statement": "$\\frac{\\partial^2 g}{\\partial x_1 \\partial x_2} = \\frac{\\partial^2 g}{\\partial x_2 \\partial x_1}$",
+            "correct": [
+                "$g$ est de classe $C^2$ sur un ouvert $\\Omega \\subset \\mathbb{R}^2$"
+            ],
+            "distractors": [
+                "$g$ admet des dérivées partielles secondes croisées en tout point",
+                "$g$ est différentiable et admet des dérivées partielles secondes",
+                "$g$ est de classe $C^1$ et admet des dérivées partielles secondes"
+            ]
+        }
+    ]
+}

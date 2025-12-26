@@ -1,0 +1,92 @@
+{
+    "title": "Familles sommables",
+    "color": "blue",
+    "questions": [
+        {
+            "name": "Proposition I.2 - Dénombrabilité du support",
+            "statement": "Soit $(u_i)_{i \\in I}$ une famille de réels positifs. Si $(u_i)_{i \\in I}$ est sommable, alors l'ensemble $K := \\{i \\in I \\mid u_i > 0\\}$ est au plus dénombrable.",
+            "correct": [
+                "La famille $(u_i)_{i \\in I}$ est sommable",
+                "Les termes $u_i$ appartiennent à $\\mathbb{R}^+$"
+            ],
+            "distractors": [
+                "L'ensemble d'indexation $I$ est dénombrable",
+                "La famille $(u_i)_{i \\in I}$ est bornée",
+                "L'ensemble $K$ est fini",
+                "La suite $(u_i)$ converge vers $0$"
+            ]
+        },
+        {
+            "name": "Proposition I.3 - Caractérisation par les suites croissantes de parties finies",
+            "statement": "Soit $(u_i)_{i \\in I}$ une famille de réels positifs. Soit $(J_n)_{n \\in \\mathbb{N}}$ une suite de parties finies de $I$. La famille est sommable de somme $\\ell$ si et seulement si...",
+            "correct": [
+                "La suite $(J_n)_{n \\in \\mathbb{N}}$ est croissante pour l'inclusion",
+                "$\\bigcup_{n \\in \\mathbb{N}} J_n = I$",
+                "La suite des sommes partielles $S_n = \\sum_{i \\in J_n} u_i$ est majorée"
+            ],
+            "distractors": [
+                "Les ensembles $J_n$ forment une partition de $I$",
+                "Les ensembles $J_n$ sont de cardinal fixé",
+                "La suite $(S_n)$ est convergente mais non nécessairement majorée",
+                "L'ensemble $I$ doit être égal à $\\mathbb{N}$"
+            ]
+        },
+        {
+            "name": "Théorème I.5 - Sommation par paquets (Cas positif)",
+            "statement": "Soit $(I_n)_{n \\in \\mathbb{N}}$ une partition de $I$ et $(u_i)_{i \\in I}$ une famille de réels positifs. La famille $(u_i)$ est sommable si et seulement si :",
+            "correct": [
+                "Pour tout $n \\in \\mathbb{N}$, la sous-famille $(u_i)_{i \\in I_n}$ est sommable",
+                "La série de terme général $U_n = \\sum_{i \\in I_n} u_i$ est convergente"
+            ],
+            "distractors": [
+                "Chaque paquet $I_n$ est un ensemble fini",
+                "La suite $(U_n)_{n \\in \\mathbb{N}}$ est décroissante",
+                "L'ensemble $I$ est une union finie d'ensembles $I_n$",
+                "La famille $(u_i)_{i \\in I}$ est de signe quelconque"
+            ]
+        },
+        {
+            "name": "Proposition II.2 - Caractérisation de la sommabilité complexe",
+            "statement": "Soit $(z_i)_{i \\in I}$ une famille de nombres complexes. La famille $(z_i)_{i \\in I}$ est sommable si et seulement si :",
+            "correct": [
+                "La famille des modules $(|z_i|)_{i \\in I}$ est sommable",
+                "Les quatre familles $(\\text{Re}(z_i)^+)$, $(\\text{Re}(z_i)^-)$, $(\\text{Im}(z_i)^+)$ et $(\\text{Im}(z_i)^-)$ sont sommables"
+            ],
+            "distractors": [
+                "La série $\\sum z_n$ est simplement convergente (pour $I=\\mathbb{N}$)",
+                "La famille est bornée dans $\\mathbb{C}$",
+                "$\\lim_{i \\in I} |z_i| = 0$",
+                "Les parties réelles et imaginaires sont de signe constant"
+            ]
+        },
+        {
+            "name": "Proposition III.1 - Produit de Cauchy",
+            "statement": "Soient $\\sum a_m$ et $\\sum b_n$ deux séries. On note $c_p = \\sum_{m+n=p} a_m b_n$. Alors $\\sum_{p=0}^{+\\infty} c_p = (\\sum_{m=0}^{+\\infty} a_m)(\\sum_{n=0}^{+\\infty} b_n)$ sous l'hypothèse :",
+            "correct": [
+                "La série $\\sum a_m$ est absolument convergente",
+                "La série $\\sum b_n$ est absolument convergente"
+            ],
+            "distractors": [
+                "Les deux séries $\\sum a_m$ et $\\sum b_n$ sont simplement convergentes",
+                "L'une des deux séries converge et l'autre est bornée",
+                "Les suites $(a_m)$ et $(b_n)$ tendent vers $0$",
+                "Les séries sont à termes positifs et divergentes"
+            ]
+        },
+        {
+            "name": "Théorème II.5 - Sommation par paquets (Cas complexe)",
+            "statement": "Soit $(z_i)_{i \\in I}$ une famille sommable de complexes et $(I_n)_{n \\in \\mathbb{N}}$ une partition de $I$. Quelles propriétés découlent de ces hypothèses ?",
+            "correct": [
+                "Chaque sous-famille $(z_i)_{i \\in I_n}$ est sommable",
+                "La série $\\sum U_n$ est absolument convergente (avec $U_n = \\sum_{i \\in I_n} z_i$)",
+                "$\\sum_{i \\in I} z_i = \\sum_{n=0}^{+\\infty} U_n$"
+            ],
+            "distractors": [
+                "La série $\\sum U_n$ est seulement semi-convergente",
+                "L'égalité $\\sum_{i \\in I} z_i = \\sum_{n=0}^{+\\infty} U_n$ est vraie même si la famille n'est pas sommable",
+                "Les paquets $I_n$ doivent être des intervalles d'entiers",
+                "La convergence de $\\sum U_n$ implique la sommabilité de la famille $(z_i)$ sans autre condition"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+{
+  "title": "Tribus et Mesures",
+  "color": "blue",
+  "questions": [
+    {
+      "name": "Proposition 2 : Critère de mesurabilité",
+      "statement": "$f: \\Omega \\to E$ est mesurable $\\iff \\forall A \\in \\mathcal{E}, f^{-1}(A) \\in \\mathfrak{F}$",
+      "correct": [
+        "$\\mathcal{T}' = \\sigma(\\mathcal{E})$ (La tribu d'arrivée est engendrée par $\\mathcal{E}$)"
+      ],
+      "distractors": [
+        "$\\mathcal{E}$ est une tribu (condition trop forte)",
+        "$\\mathcal{E}$ est stable par intersection finie (non nécessaire pour ce critère)",
+        "$f$ est bijective"
+      ]
+    },
+    {
+      "name": "Proposition 3 : Fonctions boréliennes",
+      "statement": "$f$ est une fonction borélienne (mesurable pour les tribus boréliennes).",
+      "correct": [
+        "$f$ est une fonction continue entre espaces topologiques"
+      ],
+      "distractors": [
+        "$f$ est monotone (insuffisant dans le cas général topologique)",
+        "$f$ est dérivable (trop fort)",
+        "L'espace de départ est $\\mathbb{R}$"
+      ]
+    },
+    {
+      "name": "Proposition 4 : Opérations conservant la mesurabilité",
+      "statement": "Si $f$ et $g$ sont des fonctions mesurables de $(\\Omega, \\mathfrak{F})$ dans $\\mathbb{R}$ (ou $\\overline{\\mathbb{R}}_+$), alors les fonctions suivantes sont nécessairement mesurables :",
+      "correct": [
+        "La somme $f + g$ [cite: 1196]",
+        "Le produit $f \\times g$ [cite: 1196]",
+        "La valeur absolue $|f|$ [cite: 1197]",
+        "La limite simple $\\lim_{n} f_n$ (si elle existe) [cite: 1200]"
+      ],
+      "distractors": [
+        "Si $|f|$ est mesurable, alors $f$ est mesurable (Réciproque fausse)",
+        "L'ensemble des points où $f$ est continue",
+        "La dérivée $f'$ (si $f$ est dérivable, sa mesurabilité dépend de la structure de la tribu, ce n'est pas une conséquence directe de l'algèbre des fonctions mesurables citée)"
+      ]
+    },
+    {
+      "name": "Théorème 6 : Approximation par fonctions étagées",
+      "statement": "$f$ est la limite d'une suite croissante de fonctions étagées positives.",
+      "correct": [
+        "$f$ est une fonction mesurable",
+        "$f$ est à valeurs dans $[0, \\infty]$ (positive)"
+      ],
+      "distractors": [
+        "$f$ est bornée (non nécessaire)",
+        "$f$ est continue",
+        "$f$ est intégrable"
+      ]
+    },
+    {
+      "name": "Proposition 5 : Mesure d'une différence",
+      "statement": "$\\mu(B \\setminus A) = \\mu(B) - \\mu(A)$",
+      "correct": [
+        "$A \\subset B$",
+        "$\\mu(A) < \\infty$ (Mesure de A finie)"
+      ],
+      "distractors": [
+        "$\\mu(B) < \\infty$ (Condition sur A est la stricte nécessité)",
+        "$A$ et $B$ sont disjoints (donnerait $\\mu(B)$)",
+        "$\\mu$ est une probabilité (cas particulier)"
+      ]
+    },
+    {
+      "name": "Proposition 6 : Continuité décroissante de la mesure",
+      "statement": "$\\mu(\\bigcap_{n} A_n) = \\lim_{n} \\mu(A_n)$",
+      "correct": [
+        "La suite $(A_n)$ est décroissante pour l'inclusion",
+        "$\\mu(A_0) < \\infty$ (ou au moins un ensemble de mesure finie)"
+      ],
+      "distractors": [
+        "La suite $(A_n)$ est croissante (donnerait la limite de l'union)",
+        "$\\mu$ est $\\sigma$-finie (insuffisant, il faut une mesure finie dans la suite)",
+        "Les $A_n$ sont deux à deux disjoints"
+      ]
+    },
+    {
+      "name": "Théorème 10 : Loi des probabilités totales",
+      "statement": "$\\mathbb{P}(A) = \\sum_{n} \\mathbb{P}(A | E_n) \\mathbb{P}(E_n)$",
+      "correct": [
+        "$(E_n)_n$ est une partition (finie ou dénombrable) de $\\Omega$",
+        "$\\forall n, \\mathbb{P}(E_n) > 0$"
+      ],
+      "distractors": [
+        "Les événements $(E_n)_n$ sont indépendants (confusion avec partition)",
+        "Les événements $(E_n)_n$ sont simplement disjoints (doivent recouvrir tout l'univers)",
+        "$A$ est indépendant des $E_n$"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "title": "Espérance Conditionnelle et Processus Aléatoires",
+  "color": "blue",
+  "questions": [
+    {
+      "name": "Définition 1 : Espérance conditionnelle dans $L^1$",
+      "statement": "La variable aléatoire $Y = \\mathbb{E}[X|\\mathcal{G}]$ est caractérisée par les deux propriétés suivantes :",
+      "correct": [
+        "$Y$ est $\\mathcal{G}$-mesurable et intégrable",
+        "$\\forall A \\in \\mathcal{G}, \\mathbb{E}[X \\mathbb{1}_A] = \\mathbb{E}[Y \\mathbb{1}_A]$"
+      ],
+      "distractors": [
+        "$Y$ est $\\mathcal{F}$-mesurable (Trop large, ne caractérise pas le conditionnement)",
+        "$\\forall A \\in \\mathcal{F}, \\mathbb{E}[X \\mathbb{1}_A] = \\mathbb{E}[Y \\mathbb{1}_A]$ (Ceci impliquerait $Y=X$)",
+        "$\\mathbb{E}[Y] = \\mathbb{E}[X]$ (Condition nécessaire mais pas suffisante)"
+      ]
+    },
+    {
+      "name": "Proposition 2 : Espérance conditionnelle dans $L^2$",
+      "statement": "$\\mathbb{E}[X|\\mathcal{G}]$ correspond à la projection orthogonale de $X$ sur le sous-espace $L^2(\\Omega, \\mathcal{G}, \\mathbb{P})$.",
+      "correct": [
+        "$X \\in L^2(\\Omega, \\mathcal{F}, \\mathbb{P})$"
+      ],
+      "distractors": [
+        "$X \\in L^1(\\Omega, \\mathcal{F}, \\mathbb{P})$ (L'espace $L^1$ n'est pas un espace de Hilbert, pas de projection orthogonale garantie)",
+        "$X$ est indépendante de $\\mathcal{G}$"
+      ]
+    },
+    {
+      "name": "Théorème 4 : Propriété \"On sort ce qui est connu\"",
+      "statement": "$\\mathbb{E}[XY|\\mathcal{G}] = X \\mathbb{E}[Y|\\mathcal{G}]$",
+      "correct": [
+        "$X$ est $\\mathcal{G}$-mesurable",
+        "Les variables $X$, $Y$ et $XY$ sont intégrables"
+      ],
+      "distractors": [
+        "$X$ est indépendante de $\\mathcal{G}$ (Donnerait $\\mathbb{E}[XY|\\mathcal{G}] = \\mathbb{E}[X]\\mathbb{E}[Y]$)",
+        "$X$ et $Y$ sont indépendantes",
+        "$X$ est bornée (Condition suffisante mais l'intégrabilité suffit)"
+      ]
+    },
+    {
+      "name": "Théorème 6 : Inégalité de Jensen conditionnelle",
+      "statement": "$\\varphi(\\mathbb{E}[X|\\mathcal{G}]) \\le \\mathbb{E}[\\varphi(X)|\\mathcal{G}]$",
+      "correct": [
+        "$\\varphi$ est une fonction convexe",
+        "$X$ et $\\varphi(X)$ sont intégrables ($L^1$)"
+      ],
+      "distractors": [
+        "$\\varphi$ est une fonction concave (L'inégalité serait inversée)",
+        "$\\varphi$ est croissante",
+        "$X$ est de carré intégrable ($L^2$)"
+      ]
+    },
+    {
+      "name": "Théorème 3 : Condition de mesurabilité",
+      "statement": "L'égalité $\\mathbb{E}[X|\\mathcal{G}] = X$ est vraie si et seulement si :",
+      "correct": [
+        "$X$ est $\\mathcal{G}$-mesurable"
+      ],
+      "distractors": [
+        "$X$ est indépendante de $\\mathcal{G}$ (Cela donnerait $\\mathbb{E}[X|\\mathcal{G}] = \\mathbb{E}[X]$)",
+        "$\\mathbb{E}[X] = 0$",
+        "$\\mathcal{G} = \\{\\emptyset, \\Omega\\}$ (Tribu triviale)"
+      ]
+    },
+    {
+      "name": "Définition 14 : Martingale",
+      "statement": "Un processus $(X_n)$ est une martingale par rapport à la filtration $(\\mathcal{F}_n)$ si :",
+      "correct": [
+        "$X_n$ est $\\mathcal{F}_n$-mesurable (adapté)",
+        "$X_n \\in L^1$ pour tout $n$",
+        "$\\mathbb{E}[X_{n+1}|\\mathcal{F}_n] = X_n$ p.s."
+      ],
+      "distractors": [
+        "$\\mathbb{E}[X_{n+1}|\\mathcal{F}_n] \\ge X_n$ (C'est une sous-martingale)",
+        "$\\mathbb{E}[X_{n+1}] = \\mathbb{E}[X_n]$ (Condition nécessaire mais pas suffisante)",
+        "Les accroissements $X_{n+1} - X_n$ sont indépendants (Cas particulier de la marche aléatoire, trop restrictif)"
+      ]
+    }
+  ]
+}

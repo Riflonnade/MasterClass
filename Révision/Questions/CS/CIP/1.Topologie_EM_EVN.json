@@ -1,0 +1,121 @@
+{
+  "title": "Topologie, Espaces Métriques et EVN",
+  "color": "blue",
+  "questions": [
+    {
+      "name": "Proposition 2 : Caractérisation topologique de la continuité",
+      "statement": "$f$ est continue sur $X$ $\\iff$ pour tout ouvert $V \\subset Y$, $f^{-1}(V)$ est ouvert dans $X$.",
+      "correct": [
+        "$f$ est une application entre espaces métriques (ou topologiques)"
+      ],
+      "distractors": [
+        "$f$ est bijective",
+        "Pour tout ouvert $U \\subset X$, l'image directe $f(U)$ est ouverte (Application ouverte)",
+        "$X$ et $Y$ sont des espaces vectoriels normés (Trop restrictif)",
+        "$f$ est dérivable"
+      ]
+    },
+    {
+      "name": "Proposition 4 : Intersection d'ouverts",
+      "statement": "Si $(U_i)_{i \\in I}$ est une famille d'ouverts, alors $\\bigcap_{i \\in I} U_i$ est un ouvert.",
+      "correct": [
+        "L'ensemble d'indices $I$ est fini"
+      ],
+      "distractors": [
+        "L'ensemble d'indices $I$ est quelconque (peut être infini)",
+        "Les $U_i$ sont disjoints",
+        "L'espace est complet"
+      ]
+    },
+    {
+      "name": "Proposition 5 : Suites de Cauchy et Convergence",
+      "statement": "Si une suite $(x_n)$ converge, alors elle est de Cauchy.",
+      "correct": [
+        "L'espace est métrique"
+      ],
+      "distractors": [
+        "L'espace est complet (Condition nécessaire pour la réciproque, pas le sens direct)",
+        "L'espace est compact",
+        "La suite est monotone"
+      ]
+    },
+    {
+      "name": "Proposition 7 : Compacité en dimension finie",
+      "statement": "Les parties compactes sont exactement les parties fermées et bornées.",
+      "correct": [
+        "L'espace est un espace vectoriel normé",
+        "L'espace est de dimension finie"
+      ],
+      "distractors": [
+        "L'espace est un espace métrique quelconque",
+        "L'espace est un espace de Hilbert de dimension infinie",
+        "L'ensemble est convexe"
+      ]
+    },
+    {
+      "name": "Théorème 12 : Image continue d'un compact",
+      "statement": "L'image $f(K)$ est compacte.",
+      "correct": [
+        "$K$ est une partie compacte de $X$",
+        "$f$ est une application continue"
+      ],
+      "distractors": [
+        "$K$ est fermé et borné (Insuffisant si dim infinie ou métrique qcq)",
+        "$f$ est uniformément continue (Trop fort)",
+        "$f$ est une application linéaire",
+        "$f^{-1}(K)$ est compact"
+      ]
+    },
+    {
+      "name": "Proposition 8 : Théorème des bornes atteintes",
+      "statement": "La fonction $f$ est bornée sur $K$ et atteint ses bornes.",
+      "correct": [
+        "$f$ est continue",
+        "$K$ est compact",
+        "$f$ est à valeurs dans $\\mathbb{R}$"
+      ],
+      "distractors": [
+        "$K$ est un ouvert borné",
+        "$f$ est bornée sur $X$",
+        "$f$ est dérivable sur $K$"
+      ]
+    },
+    {
+      "name": "Théorème 14 : Continuité des applications linéaires",
+      "statement": "L'application linéaire $u$ est continue $\\iff$ il existe $C>0$ tel que $\\forall x, \\|u(x)\\| \\le C\\|x\\|$.",
+      "correct": [
+        "$u$ est une application entre deux espaces vectoriels normés"
+      ],
+      "distractors": [
+        "$u$ est une application entre deux espaces métriques quelconques (La linéarité requiert une structure vectorielle)",
+        "L'espace de départ est de dimension finie (Rend la continuité automatique, mais n'est pas hypothèse du théorème)",
+        "$u$ est bijective"
+      ]
+    },
+    {
+      "name": "Proposition 9 : Extension des applications linéaires",
+      "statement": "Une application linéaire continue $u: F \\to Y$ admet une unique extension continue $\\tilde{u}: X \\to Y$.",
+      "correct": [
+        "$F$ est un sous-espace vectoriel dense dans $X$",
+        "$Y$ est un espace de Banach (Complet)",
+        "$X$ est un espace de Banach"
+      ],
+      "distractors": [
+        "$F$ est un fermé de $X$",
+        "$Y$ est un espace vectoriel normé quelconque (non complet)",
+        "$u$ est une isométrie (Propriété conservée mais pas requise pour l'existence)"
+      ]
+    },
+    {
+      "name": "Théorème 22 : Équivalence des compacités",
+      "statement": "La compacité séquentielle (Bolzano-Weierstrass) est équivalente à la propriété de Borel-Lebesgue (recouvrement fini).",
+      "correct": [
+        "L'espace est métrique"
+      ],
+      "distractors": [
+        "L'espace est topologique (La compacité séquentielle n'implique pas toujours la compacité topologique hors métrique)",
+        "L'espace est normé complet"
+      ]
+    }
+  ]
+}

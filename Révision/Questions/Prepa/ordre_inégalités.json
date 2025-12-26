@@ -1,0 +1,121 @@
+{
+    "title": "Ordre, inégalités",
+    "color": "blue",
+    "questions": [
+        {
+            "name": "Propriété de la borne supérieure (Rappel I.1)",
+            "statement": "Toute partie $A$ de $E$ non vide et majorée possède une borne supérieure.",
+            "correct": [
+                "$E = \\mathbb{R}$",
+                "$A$ est une partie non vide de $\\mathbb{R}$",
+                "$A$ est majorée dans $\\mathbb{R}$"
+            ],
+            "distractors": [
+                "$E = \\mathbb{Q}$",
+                "$A$ est une partie finie",
+                "$A$ est minorée"
+            ]
+        },
+        {
+            "name": "Caractérisation de la borne supérieure (Proposition I.2)",
+            "statement": "Soit $A$ une partie de $\\mathbb{R}$ non vide et majorée. $c = \\sup A$ si et seulement si :",
+            "correct": [
+                "$\\forall x \\in A, x \\leq c$",
+                "$\\forall \\varepsilon > 0, \\exists x \\in A, c - \\varepsilon < x \\leq c$"
+            ],
+            "distractors": [
+                "$\\forall \\varepsilon > 0, \\exists x \\in A, c - \\varepsilon < x < c$",
+                "$\\forall x \\in A, x < c$",
+                "$c \\in A$"
+            ]
+        },
+        {
+            "name": "Continuité de l'enveloppe supérieure (Proposition I.6)",
+            "statement": "Soit $(f_\\lambda)_{\\lambda \\in \\Omega}$ une famille de fonctions continues sur $I$. La fonction $x \\mapsto \\sup_{\\lambda \\in \\Omega} f_\\lambda(x)$ est continue si :",
+            "correct": [
+                "$\\Omega$ est un ensemble fini",
+                "La famille est majorée pour tout $x \\in I$"
+            ],
+            "distractors": [
+                "$\\Omega$ est un ensemble dénombrable",
+                "$\\Omega$ est un intervalle compact de $\\mathbb{R}$",
+                "La famille est uniformément bornée"
+            ]
+        },
+        {
+            "name": "Cas d'égalité de l'inégalité triangulaire",
+            "statement": "Pour $z_1, \\dots, z_n \\in \\mathbb{C}^*$, l'égalité $|\\sum_{k=1}^n z_k| = \\sum_{k=1}^n |z_k|$ est vérifiée si et seulement si :",
+            "correct": [
+                "Les points d'affixes $z_k$ appartiennent à une même demi-droite d'origine $O$",
+                "$\\forall k \\in \\{1, \\dots, n\\}, \\exists \\lambda_k \\in \\mathbb{R}^+, z_k = \\lambda_k z_1$"
+            ],
+            "distractors": [
+                "Les points d'affixes $z_k$ sont alignés avec l'origine",
+                "Les complexes $z_k$ ont tous le même module",
+                "$\\forall k, z_k^2 \\in \\mathbb{R}^+$"
+            ]
+        },
+        {
+            "name": "Inégalité de Cauchy-Schwarz (Théorème III.1)",
+            "statement": "Pour tous $(x_1, \\dots, x_n)$ et $(y_1, \\dots, y_n)$ dans $\\mathbb{R}^n$, $(\\sum_{i=1}^n x_i y_i)^2 \\leq (\\sum_{i=1}^n x_i^2)(\\sum_{i=1}^n y_i^2)$. L'égalité a lieu si et seulement si :",
+            "correct": [
+                "Les vecteurs $(x_i)$ et $(y_i)$ sont colinéaires",
+                "Le rang de la matrice $Z = \\begin{pmatrix} x_1 & \\dots & x_n \\\\ y_1 & \\dots & y_n \\end{pmatrix}$ est inférieur ou égal à 1"
+            ],
+            "distractors": [
+                "Les vecteurs $(x_i)$ et $(y_i)$ sont orthogonaux",
+                "$\\forall i, x_i = y_i$",
+                "Tous les $x_i$ et $y_i$ sont positifs"
+            ]
+        },
+        {
+            "name": "Inégalité de réarrangement",
+            "statement": "Soient $x_1 \\leq \\dots \\leq x_n$ et $y_1 \\leq \\dots \\leq y_n$ deux suites réelles ordonnées. Pour toute permutation $\\sigma \\in S_n$ :",
+            "correct": [
+                "$\\sum_{i=1}^n x_{\\sigma(i)} y_i \\leq \\sum_{i=1}^n x_i y_i$"
+            ],
+            "distractors": [
+                "$\\sum_{i=1}^n x_{\\sigma(i)} y_i \\geq \\sum_{i=1}^n x_i y_i$",
+                "$\\sum_{i=1}^n x_{\\sigma(i)} y_i \\leq \\sum_{i=1}^n x_{n-i+1} y_i$",
+                "L'inégalité est vraie quels que soient les signes de $x_i$ et $y_i$ sans ordre préalable"
+            ]
+        },
+        {
+            "name": "Théorème des accroissements finis (Théorème IV.1)",
+            "statement": "Soit $f: [a, b] \\to E$ continue sur $[a, b]$ et dérivable sur $]a, b[$. Il existe $c \\in ]a, b[$ tel que $f(b) - f(a) = f'(c)(b-a)$ si :",
+            "correct": [
+                "$E = \\mathbb{R}$",
+                "$f([a, b]) \\subset \\mathbb{R}$"
+            ],
+            "distractors": [
+                "$E = \\mathbb{C}$",
+                "$f$ est de classe $C^1$ sur $[a, b]$",
+                "$f$ est une fonction homographique"
+            ]
+        },
+        {
+            "name": "Inégalité des puissances (Lemme IV.3)",
+            "statement": "Soient $x, y \\in \\mathbb{R}^+$. L'inégalité $(x+y)^r \\leq x^r + y^r$ est vraie si :",
+            "correct": [
+                "$r \\in ]0, 1]$"
+            ],
+            "distractors": [
+                "$r \\geq 1$",
+                "$r < 0$",
+                "$r = 2$"
+            ]
+        },
+        {
+            "name": "Inégalité trigonométrique",
+            "statement": "Pour tout $n \\in \\mathbb{N}^*$ et tout $x \\in \\mathbb{R}$, on a toujours :",
+            "correct": [
+                "$|\\sin(nx)| \\leq n|\\sin(x)|$"
+            ],
+            "distractors": [
+                "$|\\sin(nx)| \\leq |\\sin(x)|$",
+                "$|\\cos(nx)| \\leq n|\\cos(x)|$",
+                "$\\sin(nx) \\geq n\\sin(x)$"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,89 @@
+{
+  "title": "Transformée de Fourier et fonctions caractéristiques",
+  "color": "blue",
+  "questions": [
+    {
+      "name": "Proposition 1 : Lemme de Riemann-Lebesgue",
+      "statement": "La transformée de Fourier $\\mathcal{F}f$ est continue, bornée et $\\lim_{|y|\\to\\infty} \\mathcal{F}f(y) = 0$.",
+      "correct": [
+        "$f \\in L^1(\\mathbb{R})$"
+      ],
+      "distractors": [
+        "$f \\in L^2(\\mathbb{R})$ (La continuité n'est pas garantie pour le représentant L2)",
+        "$f$ est continue et bornée sur $\\mathbb{R}$"
+      ]
+    },
+    {
+      "name": "Proposition 3 : Transformée de Fourier d'une dérivée",
+      "statement": "$\\mathcal{F}(f')(y) = iy \\mathcal{F}f(y)$",
+      "correct": [
+        "$f \\in L^1(\\mathbb{R})$",
+        "$f \\in C^1(\\mathbb{R})$",
+        "$f' \\in L^1(\\mathbb{R})$"
+      ],
+      "distractors": [
+        "$f \\in L^1(\\mathbb{R})$ uniquement",
+        "$f$ est dérivable et bornée"
+      ]
+    },
+    {
+      "name": "Théorème 3 : Inversion de Fourier dans $L^1$",
+      "statement": "$f(x) = \\frac{1}{\\sqrt{2\\pi}} \\int_{\\mathbb{R}} \\mathcal{F}f(y) e^{ixy} dy$ presque partout.",
+      "correct": [
+        "$f \\in L^1(\\mathbb{R})$",
+        "$\\mathcal{F}f \\in L^1(\\mathbb{R})$"
+      ],
+      "distractors": [
+        "$f \\in L^1(\\mathbb{R})$ uniquement (La TF n'est pas toujours intégrable)",
+        "$f$ est continue",
+        "$f \\in L^2(\\mathbb{R})$"
+      ]
+    },
+    {
+      "name": "Proposition 7 : Isométrie de Fourier-Plancherel",
+      "statement": "$\\|\\mathcal{F}f\\|_{L^2} = \\|f\\|_{L^2}$",
+      "correct": [
+        "$f \\in L^2(\\mathbb{R})$"
+      ],
+      "distractors": [
+        "$f \\in L^1(\\mathbb{R})$ (Norme L2 non définie ou égalité fausse)",
+        "$f$ est de carré intégrable et à support compact (Trop restrictif)"
+      ]
+    },
+    {
+      "name": "Théorème 7 : Inversion de la fonction caractéristique",
+      "statement": "La variable aléatoire $X$ admet une densité de probabilité continue bornée.",
+      "correct": [
+        "La fonction caractéristique $\\varphi_X$ est intégrable ($L^1$)"
+      ],
+      "distractors": [
+        "$X$ admet un moment d'ordre 1",
+        "$\\varphi_X$ est continue (Toujours vrai)",
+        "$\\varphi_X$ est bornée (Toujours vrai)"
+      ]
+    },
+    {
+      "name": "Proposition 14 : Somme de variables aléatoires",
+      "statement": "$\\varphi_{X_1 + \\dots + X_n} = \\prod_{j=1}^n \\varphi_{X_j}$",
+      "correct": [
+        "Les variables $X_1, \\dots, X_n$ sont indépendantes"
+      ],
+      "distractors": [
+        "Les variables sont décorrélées (Covariance nulle)",
+        "Les variables sont identiquement distribuées"
+      ]
+    },
+    {
+      "name": "Proposition 15 : Régularité de la fonction caractéristique",
+      "statement": "La fonction caractéristique $\\varphi_X$ est de classe $C^n$.",
+      "correct": [
+        "$X$ admet un moment d'ordre $n$ ($\\mathbb{E}[|X|^n] < \\infty$)"
+      ],
+      "distractors": [
+        "$X$ admet une densité de classe $C^n$",
+        "$\\varphi_X$ est intégrable",
+        "$n$ est un entier pair"
+      ]
+    }
+  ]
+}

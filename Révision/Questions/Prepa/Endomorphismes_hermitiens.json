@@ -1,0 +1,99 @@
+{
+    "title": "Endomorphismes d'un espace hermitien",
+    "color": "blue",
+    "questions": [
+        {
+            "name": "Proposition I.2 : Propriétés de l'adjonction matricielle",
+            "statement": "Soient $A, B \\in \\mathcal{M}_n(\\mathbb{C})$ et $\\lambda \\in \\mathbb{C}$. Quelles propriétés sont vérifiées par la matrice adjointe $A^* = \\bar{A}^\\top$ ?",
+            "correct": [
+                "$(AB)^* = B^*A^*$ ",
+                "$(\\lambda A)^* = \\bar{\\lambda}A^*$ ",
+                "$\\det(A^*) = \\overline{\\det(A)}$",
+                "$\\chi_{A^*} = \\overline{\\chi_A}$"
+            ],
+            "distractors": [
+                "$(AB)^* = A^*B^*$ ",
+                "$(\\lambda A)^* = \\lambda A^*$ ",
+                "$\\det(A^*) = \\det(A)$",
+                "$\\chi_{A^*} = \\chi_A$"
+            ]
+        },
+        {
+            "name": "Proposition I.3 : Structure de $\\mathcal{H}_n(\\mathbb{C})$",
+            "statement": "On considère l'ensemble des matrices hermitiennes $\\mathcal{H}_n(\\mathbb{C}) = \\{A \\in \\mathcal{M}_n(\\mathbb{C}) \\mid A^* = A\\}$. Quelles sont ses propriétés caractéristiques ?",
+            "correct": [
+                "C'est un $\\mathbb{R}$-espace vectoriel de dimension $n^2$",
+                "Si $A \\in \\mathcal{H}_n(\\mathbb{C})$, alors son polynôme caractéristique $\\chi_A$ est à coefficients réels"
+            ],
+            "distractors": [
+                "C'est un $\\mathbb{C}$-espace vectoriel de dimension $n^2$",
+                "L'ensemble est stable par multiplication par $i$",
+                "Si $A \\in \\mathcal{H}_n(\\mathbb{C})$, alors ses valeurs propres sont toutes imaginaires pures"
+            ]
+        },
+        {
+            "name": "Proposition I.4 : Caractérisations des matrices unitaires",
+            "statement": "Soit $U \\in \\mathcal{M}_n(\\mathbb{C})$. Quelles assertions sont équivalentes au fait que $U$ soit une matrice unitaire ($U^*U = I_n$) ?",
+            "correct": [
+                "Les colonnes de $U$ forment une base orthonormée de $\\mathcal{M}_{n,1}(\\mathbb{C})$",
+                "Les lignes de $U$ forment une base orthonormée de $\\mathcal{M}_{1,n}(\\mathbb{C})$",
+                "$U$ est la matrice de passage entre deux bases orthonormées de $E$"
+            ],
+            "distractors": [
+                "Les colonnes de $U$ forment une base orthogonale de $\\mathcal{M}_{n,1}(\\mathbb{C})$",
+                "La matrice $U$ est symétrique ($U^\\top = U$)",
+                "$U$ est la matrice d'un endomorphisme hermitien"
+            ]
+        },
+        {
+            "name": "Théorème II.1 : Existence et matrice de l'adjoint",
+            "statement": "Soit $u \\in \\mathcal{L}(E)$ où $E$ est un espace hermitien. Quelles conditions garantissent que la matrice de l'adjoint $u^*$ soit la matrice adjointe de celle de $u$ ?",
+            "correct": [
+                "La matrice doit être exprimée dans une base orthonormée de $E$",
+                "L'endomorphisme $v = u^*$ doit vérifier $\\forall (x, y) \\in E^2, \\langle u(x), y \\rangle = \\langle x, v(y) \\rangle$"
+            ],
+            "distractors": [
+                "La propriété est vraie pour n'importe quelle base de $E$",
+                "L'espace $E$ doit être un espace vectoriel réel",
+                "L'endomorphisme $u$ doit être nécessairement inversible"
+            ]
+        },
+        {
+            "name": "Proposition II.2 : Stabilité du complément orthogonal",
+            "statement": "Soit $F$ un sous-espace vectoriel de $E$ et $u$ un endomorphisme de $E$. Si $F$ est stable par $u$, que peut-on affirmer ?",
+            "correct": [
+                "$F^\\perp$ est stable par l'adjoint $u^*$"
+            ],
+            "distractors": [
+                "$F^\\perp$ est stable par $u$",
+                "$F$ est stable par $u^*$",
+                "$F^\\perp$ est nécessairement de dimension $n$"
+            ]
+        },
+        {
+            "name": "Théorème II.5 : Théorème spectral (Cas Normal)",
+            "statement": "Quelles sont les conditions nécessaires et suffisantes pour qu'un endomorphisme $u$ soit diagonalisable dans une base orthonormée de $E$ ?",
+            "correct": [
+                "$u$ doit être normal ($uu^* = u^*u$)"
+            ],
+            "distractors": [
+                "$u$ doit être hermitien ($u = u^*$)",
+                "$u$ doit être unitaire ($u^*u = Id$)",
+                "Le spectre de $u$ doit être inclus dans $\\mathbb{R}$"
+            ]
+        },
+        {
+            "name": "Théorème II.5 : Caractérisation spectrale des endomorphismes",
+            "statement": "Associez les types d'endomorphismes à la localisation de leur spectre $Sp(u)$, sachant qu'ils sont tous diagonalisables dans une base orthonormée.",
+            "correct": [
+                "$u$ est hermitien $\\iff Sp(u) \\subset \\mathbb{R}$",
+                "$u$ est unitaire $\\iff Sp(u) \\subset \\mathbb{U}$ (le cercle unité)"
+            ],
+            "distractors": [
+                "$u$ est unitaire $\\iff Sp(u) \\subset \\mathbb{R}$",
+                "$u$ est hermitien $\\iff Sp(u) \\subset \\mathbb{U}$",
+                "$u$ est normal $\\iff Sp(u) \\subset \\mathbb{R}$"
+            ]
+        }
+    ]
+}

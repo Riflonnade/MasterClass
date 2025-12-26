@@ -1,0 +1,92 @@
+{
+  "title": "Mesures sur un espace produit",
+  "color": "blue",
+  "questions": [
+    {
+      "name": "Proposition 1 : Mesurabilité d'une fonction vers un espace produit",
+      "statement": "Une application $h: G \\to E \\times F$ définie par $h(x)=(f(x), g(x))$ est mesurable si et seulement si...",
+      "correct": [
+        "Les fonctions coordonnées $f: G \\to E$ et $g: G \\to F$ sont mesurables [cite: 2579]",
+        "L'espace produit est muni de la tribu produit $\\mathcal{A} \\otimes \\mathcal{B}$ [cite: 2537]"
+      ],
+      "distractors": [
+        "L'espace de départ $G$ est un espace produit (Hypothèse inutile)",
+        "Les fonctions $f$ et $g$ sont continues (Condition trop forte, la mesurabilité suffit)"
+      ]
+    },
+    {
+      "name": "Proposition 3 : Mesurabilité des fonctions partielles",
+      "statement": "Si $f: E \\times F \\to \\mathbb{R}$ est mesurable pour la tribu produit, alors...",
+      "correct": [
+        "Pour tout $x \\in E$, la section $f_x: y \\mapsto f(x,y)$ est mesurable sur $F$ [cite: 2616]",
+        "Pour tout $y \\in F$, la section $f^y: x \\mapsto f(x,y)$ est mesurable sur $E$ [cite: 2617]"
+      ],
+      "distractors": [
+        "La réciproque est vraie : si toutes les sections sont mesurables, $f$ est mesurable (Faux)",
+        "La fonction $f$ est continue par rapport à chaque variable"
+      ]
+    },
+    {
+      "name": "Théorème 2 : Mesure produit",
+      "statement": "Il existe une unique mesure $m$ sur $(E \\times F, \\mathcal{A} \\otimes \\mathcal{B})$ vérifiant $m(A \\times B) = \\mu(A)\\nu(B)$.",
+      "correct": [
+        "Les mesures $\\mu$ et $\\nu$ sont $\\sigma$-finies [cite: 2636]"
+      ],
+      "distractors": [
+        "Les mesures $\\mu$ et $\\nu$ sont finies (Trop restrictif, $\\sigma$-finie suffit)",
+        "Les espaces $E$ et $F$ sont topologiques",
+        "L'unicité est garantie sans condition sur les mesures (Faux, voir contre-exemple page 17)"
+      ]
+    },
+    {
+      "name": "Théorème 5 : Fubini-Tonelli",
+      "statement": "$\\int_{E \\times F} f d(\\mu \\otimes \\nu) = \\int_E (\\int_F f d\\nu)d\\mu = \\int_F (\\int_E f d\\mu)d\\nu$",
+      "correct": [
+        "Les mesures $\\mu$ et $\\nu$ sont $\\sigma$-finies [cite: 2707]",
+        "La fonction $f$ est mesurable et positive ($f: E \\times F \\to [0, \\infty]$) [cite: 2708]"
+      ],
+      "distractors": [
+        "La fonction $f$ est intégrable (Condition de Fubini-Lebesgue, pas Tonelli)",
+        "La fonction $f$ est continue",
+        "Les intégrales itérées sont finies (Conséquence possible, mais pas une hypothèse pour appliquer l'égalité dans $[0, \\infty]$)"
+      ]
+    },
+    {
+      "name": "Théorème 6 : Fubini-Lebesgue",
+      "statement": "$\\int_{E \\times F} f d(\\mu \u2297 \\nu) = \\int_E (\\int_F f d\\nu)d\\mu = \\int_F (\\int_E f d\\mu)d\\nu$ (et intégrales définies pp)",
+      "correct": [
+        "La fonction $f$ est intégrable par rapport à la mesure produit ($\\in \\mathcal{L}^1(E \\times F)$) [cite: 2720]",
+        "Les mesures $\\mu$ et $\\nu$ sont $\\sigma$-finies [cite: 2717]"
+      ],
+      "distractors": [
+        "La fonction $f$ est positive (Confusion avec Tonelli)",
+        "La fonction $f$ est bornée sur $E \\times F$",
+        "Les intégrales simples $\\int_E f d\\mu$ et $\\int_F f d\\nu$ existent (Insuffisant)"
+      ]
+    },
+    {
+      "name": "Théorème 4 : Indépendance et mesure produit",
+      "statement": "Les variables aléatoires $X$ et $Y$ sont indépendantes si et seulement si...",
+      "correct": [
+        "La loi du couple est le produit des lois marginales : $P_{(X,Y)} = P_X \\otimes P_Y$ [cite: 2688]"
+      ],
+      "distractors": [
+        "La covariance $Cov(X,Y)$ est nulle (Condition nécessaire mais pas suffisante)",
+        "Les variables $X$ et $Y$ sont identiquement distribuées"
+      ]
+    },
+    {
+      "name": "Théorème 7 (Admis) : Changement de variables",
+      "statement": "$\\int_U f(y) dy = \\int_V f \\circ \\Phi(x) |J_{\\Phi}(x)| dx$",
+      "correct": [
+        "$\\Phi$ est un $C^1$-difféomorphisme de $V$ sur $U$ [cite: 2745]",
+        "$f$ est borélienne et intégrable sur $U$ (ou positive) [cite: 2747]"
+      ],
+      "distractors": [
+        "$\\Phi$ est une bijection continue (Insuffisant, il faut le caractère $C^1$)",
+        "Le terme déterminant est $J_{\\Phi}(x)$ sans valeur absolue (Faux)",
+        "$U$ et $V$ sont des fermés de $\\mathbb{R}^N$"
+      ]
+    }
+  ]
+}

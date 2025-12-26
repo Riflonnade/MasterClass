@@ -1,0 +1,104 @@
+{
+    "title": "Valeurs d'adhérence",
+    "color": "blue",
+    "questions": [
+        {
+            "name": "Proposition I.2 : Propriétés des extractions",
+            "statement": "Soit $\\varphi : \\mathbb{N} \\to \\mathbb{N}$ une application. À quelle condition a-t-on $\\forall n \\in \\mathbb{N}, \\varphi(n) \\ge n$ ?",
+            "correct": [
+                "$\\varphi$ est strictement croissante",
+                "$\\varphi$ est une extraction"
+            ],
+            "distractors": [
+                "$\\varphi$ est seulement injective",
+                "$\\varphi$ est seulement croissante au sens large",
+                "$\\varphi$ est une bijection de $\\mathbb{N}$ dans $\\mathbb{N}$",
+                "$\\forall n, \\varphi(n) = n!$"
+            ]
+        },
+        {
+            "name": "Définition et Proposition II.1 : Caractérisations d'une valeur d'adhérence",
+            "statement": "Soit $(u_n) \\in \\mathbb{C}^\\mathbb{N}$ et $a \\in \\mathbb{C}$. Lesquelles de ces propriétés caractérisent le fait que $a$ est une valeur d'adhérence de $(u_n)$ ?",
+            "correct": [
+                "$\\forall \\varepsilon > 0, \\forall N \\in \\mathbb{N}, \\exists n \\ge N, |u_n - a| < \\varepsilon$",
+                "Il existe une extractrice $\\varphi$ telle que $u_{\\varphi(n)} \\to a$",
+                "Pour tout $\\varepsilon > 0$, l'ensemble $\\{n \\in \\mathbb{N}, |u_n - a| < \\varepsilon\\}$ est infini"
+            ],
+            "distractors": [
+                "La suite $(u_n)$ converge vers $a$",
+                "L'ensemble $\\{u_n, n \\in \\mathbb{N}\\}$ est borné",
+                "$\\forall \\varepsilon > 0, \\exists N \\in \\mathbb{N}, \\forall n \\ge N, |u_n - a| < \\varepsilon$",
+                "$\\exists n \\in \\mathbb{N}, u_n = a$"
+            ]
+        },
+        {
+            "name": "Théorème de Bolzano-Weierstraß (III.1)",
+            "statement": "Quelles sont les conditions nécessaires et suffisantes pour garantir l'existence d'au moins une valeur d'adhérence pour une suite réelle $(u_n)$ ?",
+            "correct": [
+                "La suite $(u_n)$ est bornée"
+            ],
+            "distractors": [
+                "La suite $(u_n)$ est convergente",
+                "La suite $(u_n)$ est monotone",
+                "La suite $(u_n)$ est positive",
+                "La suite $(u_n)$ est de Cauchy"
+            ]
+        },
+        {
+            "name": "Proposition III.4 : Convergence et Valeurs d'adhérence",
+            "statement": "Soit $(z_n)$ une suite complexe. Sous quelle(s) condition(s) la convergence de $(z_n)$ est-elle équivalente au fait de posséder une unique valeur d'adhérence ?",
+            "correct": [
+                "$(z_n)$ est une suite bornée"
+            ],
+            "distractors": [
+                "$(z_n)$ est une suite réelle",
+                "$(z_n)$ est une suite monotone",
+                "$(z_n)$ possède au moins deux valeurs d'adhérence distinctes",
+                "La suite est à valeurs dans $\\mathbb{N}$"
+            ]
+        },
+        {
+            "name": "Proposition IV.2 : Caractérisation séquentielle des fermés",
+            "statement": "Soit $F$ une partie de $X = \\mathbb{R}$ ou $\\mathbb{C}$. Quelles propriétés sont équivalentes à '$F$ est un fermé' ?",
+            "correct": [
+                "Toute suite convergente d'éléments de $F$ a sa limite dans $F$",
+                "$X \\setminus F$ est un ouvert",
+                "Pour toute suite $(u_n)$ à valeurs dans $F$, $\\text{Adh}(u_n) \\subset F$"
+            ],
+            "distractors": [
+                "$F$ est un ensemble borné",
+                "$F$ est un intervalle de type $[a, b]$",
+                "$F$ est une union finie d'intervalles ouverts",
+                "Toute suite d'éléments de $F$ admet une sous-suite convergente dans $F$"
+            ]
+        },
+        {
+            "name": "Lemme IV.4 : Bornes et ensembles fermés",
+            "statement": "Soit $F$ une partie non vide de $\\mathbb{R}$. Quelles hypothèses permettent d'affirmer que $\\sup F \\in F$ et $\\inf F \\in F$ ?",
+            "correct": [
+                "$F$ est fermée et bornée"
+            ],
+            "distractors": [
+                "$F$ est seulement fermée",
+                "$F$ est seulement bornée",
+                "$F$ est un ensemble fini",
+                "$F$ est un intervalle ouvert"
+            ]
+        },
+        {
+            "name": "Proposition V.2 : Propriétés des suites de Cauchy",
+            "statement": "Soit $(z_n)$ une suite de Cauchy dans $\\mathbb{C}$. Quelles affirmations sont mathématiquement exactes ?",
+            "correct": [
+                "$(z_n)$ est bornée",
+                "$\\forall p \\ge 1, z_{n+p} - z_n \\to 0$",
+                "Si $(z_n)$ possède une valeur d'adhérence, alors elle converge"
+            ],
+            "distractors": [
+                "$(z_n)$ est nécessairement monotone",
+                "Si $z_{n+1} - z_n \\to 0$, alors la suite est de Cauchy",
+                "$(z_n)$ est une suite d'entiers naturels",
+                "La suite $(\\sum_{k=0}^n |z_{k+1}-z_k|)$ est toujours convergente"
+            ]
+        }
+    ]
+}

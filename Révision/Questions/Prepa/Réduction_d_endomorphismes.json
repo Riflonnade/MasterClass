@@ -1,0 +1,162 @@
+{
+    "title": "Réduction d'endomorphisme",
+    "color": "blue",
+    "questions": [
+        {
+            "name": "Proposition I.3 : Stabilité par commutation",
+            "statement": "Soient $u, v \\in \\mathcal{L}(E)$. Si $u$ et $v$ commutent ($u \\circ v = v \\circ u$), alors $v$ laisse stable les sous-espaces associés à $u$.",
+            "correct": [
+                "$v$ laisse stable $\\ker(u)$",
+                "$v$ laisse stable $\\text{Im}(u)$",
+                "$\\forall P \\in \\mathbb{K}[X], v$ laisse stable $\\ker(P(u))$ et $\\text{Im}(P(u))$"
+            ],
+            "distractors": [
+                "$u$ et $v$ doivent être diagonalisables",
+                "$u$ doit être une homothétie",
+                "$v$ laisse stable n'importe quel sous-espace de $E$",
+                "$E$ doit être de dimension finie"
+            ]
+        },
+        {
+            "name": "Proposition II.4 : Existence de valeurs propres",
+            "statement": "Tout endomorphisme $u \\in \\mathcal{L}(E)$ possède au moins une valeur propre.",
+            "correct": [
+                "$\\mathbb{K} = \\mathbb{C}$",
+                "$E$ est de dimension finie $n \\in \\mathbb{N}^*$"
+            ],
+            "distractors": [
+                "$\\mathbb{K} = \\mathbb{R}$",
+                "$u$ est un projecteur",
+                "$E$ est de dimension infinie",
+                "$u$ est injectif"
+            ]
+        },
+        {
+            "name": "Lemme III.2 : Liberté des vecteurs propres",
+            "statement": "Soit $u \\in \\mathcal{L}(E)$ et $(x_1, \\dots, x_p)$ une famille de vecteurs propres associés aux valeurs propres $(\\lambda_1, \\dots, \\lambda_p)$. La famille $(x_1, \\dots, x_p)$ est libre.",
+            "correct": [
+                "Les valeurs propres $\\lambda_i$ sont deux à deux distinctes",
+                "Les vecteurs $x_i$ sont tous non nuls"
+            ],
+            "distractors": [
+                "$u$ est diagonalisable",
+                "$\\mathbb{K}$ est un corps algébriquement clos",
+                "L'endomorphisme $u$ est inversible",
+                "$E$ est de dimension finie"
+            ]
+        },
+        {
+            "name": "Proposition III.3 : Caractérisation de la diagonalisabilité",
+            "statement": "Soit $E$ un espace de dimension finie et $u \\in \\mathcal{L}(E)$. L'endomorphisme $u$ est diagonalisable si et seulement si :",
+            "correct": [
+                "Il existe une base de $E$ formée de vecteurs propres de $u$",
+                "$\\sum_{\\lambda \\in VP(u)} E_{\\lambda,u} = E$",
+                "Le polynôme minimal $\\mu_u$ est scindé à racines simples"
+            ],
+            "distractors": [
+                "Le polynôme caractéristique $\\chi_u$ est scindé",
+                "$u$ possède $n = \\dim(E)$ valeurs propres distinctes",
+                "$u$ est trigonalisable",
+                "$\\det(u) \\neq 0$"
+            ]
+        },
+        {
+            "name": "Proposition IV.4 : Lemme de décomposition des noyaux",
+            "statement": "Soient $P_1, \\dots, P_r \\in \\mathbb{K}[X]$ et $u \\in \\mathcal{L}(E)$. On a $\\ker(P_1 \\dots P_r(u)) = \\bigoplus_{i=1}^r \\ker(P_i(u))$.",
+            "correct": [
+                "Les polynômes $P_i$ sont deux à deux premiers entre eux"
+            ],
+            "distractors": [
+                "Les polynômes $P_i$ sont tous de degré 1",
+                "Les polynômes $P_i$ sont irréductibles",
+                "L'endomorphisme $u$ est diagonalisable",
+                "$\\mathbb{K}$ est le corps des complexes"
+            ]
+        },
+        {
+            "name": "Théorème de Cayley-Hamilton (V.7)",
+            "statement": "Pour tout endomorphisme $u \\in \\mathcal{L}(E)$ en dimension finie, on a $\\chi_u(u) = 0_{\\mathcal{L}(E)}$.",
+            "correct": [
+                "$E$ est de dimension finie",
+                "$\\mathbb{K}$ est un corps commutatif"
+            ],
+            "distractors": [
+                "$u$ est diagonalisable",
+                "$\\mathbb{K} = \\mathbb{C}$",
+                "Le polynôme minimal est égal au polynôme caractéristique",
+                "$u$ est nilpotent"
+            ]
+        },
+        {
+            "name": "Proposition V.6 : Multiplicités et diagonalisabilité",
+            "statement": "Soit $u \\in \\mathcal{L}(E)$ en dimension finie. $u$ est diagonalisable si et seulement si :",
+            "correct": [
+                "$\\chi_u$ est scindé sur $\\mathbb{K}$",
+                "$\\forall \\lambda \\in Spec(u), \\alpha_u(\\lambda) = \\beta_u(\\lambda)$ (multiplicité algébrique = géométrique)"
+            ],
+            "distractors": [
+                "$\\forall \\lambda \\in Spec(u), \\alpha_u(\\lambda) \\geq \\beta_u(\\lambda)$",
+                "$\\chi_u$ possède $n = \\dim(E)$ racines distinctes",
+                "$u$ est scindé sur $\\mathbb{C}$",
+                "$\\text{Tr}(u) = \\sum_{i=1}^n \\lambda_i$"
+            ]
+        },
+        {
+            "name": "Proposition VI.4 : Trigonalisation",
+            "statement": "Un endomorphisme $u \\in \\mathcal{L}(E)$ en dimension finie est trigonalisable si et seulement si :",
+            "correct": [
+                "$\\chi_u$ est scindé sur $\\mathbb{K}$",
+                "$\\mu_u$ est scindé sur $\\mathbb{K}$"
+            ],
+            "distractors": [
+                "$\\chi_u$ est scindé à racines simples",
+                "$\\mathbb{K} = \\mathbb{C}$",
+                "$u$ est nilpotent",
+                "$\\{0\\}$ et $E$ sont les seuls sous-espaces stables"
+            ]
+        },
+        {
+            "name": "Proposition VI.9 : Décomposition de Dunford",
+            "statement": "Soit $u \\in \\mathcal{L}(E)$ tel que $\\chi_u$ soit scindé. Il existe un unique couple $(\\delta, \\nu) \\in \\mathcal{L}(E)^2$ tel que $u = \\delta + \\nu$ avec :",
+            "correct": [
+                "$\\delta$ est diagonalisable et $\\nu$ est nilpotent",
+                "$\\delta \\circ \\nu = \\nu \\circ \\delta$",
+                "$\\delta$ et $\\nu$ sont des polynômes en $u$"
+            ],
+            "distractors": [
+                "$\\delta$ est inversible",
+                "$\\nu$ est une matrice triangulaire supérieure stricte dans n'importe quelle base",
+                "$u$ doit être diagonalisable",
+                "$\\mathbb{K}$ doit être de caractéristique nulle"
+            ]
+        },
+        {
+            "name": "Proposition VII.4 : Endomorphismes cycliques",
+            "statement": "Si $u \\in \\mathcal{L}(E)$ est cyclique de vecteur générateur $x$, alors :",
+            "correct": [
+                "$(x, u(x), \\dots, u^{n-1}(x))$ est une base de $E$",
+                "$\\mu_x = \\mu_u = \\chi_u$",
+                "$\\dim(\\text{Com}(u)) = n$"
+            ],
+            "distractors": [
+                "$u$ est diagonalisable",
+                "$u$ possède $n$ valeurs propres distinctes",
+                "$\\{0\\}$ et $E$ sont les seuls sous-espaces stables par $u$",
+                "$\\%u$ est irréductible"
+            ]
+        },
+        {
+            "name": "Proposition VIII.7 : Densité des matrices diagonalisables",
+            "statement": "L'ensemble des matrices de $\\mathcal{M}_n(\\mathbb{K})$ possédant $n$ valeurs propres distinctes est dense dans $\\mathcal{M}_n(\\mathbb{K})$.",
+            "correct": [
+                "$\\mathbb{K} = \\mathbb{C}$"
+            ],
+            "distractors": [
+                "$\\mathbb{K} = \\mathbb{R}$",
+                "$n=2$",
+                "L'ensemble considéré est fermé",
+                "Le corps $\\mathbb{K}$ est un corps fini"
+            ]
+        }
+    ]
+}

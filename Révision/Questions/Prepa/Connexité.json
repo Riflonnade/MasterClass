@@ -1,0 +1,128 @@
+{
+    "title": "Connexité et Connexité par arcs",
+    "color": "blue",
+    "questions": [
+        {
+            "name": "Définition I.1 : Caractérisation d'un espace métrique connexe",
+            "statement": "Soit $(X, d)$ un espace métrique. Les propositions suivantes sont des caractérisations équivalentes de la connexité de $X$ :",
+            "correct": [
+                "Si $O_1, O_2$ sont deux ouverts disjoints tels que $X = O_1 \\cup O_2$, alors l'un d'eux est vide.",
+                "Si $F_1, F_2$ sont deux fermés disjoints tels que $X = F_1 \\cup F_2$, alors l'un d'eux est vide.",
+                "Les seules parties de $X$ à la fois ouvertes et fermées sont $\\emptyset$ et $X$.",
+                "Toute application continue $f : X \\to \\{0, 1\\}$ est constante."
+            ],
+            "distractors": [
+                "Toute application continue $f : X \\to \\mathbb{R}$ est constante.",
+                "Toute application injective $f : X \\to X$ est une bijection.",
+                "Toute suite de $X$ possède une sous-suite convergente.",
+                "Si $O_1, O_2$ sont deux ouverts tels que $X = O_1 \\cup O_2$, alors leur intersection est non vide."
+            ]
+        },
+        {
+            "name": "Proposition I.2 : Partition d'un espace connexe",
+            "statement": "Soit $I$ un ensemble et $(\\Omega_i)_{i\\in I}$ une partition d'ouverts d'un espace métrique connexe $X$.",
+            "correct": [
+                "Il existe au plus un indice $i_0 \\in I$ tel que $\\Omega_{i_0} \\neq \\emptyset$."
+            ],
+            "distractors": [
+                "Il existe exactement un indice $i_0 \\in I$ tel que $\\Omega_{i_0} \\neq \\emptyset$.",
+                "Tous les $\\Omega_i$ sont nécessairement vides.",
+                "L'ensemble d'indices $I$ doit être fini.",
+                "La réunion des fermés $\\overline{\\Omega_i}$ est égale à $X$."
+            ]
+        },
+        {
+            "name": "Proposition I.3 : Connexité de l'adhérence",
+            "statement": "Soit $A$ une partie d'un espace métrique $X$. Si $A$ est connexe, alors :",
+            "correct": [
+                "Son adhérence $\\overline{A}$ est connexe."
+            ],
+            "distractors": [
+                "Son intérieur $\\mathring{A}$ est connexe.",
+                "Sa frontière $\\partial A$ est connexe.",
+                "Son complémentaire $X \\setminus A$ n'est pas connexe.",
+                "$A$ est nécessairement un intervalle."
+            ]
+        },
+        {
+            "name": "Proposition I.4 : Conservation de la connexité par continuité",
+            "statement": "Soient $X, Y$ deux espaces métriques et $f \\in \\mathcal{C}(X, Y)$. Si $A$ est une partie connexe de $X$ :",
+            "correct": [
+                "$f(A)$ est une partie connexe de $Y$."
+            ],
+            "distractors": [
+                "L'image réciproque $f^{-1}(A)$ est connexe si $A \\subset Y$ est connexe.",
+                "$f(A)$ est connexe par arcs.",
+                "$f$ doit être un homéomorphisme.",
+                "$f(A)$ est nécessairement un fermé de $Y$."
+            ]
+        },
+        {
+            "name": "Proposition II.6 : Relation entre connexité par arcs et connexité",
+            "statement": "Soit $A$ une partie d'un espace métrique $E$.",
+            "correct": [
+                "$A$ est connexe par arcs $\\implies A$ est connexe."
+            ],
+            "distractors": [
+                "$A$ est connexe $\\implies A$ est connexe par arcs.",
+                "$A$ est connexe par arcs $\\iff A$ est connexe.",
+                "$A$ est connexe $\\implies A$ est un intervalle.",
+                "$A$ est connexe par arcs $\\implies A$ est convexe."
+            ]
+        },
+        {
+            "name": "Proposition II.8 : Réunion de connexes par arcs",
+            "statement": "Soit $(A_n)_{n \\in \\mathbb{N}}$ une famille de parties d'un espace métrique $E$.",
+            "correct": [
+                "Si chaque $A_n$ est connexe par arcs et $\\bigcap_{n \\in \\mathbb{N}} A_n \\neq \\emptyset$, alors $\\bigcup_{n \\in \\mathbb{N}} A_n$ est connexe par arcs."
+            ],
+            "distractors": [
+                "La réunion d'une famille quelconque de parties connexes par arcs est connexe par arcs.",
+                "Si chaque $A_n$ est connexe par arcs, alors leur intersection est connexe par arcs.",
+                "La réunion de deux parties connexes par arcs est connexe par arcs si et seulement si elles sont disjointes.",
+                "Le produit cartésien de deux parties connexes n'est pas nécessairement connexe."
+            ]
+        },
+        {
+            "name": "Proposition III.1 : Caractérisation des connexes de $\\mathbb{R}$",
+            "statement": "Soit $A$ une partie de $\\mathbb{R}$. Les propositions suivantes sont équivalentes :",
+            "correct": [
+                "$A$ est connexe par arcs.",
+                "$A$ est un intervalle.",
+                "$A$ est connexe."
+            ],
+            "distractors": [
+                "$A$ est un ensemble borné.",
+                "$A$ est un ensemble dénombrable.",
+                "$A$ est un ouvert de $\\mathbb{R}$.",
+                "$A$ est un fermé de $\\mathbb{R}$."
+            ]
+        },
+        {
+            "name": "Proposition III.2 : Injectivité et Monotonie sur un intervalle",
+            "statement": "Soit $I$ un intervalle de $\\mathbb{R}$ et $f \\in \\mathcal{C}(I, \\mathbb{R})$.",
+            "correct": [
+                "$f$ est injective $\\iff f$ est strictement monotone."
+            ],
+            "distractors": [
+                "$f$ est monotone $\\implies f$ est continue.",
+                "$f$ est injective $\\implies f(I)$ est un ouvert.",
+                "$f$ est strictement monotone $\\implies f$ est bijective de $I$ dans $\\mathbb{R}$.",
+                "Cette équivalence reste vraie si $I$ est une union disjointe de deux intervalles."
+            ]
+        },
+        {
+            "name": "Proposition III.3 : Continuité des fonctions monotones",
+            "statement": "Soit $I$ un intervalle de $\\mathbb{R}$ et $f$ une application monotone de $I$ dans $\\mathbb{R}$.",
+            "correct": [
+                "$f$ est continue $\\iff f(I)$ est un intervalle."
+            ],
+            "distractors": [
+                "$f$ est continue $\\iff f$ est strictement monotone.",
+                "$f$ est toujours continue sur l'intérieur de $I$.",
+                "$f(I)$ est toujours un intervalle par monotonie.",
+                "Si $f$ est injective et continue, alors $f^{-1}$ peut être discontinue."
+            ]
+        }
+    ]
+}

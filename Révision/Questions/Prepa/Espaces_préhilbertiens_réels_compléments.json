@@ -1,0 +1,112 @@
+{
+    "title": "Espaces préhilbertiens réels, compléments",
+    "color": "blue",
+    "questions": [
+        {
+            "name": "Proposition I.3 : Relation d'équivalence d'orientation",
+            "statement": "La relation $\\sim$ définie par $\\det_{\\mathcal{E}}(\\mathcal{F}) > 0$ est une relation d'équivalence possédant exactement deux classes.",
+            "correct": [
+                "E est un espace vectoriel réel de dimension finie $n \\geq 1$",
+                "Le déterminant est calculé entre deux bases de E"
+            ],
+            "distractors": [
+                "E est un espace vectoriel complexe",
+                "E est un espace de Hilbert de dimension infinie",
+                "La relation d'équivalence possède $n$ classes"
+            ]
+        },
+        {
+            "name": "Proposition I.5 : Changement de base et déterminant",
+            "statement": "Si $\\mathcal{F}$ est une base orthonormée directe, alors $\\det_{\\mathcal{F}}(x_1, \\dots, x_n) = \\det_{\\mathcal{E}}(x_1, \\dots, x_n)$.",
+            "correct": [
+                "$\\mathcal{E}$ et $\\mathcal{F}$ sont des bases orthonormées",
+                "$\\mathcal{F}$ est une base directe (même orientation que $\\mathcal{E}$)"
+            ],
+            "distractors": [
+                "$\\mathcal{E}$ et $\\mathcal{F}$ sont des bases quelconques",
+                "La matrice de passage de $\\mathcal{E}$ à $\\mathcal{F}$ est symétrique",
+                "Le résultat est valable pour tout espace préhilbertien"
+            ]
+        },
+        {
+            "name": "Proposition I.6 : Produit vectoriel",
+            "statement": "Il existe un unique vecteur $w$ tel que $\\forall z \\in E, \\det_{\\mathcal{E}}(x, y, z) = \\langle w, z \\rangle$.",
+            "correct": [
+                "$\\dim(E) = 3$",
+                "E est un espace euclidien orienté",
+                "$(x, y) \\in E^2$"
+            ],
+            "distractors": [
+                "$\\dim(E) \\geq 3$",
+                "E est un espace préhilbertien de dimension infinie",
+                "Le produit vectoriel est commutatif"
+            ]
+        },
+        {
+            "name": "Proposition I.8 : Décomposition de Cartan (Iwasawa)",
+            "statement": "Il existe un unique couple $(O, T) \\in O_n(\\mathbb{R}) \\times \\mathcal{T}_n^+(\\mathbb{R})$ tel que $A = OT$.",
+            "correct": [
+                "$A \\in GL_n(\\mathbb{R})$ (matrice inversible)",
+                "T est triangulaire supérieure à coefficients diagonaux strictement positifs"
+            ],
+            "distractors": [
+                "$A$ est une matrice symétrique définie positive",
+                "$\\det(A) > 0$",
+                "O est une matrice de rotation ($O \\in SO_n(\\mathbb{R})$)"
+            ]
+        },
+        {
+            "name": "Exercice I.11 : Inégalité de Hadamard",
+            "statement": "$|\\det_{\\mathcal{E}}(x_1, \\dots, x_n)| \\leq \\prod_{k=1}^n \\|x_k\\|$",
+            "correct": [
+                "$\\mathcal{E}$ est une base orthonormée de E",
+                "E est un espace euclidien de dimension $n$"
+            ],
+            "distractors": [
+                "La famille $(x_1, \\dots, x_n)$ doit être libre",
+                "Les vecteurs $x_k$ doivent être unitaires",
+                "E est un espace de dimension infinie"
+            ]
+        },
+        {
+            "name": "Proposition II.2 : Liberté et Déterminant de Gram",
+            "statement": "$|G|(x_1, \\dots, x_n) > 0$ si et seulement si la famille est libre.",
+            "correct": [
+                "$(x_1, \\dots, x_n) \\in E^n$",
+                "E est un espace préhilbertien réel"
+            ],
+            "distractors": [
+                "E est de dimension finie $n$",
+                "La famille $(x_1, \\dots, x_n)$ est une base de E",
+                "La matrice de Gram est une matrice de passage"
+            ]
+        },
+        {
+            "name": "Proposition II.2 : Isométrie et Gram",
+            "statement": "$G(x_1, \\dots, x_n) = G(y_1, \\dots, y_n) \\iff \\exists u \\in O(E), \\forall i, u(x_i) = y_i$",
+            "correct": [
+                "E est de dimension finie",
+                "E est un espace euclidien"
+            ],
+            "distractors": [
+                "Les familles $(x_i)$ et $(y_i)$ sont des bases",
+                "u doit être une application linéaire quelconque",
+                "Le résultat est vrai dans tout espace préhilbertien de dimension infinie"
+            ]
+        },
+        {
+            "name": "Exercice II.3 : Distance à un sous-espace",
+            "statement": "$d(a, F)^2 = \\frac{|G|(a, x_1, \\dots, x_n)}{|G|(x_1, \\dots, x_n)}$",
+            "correct": [
+                "$(x_1, \\dots, x_n)$ est une famille libre",
+                "$F = \\text{Vect}(x_1, \\dots, x_n)$",
+                "E est un espace préhilbertien réel"
+            ],
+            "distractors": [
+                "La famille $(x_1, \\dots, x_n)$ est orthonormée",
+                "$a$ appartient à l'orthogonal de $F$",
+                "E est un espace vectoriel de dimension $n$"
+            ]
+        }
+    ]
+}

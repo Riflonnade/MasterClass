@@ -1,0 +1,277 @@
+{
+  "title": "Topologie et Analyse Fonctionnelle - L3/Magistère",
+  "color": "blue",
+  "questions": [
+    {
+      "name": "Théorème 1.1.9 : Propriétés des ouverts",
+      "statement": "L'intersection $U \\cap V$ de deux ouverts $U$ et $V$ est un ouvert.",
+      "correct": [
+        "L'intersection porte sur un nombre fini d'ouverts"
+      ],
+      "distractors": [
+        "L'intersection porte sur une famille quelconque (infinie) d'ouverts (Faux, l'intersection infinie n'est pas toujours ouverte)",
+        "Les ouverts doivent être disjoints"
+      ]
+    },
+    {
+      "name": "Théorème 1.1.10 : Caractérisation des ouverts dans un espace métrique",
+      "statement": "Un sous-ensemble $U$ de $X$ est ouvert si et seulement si...",
+      "correct": [
+        "$U$ est une réunion de boules ouvertes"
+      ],
+      "distractors": [
+        "$U$ est une intersection finie de boules fermées",
+        "$U$ contient toutes ses valeurs d'adhérence",
+        "$U$ est une réunion finie de boules ouvertes (Faux, la réunion peut être quelconque)"
+      ]
+    },
+    {
+      "name": "Théorème 1.2.2 : Topologie associée à une distance",
+      "statement": "Il existe une unique topologie sur $X$ pour laquelle les ouverts sont les réunions de boules ouvertes.",
+      "correct": [
+        "$(X,d)$ est un espace métrique"
+      ],
+      "distractors": [
+        "$(X,d)$ est un espace vectoriel normé (Pas nécessaire, métrique suffit)",
+        "L'espace doit être complet",
+        "L'espace doit être séparable"
+      ]
+    },
+    {
+      "name": "Théorème 1.2.6 : Distances topologiquement équivalentes",
+      "statement": "Deux distances $d_1$ et $d_2$ sont topologiquement équivalentes si et seulement si...",
+      "correct": [
+        "Elles définissent le même ensemble d'ouverts (la même topologie)"
+      ],
+      "distractors": [
+        "Elles sont Lipschitz-équivalentes (Condition suffisante mais non nécessaire)",
+        "Elles définissent les mêmes suites de Cauchy (Faux, la complétude dépend de la métrique, pas seulement de la topologie)",
+        "Elles sont bornées"
+      ]
+    },
+    {
+      "name": "Théorème 1.3.2 : Séparation des espaces métriques",
+      "statement": "Tout espace $X$ est séparé (Hausdorff).",
+      "correct": [
+        "L'espace est métrique"
+      ],
+      "distractors": [
+        "L'espace est muni de la topologie grossière (Non séparé si $|X| > 1$)",
+        "L'espace doit être complet",
+        "L'espace doit être de dimension finie"
+      ]
+    },
+    {
+      "name": "Proposition 1.3.7 : Unicité de la limite",
+      "statement": "Une suite de $X$ a au plus une limite.",
+      "correct": [
+        "L'espace topologique $X$ est séparé"
+      ],
+      "distractors": [
+        "L'espace topologique $X$ est compact (Pas suffisant pour l'unicité sans séparation)",
+        "L'espace $X$ est connexe",
+        "La suite est bornée"
+      ]
+    },
+    {
+      "name": "Proposition 1.3.8 : Convergence dans un espace métrique",
+      "statement": "La suite $(x_n)$ converge vers $l$ si et seulement si $\\lim_{n \\to +\\infty} d(x_n, l) = 0$.",
+      "correct": [
+        "$(X, d)$ est un espace métrique"
+      ],
+      "distractors": [
+        "$(X, d)$ est un espace topologique quelconque (La distance n'existe pas forcément)",
+        "La suite $(x_n)$ est de Cauchy (Cela n'implique la convergence que si l'espace est complet)"
+      ]
+    },
+    {
+      "name": "Théorème 1.4.3 : Caractérisation globale de la continuité",
+      "statement": "Une application $f: X \\to Y$ est continue si et seulement si...",
+      "correct": [
+        "L'image réciproque de tout ouvert de $Y$ est un ouvert de $X$ ($f^{-1}(U)$ ouvert)"
+      ],
+      "distractors": [
+        "L'image directe de tout ouvert de $X$ est un ouvert de $Y$ (Application ouverte)",
+        "L'image réciproque de tout borné est bornée",
+        "L'image directe de tout fermé est un fermé (Application fermée)"
+      ]
+    },
+    {
+      "name": "Théorème 1.4.7 : Caractérisation séquentielle de la continuité",
+      "statement": "$f$ est continue en $a$ si et seulement si pour toute suite $(x_n) \\to a$, $f(x_n) \\to f(a)$.",
+      "correct": [
+        "$X$ et $Y$ sont des espaces métriques (ou à bases dénombrables de voisinages)"
+      ],
+      "distractors": [
+        "$X$ et $Y$ sont des espaces topologiques quelconques (Faux dans le cas général)",
+        "$f$ est bijective",
+        "$f$ est uniformément continue"
+      ]
+    },
+    {
+      "name": "Théorème 1.4.16 : Continuité de la limite uniforme",
+      "statement": "Si $(f_n)$ converge vers $f$, alors $f$ est continue.",
+      "correct": [
+        "Chaque $f_n$ est continue",
+        "La convergence est uniforme"
+      ],
+      "distractors": [
+        "La convergence est simple (Insuffisant pour conserver la continuité)",
+        "L'espace de départ est compact",
+        "Les fonctions $f_n$ sont bornées"
+      ]
+    },
+    {
+      "name": "Théorème 2.2.8 : Compacité de [0,1]",
+      "statement": "L'intervalle $[0,1]$ muni de la topologie usuelle est compact.",
+      "correct": [
+        "Muni de la topologie induite par $\\mathbb{R}$"
+      ],
+      "distractors": [
+        "Muni de la topologie discrète (Ne serait pas compact car infini)",
+        "L'intervalle $]0,1[$ est compact (Faux, non fermé)",
+        "Tout intervalle de $\\mathbb{R}$ est compact"
+      ]
+    },
+    {
+      "name": "Théorème 2.2.10 : Image continue d'un compact",
+      "statement": "Si $f: X \\to Y$ est continue et $X$ est quasi-compact, alors...",
+      "correct": [
+        "$f(X)$ est quasi-compact"
+      ],
+      "distractors": [
+        "$f^{-1}(Y)$ est compact",
+        "$f(X)$ est fermé (Seulement vrai si $Y$ est séparé)",
+        "$f$ est uniformément continue (Nécessite que $X$ soit métrique)"
+      ]
+    },
+    {
+      "name": "Corollaire 2.2.12 : Homéomorphisme et compacité",
+      "statement": "Une bijection continue $f: X \\to Y$ est un homéomorphisme si...",
+      "correct": [
+        "$X$ est compact",
+        "$Y$ est séparé"
+      ],
+      "distractors": [
+        "$X$ est connexe",
+        "$X$ et $Y$ sont des espaces métriques quelconques",
+        "$f$ est uniformément continue"
+      ]
+    },
+    {
+      "name": "Théorème 2.2.25 : Bolzano-Weierstrass (Équivalence Compacité)",
+      "statement": "Dans un espace métrique $(X,d)$, $X$ est compact si et seulement si...",
+      "correct": [
+        "Toute suite de $X$ possède une sous-suite convergente (Compacité séquentielle)",
+        "De tout recouvrement ouvert, on peut extraire un sous-recouvrement fini (Borel-Lebesgue)"
+      ],
+      "distractors": [
+        "$X$ est complet et borné (Insuffisant, il faut précompact ou totalement borné)",
+        "Toute suite de Cauchy converge (C'est la complétude, pas la compacité)",
+        "$X$ est fermé et borné (Vrai seulement dans les EVN de dimension finie)"
+      ]
+    },
+    {
+      "name": "Théorème 2.2.30 : Théorème de Heine",
+      "statement": "Toute application continue $f: X \\to Y$ est uniformément continue.",
+      "correct": [
+        "$(X,d)$ et $(Y,d')$ sont des espaces métriques",
+        "$X$ est compact"
+      ],
+      "distractors": [
+        "$X$ est complet (Insuffisant)",
+        "$f$ est bornée",
+        "$X$ est un intervalle ouvert borné"
+      ]
+    },
+    {
+      "name": "Théorème 2.2.36 : Théorème de Riesz",
+      "statement": "La boule unité fermée de $E$ est compacte si et seulement si...",
+      "correct": [
+        "$E$ est un espace vectoriel normé de dimension finie"
+      ],
+      "distractors": [
+        "$E$ est un espace de Banach quelconque",
+        "$E$ est complet",
+        "$E$ est un espace de Hilbert de dimension infinie"
+      ]
+    },
+    {
+      "name": "Théorème 3.3.2 : Complétude de l'espace des fonctions continues",
+      "statement": "L'espace $(\\mathcal{C}(X,Y), D_{\\infty})$ est complet.",
+      "correct": [
+        "$X$ est un espace topologique compact",
+        "$Y$ est un espace métrique complet"
+      ],
+      "distractors": [
+        "$X$ est un espace métrique complet quelconque (Il faut la compacité pour définir la norme uniforme)",
+        "$Y$ est compact (Pas nécessaire, la complétude suffit)",
+        "Les fonctions doivent être bornées mais pas nécessairement continues"
+      ]
+    },
+    {
+      "name": "Théorème 3.3.6 : Stone-Weierstrass (Réel)",
+      "statement": "Une sous-algèbre $\\mathcal{A}$ de $\\mathcal{C}(X, \\mathbb{R})$ est dense si...",
+      "correct": [
+        "$\\mathcal{A}$ contient les fonctions constantes",
+        "$\\mathcal{A}$ sépare les points de $X$",
+        "$X$ est un espace topologique compact"
+      ],
+      "distractors": [
+        "$\\mathcal{A}$ est fermée (Si elle est fermée et dense, elle vaut tout l'espace, mais ce n'est pas l'hypothèse du théorème)",
+        "$\\mathcal{A}$ est un idéal",
+        "$X$ est un espace métrique complet quelconque"
+      ]
+    },
+    {
+      "name": "Théorème 4.3.3 : Espace des applications linéaires continues",
+      "statement": "L'espace $(\\mathcal{L}(E,F), ||.||)$ est un espace de Banach.",
+      "correct": [
+        "$F$ est un espace de Banach (complet)"
+      ],
+      "distractors": [
+        "$E$ est un espace de Banach (La complétude de l'espace de départ n'est pas requise)",
+        "$E$ est de dimension finie",
+        "Les applications doivent être bijectives"
+      ]
+    },
+    {
+      "name": "Théorème 4.3.6 : Caractérisation des Banach par les séries",
+      "statement": "Un EVN $(E, ||.||)$ est un Banach si et seulement si...",
+      "correct": [
+        "Toute série absolument convergente est convergente"
+      ],
+      "distractors": [
+        "Toute suite bornée admet une sous-suite convergente (C'est la propriété de Montel/Heine-Borel pour la compacité)",
+        "Toute série convergente est absolument convergente (C'est la dimension finie)",
+        "La norme satisfait l'identité du parallélogramme (C'est pour les espaces de Hilbert)"
+      ]
+    },
+    {
+      "name": "Théorème 5.3.1 : Projection sur un convexe fermé",
+      "statement": "Pour tout $x \\in H$, il existe un unique $y_0 \\in C$ réalisant la distance $d(x, C)$.",
+      "correct": [
+        "$H$ est un espace de Hilbert (complet)",
+        "$C$ est une partie convexe fermée non vide"
+      ],
+      "distractors": [
+        "$H$ est un espace préhilbertien quelconque (La complétude est nécessaire pour l'existence)",
+        "$C$ est un sous-espace vectoriel (Cas particulier, pas l'hypothèse générale)",
+        "$C$ est un compact quelconque (L'unicité requiert la convexité)"
+      ]
+    },
+    {
+      "name": "Théorème 5.3.6 : Représentation de Riesz",
+      "statement": "Pour tout $f \\in H'$, il existe un unique $y \\in H$ tel que $\\forall x, f(x) = \\langle y, x \\rangle$.",
+      "correct": [
+        "$H$ est un espace de Hilbert",
+        "$f$ est une forme linéaire continue"
+      ],
+      "distractors": [
+        "$H$ est un espace préhilbertien",
+        "$f$ est une application linéaire quelconque (La continuité est cruciale)",
+        "$f$ est une forme bilinéaire"
+      ]
+    }
+  ]
+}

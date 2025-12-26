@@ -1,0 +1,135 @@
+{
+    "title": "Suites de fonctions",
+    "color": "blue",
+    "questions": [
+        {
+            "name": "Caractérisations de la convergence uniforme",
+            "statement": "Soit $f$ une fonction de $X$ dans $E$. On dit que la suite de fonctions $(f_n)$ converge uniformément vers $f$ sur $X$ si :",
+            "correct": [
+                "$\\forall \\varepsilon > 0, \\exists N \\in \\mathbb{N}, \\forall n \\geq N, \\sup_{x \\in X} \\|f_n(x) - f(x)\\| \\leq \\varepsilon$",
+                "$\\forall \\varepsilon > 0, \\exists N \\in \\mathbb{N}, \\forall n \\geq N, \\forall x \\in X, \\|f_n(x) - f(x)\\| < \\varepsilon$",
+                "$(f_n - f)$ est bornée à partir d'un certain rang et $\\|f_n - f\\|_\\infty \\xrightarrow[n \\to +\\infty]{} 0$"
+            ],
+            "distractors": [
+                "$\\forall x \\in X, f_n(x) \\xrightarrow[n \\to +\\infty]{} f(x)$",
+                "La suite $(\\|f_n\\|_\\infty)_{n \\in \\mathbb{N}}$ converge vers $\\|f\\|_\\infty$",
+                "$\\exists N \\in \\mathbb{N}, \\forall n \\geq N, \\int_X |f_n - f| < \\varepsilon$"
+            ]
+        },
+        {
+            "name": "Proposition I.5 : Opérations sur la convergence uniforme",
+            "statement": "Soient $(f_n)$ et $(g_n)$ deux suites de fonctions convergeant uniformément vers $f$ et $g$. Sous quelles conditions le produit $(f_n \\times g_n)$ converge-t-il uniformément vers $f \\times g$ ?",
+            "correct": [
+                "$(f_n)$ est une suite de fonctions bornées",
+                "$(g_n)$ est une suite de fonctions bornées"
+            ],
+            "distractors": [
+                "$X$ est un espace métrique compact",
+                "$E$ est un espace de Banach",
+                "$f$ et $g$ sont continues"
+            ]
+        },
+        {
+            "name": "Proposition II.1 : Conservation des propriétés par limite simple",
+            "statement": "Soit $(f_n)$ une suite de fonctions de $\\mathbb{R}$ dans $\\mathbb{R}$ convergeant simplement vers $f$. Si pour tout $n$, $f_n$ possède une propriété, $f$ l'aura aussi pour :",
+            "correct": [
+                "La croissance (monotonie)",
+                "La convexité"
+            ],
+            "distractors": [
+                "La continuité",
+                "La dérivabilité",
+                "Le caractère strictement croissant"
+            ]
+        },
+        {
+            "name": "Théorème II.2 : Premier théorème de Dini",
+            "statement": "Soit $(f_n)$ une suite de fonctions continues de $X$ dans $\\mathbb{R}$ convergeant simplement vers $f$. Alors $(f_n)$ converge uniformément vers $f$ si :",
+            "correct": [
+                "$X$ est un espace compact",
+                "$f$ est continue sur $X$",
+                "La suite $(f_n(x))$ est monotone pour tout $x \\in X$"
+            ],
+            "distractors": [
+                "$X$ est un espace complet",
+                "$(f_n)$ est une suite de fonctions lipschitziennes",
+                "$(f_n)$ converge uniformément sur tout compact de $X$"
+            ]
+        },
+        {
+            "name": "Proposition II.5 : Interversion de limites",
+            "statement": "Soit $(f_n)$ convergeant uniformément vers $f$ sur $A \\subset X$. Pour affirmer que $\\lim_{n \\to \\infty} \\lim_{x \\to a} f_n(x) = \\lim_{x \\to a} \\lim_{n \\to \\infty} f_n(x)$, il faut :",
+            "correct": [
+                "$E$ est un espace vectoriel normé complet (espace de Banach)",
+                "Pour chaque $n$, $f_n(x)$ admet une limite $\\lambda_n$ en $a$ suivant $A$",
+                "La convergence $f_n \\to f$ est uniforme sur $A$"
+            ],
+            "distractors": [
+                "$A$ est un voisinage compact de $a$",
+                "$f$ est uniformément continue sur $A$",
+                "La suite $(\\lambda_n)$ est stationnaire"
+            ]
+        },
+        {
+            "name": "Proposition II.6 : Intégration sur un segment",
+            "statement": "Soient $a, b \\in \\mathbb{R}$ avec $a \\leq b$. Si $(f_n)$ converge uniformément vers $f$ sur $[a, b]$, alors $\\int_a^b f_n(x)dx \\to \\int_a^b f(x)dx$ sous réserve que :",
+            "correct": [
+                "Les $f_n$ sont continues par morceaux sur $[a, b]$"
+            ],
+            "distractors": [
+                "L'intervalle d'intégration est $[0, +\\infty[$",
+                "La suite $(f_n)$ est croissante",
+                "$(f_n)$ converge simplement vers une fonction intégrable"
+            ]
+        },
+        {
+            "name": "Proposition II.8 : Dérivation et convergence uniforme",
+            "statement": "Soit $(f_n)$ une suite de fonctions de classe $C^1$ sur un intervalle $I$. Pour que $(f_n)$ converge vers une fonction $f$ de classe $C^1$ telle que $f' = \\lim f'_n$, il suffit que :",
+            "correct": [
+                "$(f'_n)$ converge uniformément sur tout segment de $I$ vers une fonction $g$",
+                "Il existe $a \\in I$ tel que la suite numérique $(f_n(a))$ converge"
+            ],
+            "distractors": [
+                "$(f_n)$ converge uniformément sur $I$",
+                "$(f_n)$ est uniformément bornée sur $I$",
+                "Les fonctions $f'_n$ sont lipschitziennes"
+            ]
+        },
+        {
+            "name": "Théorème III.3 : Critère de Cauchy uniforme",
+            "statement": "La suite $(f_n)$ converge uniformément sur $X$ vers une fonction $f$ si et seulement si elle vérifie le critère de Cauchy uniforme, à condition que :",
+            "correct": [
+                "$E$ soit un espace complet"
+            ],
+            "distractors": [
+                "$X$ soit un espace compact",
+                "Les fonctions $f_n$ soient bornées",
+                "La convergence simple soit déjà acquise"
+            ]
+        },
+        {
+            "name": "Théorème III.5 : Deuxième théorème de Dini",
+            "statement": "Soit $(f_n)$ une suite de fonctions croissantes de $[a, b]$ dans $\\mathbb{R}$ convergeant simplement vers $f$. La convergence est uniforme si :",
+            "correct": [
+                "$f$ est continue sur $[a, b]$"
+            ],
+            "distractors": [
+                "Les fonctions $f_n$ sont continues",
+                "La suite $(f_n)$ est monotone par rapport à $n$",
+                "Les fonctions $f_n$ sont dérivables"
+            ]
+        },
+        {
+            "name": "Théorème III.7 : Convergence des suites équi-lipschitziennes",
+            "statement": "Soit $(f_n)$ une suite de fonctions de $[a, b]$ dans $\\mathbb{R}$ convergeant simplement vers $f$. $(f_n)$ converge uniformément vers $f$ si :",
+            "correct": [
+                "Il existe $K \\geq 0$ tel que toutes les $f_n$ sont $K$-lipschitziennes"
+            ],
+            "distractors": [
+                "Les fonctions $f_n$ sont de classe $C^1$ et $(f'_n)$ converge simplement",
+                "$f$ est lipschitzienne",
+                "$(f_n)$ est une suite de fonctions convexes"
+            ]
+        }
+    ]
+}

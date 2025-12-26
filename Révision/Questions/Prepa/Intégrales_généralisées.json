@@ -1,0 +1,139 @@
+{
+    "title": "Intégrales généralisées",
+    "color": "blue",
+    "questions": [
+        {
+            "name": "Caractérisation séquentielle de la limite",
+            "statement": "$f$ possède une limite finie en $a$ si et seulement si pour toute suite $(u_n)_{n\\in\\mathbb{N}}$ à valeurs dans $I$, si $(u_n)$ converge vers $a$, alors $(f(u_n))$ est convergente.",
+            "correct": [
+                "$f$ est une application de $I$ dans $\\mathbb{R}$",
+                "$a$ est un élément de $I$ ou une borne de $I$",
+                "La suite $(u_n)$ est à valeurs dans $I$"
+            ],
+            "distractors": [
+                "$f$ doit être continue sur l'intervalle $I$",
+                "La suite $(u_n)$ doit être monotone",
+                "$a$ doit impérativement être un point intérieur à $I$"
+            ]
+        },
+        {
+            "name": "Critère de Cauchy pour les limites de fonctions",
+            "statement": "$f$ possède une limite finie en $a$ si et seulement si : $\\forall \\varepsilon > 0, \\exists \\eta > 0, \\forall x, y \\in I, |x - a| < \\eta \\text{ et } |y - a| < \\eta \\implies |f(x) - f(y)| < \\varepsilon$",
+            "correct": [
+                "$f$ est une application de $I$ dans $\\mathbb{R}$",
+                "$a$ est un élément de $I$ ou une borne de $I$"
+            ],
+            "distractors": [
+                "$f$ est une fonction positive",
+                "$f$ est uniformément continue sur $I$",
+                "$I$ est un intervalle fermé borné"
+            ]
+        },
+        {
+            "name": "Proposition I.4 : Indépendance de la borne inférieure",
+            "statement": "$\\int_{a}^{b} f(t)dt$ converge $\\iff \\int_{a'}^{b} f(t)dt$ converge.",
+            "correct": [
+                "$f$ est continue par morceaux sur $[a, b[$",
+                "$a' \\in [a, b[$",
+                "$a < b$ (réels)"
+            ],
+            "distractors": [
+                "$f$ est de signe constant sur $[a, b[$",
+                "$f$ est bornée au voisinage de $a$",
+                "$f$ est continue sur le segment $[a, b]$"
+            ]
+        },
+        {
+            "name": "Proposition II.1 : Caractérisation pour les fonctions positives",
+            "statement": "Soit $f$ positive sur $[a, b[$. $f$ admet une intégrale généralisée sur $[a, b[$ si et seulement si l'application $x \\mapsto \\int_{a}^{x} f(t)dt$ est bornée sur $[a, b[$.",
+            "correct": [
+                "$f$ est continue par morceaux sur $[a, b[$",
+                "$f$ est positive sur $[a, b[$"
+            ],
+            "distractors": [
+                "$f$ est décroissante sur $[a, b[$",
+                "$f$ est bornée sur $[a, b[$",
+                "$b$ est nécessairement égal à $+\\infty$"
+            ]
+        },
+        {
+            "name": "Proposition II.2 : Comparaison par équivalence",
+            "statement": "Si $f \\sim_{x \\to b} g$, alors $\\int_{a}^{b} f(t)dt$ converge si et seulement si $\\int_{a}^{b} g(t)dt$ converge.",
+            "correct": [
+                "$f$ et $g$ sont continues par morceaux sur $[a, b[$",
+                "$f$ et $g$ sont positives au voisinage de $b$"
+            ],
+            "distractors": [
+                "$f$ et $g$ sont bornées sur $[a, b[$",
+                "L'équivalence est vraie même si $f$ et $g$ changent de signe une infinité de fois",
+                "$f$ et $g$ tendent vers 0 en $b$"
+            ]
+        },
+        {
+            "name": "Théorème II.3 : Critère de Cauchy pour les intégrales",
+            "statement": "$\\int_{a}^{b} f(t)dt$ admet une intégrale généralisée sur $[a, b[$ si et seulement si : $\\forall \\varepsilon > 0, \\exists \\eta > 0, \\forall x, y \\in [a, b[, |x - b| < \\eta \\text{ et } |y - b| < \\eta \\implies |\\int_{x}^{y} f(t)dt| \\leq \\varepsilon$",
+            "correct": [
+                "$f$ est continue par morceaux sur $[a, b[$",
+                "$f$ est à valeurs dans $\\mathbb{C}$"
+            ],
+            "distractors": [
+                "$f$ est une fonction positive",
+                "$f$ est intégrable au sens de Lebesgue",
+                "$b$ doit être un réel fini"
+            ]
+        },
+        {
+            "name": "Proposition III.2 : Intégrabilité et convergence",
+            "statement": "Si $f$ est intégrable sur $I$, alors elle admet une intégrale généralisée sur $I$.",
+            "correct": [
+                "$f$ est une fonction d'un intervalle $I$ dans $\\mathbb{R}$ ou $\\mathbb{C}$",
+                "$f$ est continue par morceaux sur $I$",
+                "$\\int_I |f(t)|dt$ converge (définition de l'intégrabilité)"
+            ],
+            "distractors": [
+                "$f$ est positive sur $I$",
+                "$I$ est un segment $[a, b]$",
+                "$f$ est de signe constant"
+            ]
+        },
+        {
+            "name": "Proposition IV.1 : Intégrales de Riemann en $+\\infty$",
+            "statement": "$\\int_{1}^{+\\infty} \\frac{1}{t^\\alpha} dt$ converge si et seulement si $\\alpha > 1$.",
+            "correct": [
+                "$\\alpha \\in \\mathbb{R}$"
+            ],
+            "distractors": [
+                "$\\alpha$ doit être un entier naturel",
+                "$\\alpha \\geq 1$",
+                "La fonction doit être continue en 0"
+            ]
+        },
+        {
+            "name": "Proposition V.2 : Intégration par parties",
+            "statement": "Si $t \\mapsto f(t)g(t)$ admet une limite finie en $b$, alors $\\int_{a}^{b} f'(t)g(t)dt$ converge si et seulement si $\\int_{a}^{b} f(t)g'(t)dt$ converge.",
+            "correct": [
+                "$f$ et $g$ sont de classe $C^1$ sur $[a, b[$",
+                "$\\lim_{t \\to b} f(t)g(t)$ existe et est finie"
+            ],
+            "distractors": [
+                "$f$ et $g$ sont des fonctions positives",
+                "L'une des fonctions au moins doit être bornée",
+                "Les deux intégrales doivent converger absolument"
+            ]
+        },
+        {
+            "name": "Proposition VII.1 : Comportement à l'infini",
+            "statement": "Si $\\int_{0}^{+\\infty} f(t)dt$ converge et si $f(x) \\xrightarrow[x \\to +\\infty]{} \\ell$, alors $\\ell = 0$.",
+            "correct": [
+                "$f$ est continue par morceaux sur $\\mathbb{R}^+$",
+                "L'intégrale $\\int_{0}^{+\\infty} f(t)dt$ converge",
+                "La limite $\\ell$ de $f$ en $+\\infty$ existe"
+            ],
+            "distractors": [
+                "$f$ est uniformément continue",
+                "$f$ est positive",
+                "$f$ est décroissante"
+            ]
+        }
+    ]
+}

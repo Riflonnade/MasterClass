@@ -1,0 +1,82 @@
+{
+  "title": "Suites de Variables Aléatoires : LGN et TCL",
+  "color": "blue",
+  "questions": [
+    {
+      "name": "Théorème 6 : Hiérarchie des convergences",
+      "statement": "$X_n \\xrightarrow{L^p} X \\implies X_n \\xrightarrow{\\mathbb{P}} X$ et $X_n \\xrightarrow{p.s.} X \\implies X_n \\xrightarrow{\\mathbb{P}} X$",
+      "correct": [
+        "L'espace est un espace de probabilité (mesure finie)",
+        "$p \\ge 1$"
+      ],
+      "distractors": [
+        "La convergence en probabilité implique la convergence presque sûre (Faux, réciproque partielle)",
+        "La convergence en probabilité implique la convergence $L^p$ (Faux sans domination)",
+        "La convergence presque sûre implique la convergence $L^p$"
+      ]
+    },
+    {
+      "name": "Théorème 10 : Loi Forte des Grands Nombres (Kolmogorov)",
+      "statement": "$\\lim_{n \\to \\infty} \\frac{1}{n} \\sum_{i=1}^n X_i = \\mu$ presque sûrement.",
+      "correct": [
+        "Les variables $(X_n)$ sont i.i.d. (indépendantes et identiquement distribuées)",
+        "$X_1$ est intégrable ($X_1 \\in L^1$, $\\mathbb{E}[|X_1|] < \\infty$)"
+      ],
+      "distractors": [
+        "$X_1$ est de carré intégrable ($X_1 \\in L^2$) (Condition trop forte pour la LGN, requise pour la convergence $L^2$ ou le TCL)",
+        "La convergence a lieu en loi uniquement",
+        "Les variables sont seulement deux à deux indépendantes (Suffisant pour la loi faible, mais ici c'est la forte)"
+      ]
+    },
+    {
+      "name": "Théorème 13 : Caractérisation de la convergence en loi (Méthode de la fonction muette)",
+      "statement": "$X_n \\xrightarrow{\\mathcal{L}} X \\iff \\lim_{n \\to \\infty} \\mathbb{E}[f(X_n)] = \\mathbb{E}[f(X)]$",
+      "correct": [
+        "Pour toute fonction $f$ continue et bornée"
+      ],
+      "distractors": [
+        "Pour toute fonction $f$ continue (Manque l'hypothèse bornée)",
+        "Pour toute fonction $f$ mesurable bornée (Trop fort)",
+        "Pour toute fonction $f$ lisse à support compact"
+      ]
+    },
+    {
+      "name": "Théorème 15 : Théorème Central Limite (TCL)",
+      "statement": "$\\frac{S_n - n\\mu}{\\sigma\\sqrt{n}} \\xrightarrow{\\mathcal{L}} Y$ où $Y \\sim \\mathcal{N}(0,1)$",
+      "correct": [
+        "Les variables $(X_n)$ sont i.i.d.",
+        "$X_1$ admet un moment d'ordre 2 (Variance finie $\\sigma^2 < \\infty$ et $\\sigma^2 > 0$)"
+      ],
+      "distractors": [
+        "La convergence a lieu presque sûrement (Faux, c'est en loi)",
+        "La convergence a lieu en probabilité",
+        "$X_1$ est seulement intégrable ($L^1$)"
+      ]
+    },
+    {
+      "name": "Théorème 8 : Convergence $L^p$ (Domination)",
+      "statement": "Si $X_n \\xrightarrow{\\mathbb{P}} X$, alors $X_n \\xrightarrow{L^p} X$ sous condition de domination.",
+      "correct": [
+        "Il existe $Y \\in L^p$ telle que $|X_n| \\le Y$ p.s. pour tout $n$"
+      ],
+      "distractors": [
+        "Il existe $M > 0$ telle que $|X_n| \\le M$ (Trop restrictif, domination par une constante)",
+        "$(X_n)$ est une suite croissante",
+        "$\\mathbb{E}[X_n]$ converge vers $\\mathbb{E}[X]$"
+      ]
+    },
+    {
+      "name": "Équivalences de la convergence en loi",
+      "statement": "La suite $(X_n)$ converge en loi vers $X$ ($X_n \\xrightarrow{\\mathcal{L}} X$) est équivalent à :",
+      "correct": [
+        "La suite des mesures images (lois) $P_{X_n}$ converge faiblement vers $P_X$ (Définition)",
+        "Pour tout $t$, la suite des fonctions caractéristiques converge simplement : $\\lim_{n \\to \\infty} \\varphi_{X_n}(t) = \\varphi_X(t)$ (Théorème de Lévy)"
+      ],
+      "distractors": [
+        "La suite $(X_n)$ converge en probabilité vers $X$ (Condition suffisante mais non nécessaire)",
+        "Les densités de probabilité $f_{X_n}$ convergent simplement vers la densité $f_X$ (Faux en général)",
+        "Pour toute fonction $f$ continue (non nécessairement bornée), $\\mathbb{E}[f(X_n)] \\to \\mathbb{E}[f(X)]$"
+      ]
+    }
+  ]
+}

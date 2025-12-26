@@ -1,0 +1,136 @@
+{
+    "title": "Espaces préhilbertiens réels",
+    "color": "blue",
+    "questions": [
+        {
+            "name": "Théorème (Inégalité de Cauchy-Schwarz) I.2",
+            "statement": "$|\\langle x, y \\rangle| \\leq \\sqrt{\\langle x, x \\rangle} \\sqrt{\\langle y, y \\rangle}$",
+            "correct": [
+                "$\\langle \\cdot, \\cdot \\rangle$ est un produit scalaire (bilinéaire, symétrique, positive)",
+                "$E$ est un $\\mathbb{R}$-espace vectoriel"
+            ],
+            "distractors": [
+                "$E$ doit être de dimension finie",
+                "Le produit scalaire doit être défini positif pour que l'inégalité large soit vraie",
+                "L'égalité implique nécessairement que $x=y$"
+            ]
+        },
+        {
+            "name": "Théorème (Inégalité de Minkowski) I.4",
+            "statement": "$\\|x + y\\| \\leq \\|x\\| + \\|y\\|$",
+            "correct": [
+                "$\\| \\cdot \\|$ est la norme associée à un produit scalaire",
+                "Le cas d'égalité $\\|x+y\\| = \\|x\\| + \\|y\\|$ équivaut à l'existence de $\\lambda \\geq 0$ tel que $x = \\lambda y$ ou $y = \\lambda x$"
+            ],
+            "distractors": [
+                "L'inégalité est vraie pour n'importe quelle norme sur $E$",
+                "L'égalité implique que $x$ et $y$ sont orthogonaux",
+                "$\\|x+y\\|^2 = \\|x\\|^2 + \\|y\\|^2$"
+            ]
+        },
+        {
+            "name": "Proposition II.2 (Identité de Pythagore)",
+            "statement": "$\\| \\sum_{i\\in J} \\lambda_i x_i \\|^2 = \\sum_{i\\in J} \\lambda_i^2 \\|x_i\\|^2$",
+            "correct": [
+                "$(x_i)_{i\\in I}$ est une famille orthogonale",
+                "$J$ est une partie finie de $I$"
+            ],
+            "distractors": [
+                "$(x_i)_{i\\in I}$ doit être une famille orthonormée",
+                "La famille $(x_i)$ doit être une base de $E$",
+                "L'égalité est vraie pour toute famille libre"
+            ]
+        },
+        {
+            "name": "Théorème II.4 (Isomorphisme de Riesz)",
+            "statement": "L'application $j : u \\mapsto \\langle u, \\cdot \\rangle$ est un isomorphisme de $E$ vers $E^*$",
+            "correct": [
+                "$E$ est un espace euclidien (dimension finie)",
+                "$\\langle \\cdot, \\cdot \\rangle$ est un produit scalaire défini positif"
+            ],
+            "distractors": [
+                "$E$ est un espace préhilbertien quelconque (dimension infinie possible)",
+                "$j$ est une application bilinéaire",
+                "L'isomorphisme est toujours vrai si $\\langle \\cdot, \\cdot \\rangle$ est seulement une forme bilinéaire symétrique positive"
+            ]
+        },
+        {
+            "name": "Théorème (Procédé de Gram-Schmidt) II.7",
+            "statement": "Il existe une base orthonormée $(\\varepsilon_1, \\dots, \\varepsilon_n)$ telle que $\\forall k, \\text{Vect}(\\varepsilon_1, \\dots, \\varepsilon_k) = \\text{Vect}(e_1, \\dots, e_k)$",
+            "correct": [
+                "$(e_1, \\dots, e_n)$ est une base de $E$",
+                "$E$ est un espace préhilbertien muni d'un produit scalaire défini positif"
+            ],
+            "distractors": [
+                "La base $(e_1, \\dots, e_n)$ doit être déjà orthogonale",
+                "La base orthonormée construite est unique",
+                "Le procédé nécessite que $E$ soit complet"
+            ]
+        },
+        {
+            "name": "Théorème II.14 (Supplémentaire orthogonal)",
+            "statement": "$E = F \\oplus F^\\perp$",
+            "correct": [
+                "$F$ est un sous-espace vectoriel de dimension finie",
+                "$E$ est un espace préhilbertien"
+            ],
+            "distractors": [
+                "$F$ est un sous-espace vectoriel quelconque de $E$",
+                "$E$ doit être de dimension finie pour que $F \\oplus F^\\perp = E$",
+                "$F^\\perp$ est toujours de dimension finie"
+            ]
+        },
+        {
+            "name": "Proposition II.15 (Propriétés de l'orthogonal)",
+            "statement": "$(F^\\perp)^\\perp = F$",
+            "correct": [
+                "$E$ est de dimension finie $n$",
+                "$F$ est un sous-espace vectoriel de $E$"
+            ],
+            "distractors": [
+                "C'est vrai pour toute partie $A$ de $E$ (non nécessairement SEV)",
+                "C'est toujours vrai dans tout espace préhilbertien de dimension infinie",
+                "$(F^\\perp)^\\perp \\subset F$ est toujours faux"
+            ]
+        },
+        {
+            "name": "Caractérisation des projecteurs orthogonaux (Page 9)",
+            "statement": "$p$ est un projecteur orthogonal si et seulement si $p^2=p$, $p$ est continu et $\\|p\\| \\leq 1$",
+            "correct": [
+                "$p$ est un endomorphisme ($p \\in \\mathcal{L}(E)$)",
+                "$\\text{Im}(p)$ et $\\text{Ker}(p)$ sont orthogonaux"
+            ],
+            "distractors": [
+                "$\\|p\\| = 1$ est une condition nécessaire même si $p=0$",
+                "Un projecteur orthogonal est toujours une isométrie",
+                "$p$ doit être un automorphisme"
+            ]
+        },
+        {
+            "name": "Proposition II.19 (Distance à un sous-espace)",
+            "statement": "$d(x, F) = \\|x - p(x)\\|$",
+            "correct": [
+                "$p$ est le projecteur orthogonal d'image $F$",
+                "$x$ est un élément quelconque de $E$"
+            ],
+            "distractors": [
+                "$p$ est n'importe quel projecteur sur $F$",
+                "$F$ est une partie convexe quelconque",
+                "L'unicité de $p(x)$ est garantie même si $F$ n'est pas un sous-espace vectoriel"
+            ]
+        },
+        {
+            "name": "Inégalité de Bessel (Théorème II.20)",
+            "statement": "$\\sum_{i=1}^d \\langle x, e_i \\rangle^2 \\leq \\|x\\|^2$",
+            "correct": [
+                "$(e_1, \\dots, e_d)$ est une famille orthonormée",
+                "$x$ est un vecteur de $E$"
+            ],
+            "distractors": [
+                "$(e_i)$ est une famille orthogonale quelconque",
+                "L'égalité est toujours vérifiée (Identité de Parseval)",
+                "$d$ doit être égal à la dimension de $E$"
+            ]
+        }
+    ]
+}

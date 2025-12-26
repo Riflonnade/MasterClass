@@ -1,0 +1,119 @@
+{
+    "title": "Cours sur la Théorie des Groupes",
+    "color": "blue",
+    "questions": [
+        {
+            "name": "Définition d'un Groupe",
+            "statement": "Soit $(G, *)$ un ensemble muni d'une loi de composition interne. Quelles conditions définissent la structure de groupe ?",
+            "correct": [
+                "La loi $*$ est associative",
+                "Il existe un élément neutre $e \\in G$",
+                "Tout élément possède un symétrique (inverse) dans $G$"
+            ],
+            "distractors": [
+                "La loi $*$ est commutative",
+                "L'ensemble $G$ est fini",
+                "L'élément neutre est unique et différent de l'inverse"
+            ]
+        },
+        {
+            "name": "Caractérisation d'un sous-groupe (Proposition I.4)",
+            "statement": "Soit $(G, *)$ un groupe et $H \\subset G$. Quelles conditions sont nécessaires et suffisantes pour que $H$ soit un sous-groupe de $G$ ?",
+            "correct": [
+                "$H \\neq \\emptyset$",
+                "$\\forall x, y \\in H, x * y^{-1} \\in H$"
+            ],
+            "distractors": [
+                "$H$ contient le centre $Z(G)$",
+                "$H$ est stable par morphisme",
+                "$\\forall x \\in H, x^2 \\in H$"
+            ]
+        },
+        {
+            "name": "Critère de sous-groupe pour une partie finie (Exercice I.7)",
+            "statement": "Soit $H$ une partie d'un groupe $G$. Si $H$ est un sous-groupe de $G$, alors $H$ est stable par la loi $*$. Sous quelle(s) hypothèse(s) supplémentaire(s) la stabilité suffit-elle à prouver que $H$ est un sous-groupe ?",
+            "correct": [
+                "$H$ est une partie finie non vide"
+            ],
+            "distractors": [
+                "$H$ est une partie dénombrable",
+                "$G$ est un groupe abélien",
+                "$H$ contient l'élément neutre $e$"
+            ]
+        },
+        {
+            "name": "Morphisme et Ordre (Proposition IV.1)",
+            "statement": "Soit $f \\in \\text{Hom}(G, G')$ et $a \\in G$ un élément d'ordre fini $\\omega(a)$. Quelle propriété lie l'ordre de $f(a)$ à celui de $a$ ?",
+            "correct": [
+                "$\\omega(f(a))$ divise $\\omega(a)$"
+            ],
+            "distractors": [
+                "$\\omega(f(a)) = \\omega(a)$",
+                "$\\omega(f(a))$ est premier avec $\\omega(a)$",
+                "$\\omega(a)$ divise $\\omega(f(a))$"
+            ]
+        },
+        {
+            "name": "Théorème de Lagrange (Théorème VII.4)",
+            "statement": "Soit $G$ un groupe fini et $H$ un sous-groupe de $G$. Quelle est la relation entre leurs cardinaux ?",
+            "correct": [
+                "$|H|$ divise $|G|$"
+            ],
+            "distractors": [
+                "$G$ est nécessairement abélien",
+                "$H$ est nécessairement distingué dans $G$",
+                "$|G|/|H|$ est un nombre premier"
+            ]
+        },
+        {
+            "name": "Théorème de Cauchy (Théorème VII.14)",
+            "statement": "Soit $G$ un groupe fini et $p$ un nombre premier. Quelle condition garantit l'existence d'un élément d'ordre $p$ dans $G$ ?",
+            "correct": [
+                "$p$ divise le cardinal de $G$"
+            ],
+            "distractors": [
+                "$G$ est un groupe cyclique",
+                "$p$ est le plus petit diviseur de $|G|$",
+                "$G$ est abélien"
+            ]
+        },
+        {
+            "name": "Ordre d'une puissance (Proposition III.1)",
+            "statement": "Si $a$ est un élément d'ordre $n$, quel est l'ordre de l'élément $a^k$ pour $k \\in \\mathbb{Z}$ ?",
+            "correct": [
+                "$\\frac{n}{n \\wedge k}$"
+            ],
+            "distractors": [
+                "$\\frac{n}{k}$",
+                "$n \\wedge k$",
+                "$k \\cdot n$"
+            ]
+        },
+        {
+            "name": "Sous-groupe Distingué (Définition I.12)",
+            "statement": "Soit $H$ un sous-groupe de $G$. Quelles propriétés caractérisent le fait que $H$ est distingué ($H \\trianglelefteq G$) ?",
+            "correct": [
+                "$\\forall a \\in G, aHa^{-1} = H$",
+                "$\\forall a \\in G, aH = Ha$",
+                "L'ensemble quotient $G/H$ peut être muni d'une structure de groupe"
+            ],
+            "distractors": [
+                "$H$ est inclus dans le centre $Z(G)$",
+                "$H$ est un groupe abélien",
+                "Tous les éléments de $H$ commutent avec tous les éléments de $G$"
+            ]
+        },
+        {
+            "name": "Produit de deux sous-groupes (Exercice I.13)",
+            "statement": "Soient $H$ et $K$ deux sous-groupe de $G$. À quelle condition l'ensemble $HK = \\{hk, (h,k) \\in H \\times K\\}$ est-il un sous-groupe de $G$ ?",
+            "correct": [
+                "$HK = KH$"
+            ],
+            "distractors": [
+                "$H \\cap K = \\{e\\}$",
+                "$H$ et $K$ sont de cardinaux premiers entre eux",
+                "$G$ est fini"
+            ]
+        }
+    ]
+}

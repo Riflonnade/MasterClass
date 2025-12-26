@@ -1,0 +1,108 @@
+{
+    "title": "Fonctions convexes",
+    "color": "blue",
+    "questions": [
+        {
+            "name": "Théorème des trois pentes (I.3)",
+            "statement": "Soit $f: I \\to \\mathbb{R}$ une fonction convexe. Pour tous $a, b, c \\in I$ tels que $a < b < c$, on a : $p_{a,b}(f) \\le p_{a,c}(f) \\le p_{b,c}(f)$ où $p_{x,y}(f) = \\frac{f(y)-f(x)}{y-x}$.",
+            "correct": [
+                "$f$ est convexe sur l'intervalle $I$",
+                "$a, b, c$ sont des points distincts de $I$ ordonnés $a < b < c$"
+            ],
+            "distractors": [
+                "$f$ est dérivable sur $I$",
+                "$f$ est continue sur les bornes de l'intervalle $I$",
+                "L'inégalité est stricte si $f$ est seulement convexe"
+            ]
+        },
+        {
+            "name": "Régularité des fonctions convexes (Prop I.4)",
+            "statement": "Si $f$ est convexe sur un intervalle $I$, quelles propriétés sont nécessairement vraies en tout point $x$ de l'intérieur de $I$ ?",
+            "correct": [
+                "$f$ admet une dérivée à gauche $f'_g(x)$ et une dérivée à droite $f'_d(x)$",
+                "$f$ est continue en $x$",
+                "$f'_g(x) \\le f'_d(x)$"
+            ],
+            "distractors": [
+                "$f$ est dérivable en $x$ (i.e., $f'_g(x) = f'_d(x)$)",
+                "$f$ est de classe $C^1$ sur l'intérieur de $I$",
+                "$f$ est continue sur l'adhérence de $I$ (bornes incluses)"
+            ]
+        },
+        {
+            "name": "Caractérisation par la dérivée première (Prop I.6)",
+            "statement": "Soit $f$ une fonction dérivable sur un intervalle $I$. $f$ est convexe sur $I$ si et seulement si :",
+            "correct": [
+                "$f'$ est croissante sur $I$"
+            ],
+            "distractors": [
+                "$f'$ est positive sur $I$",
+                "$f'$ est continue sur $I$",
+                "$f$ est de classe $C^2$ sur $I$"
+            ]
+        },
+        {
+            "name": "Position par rapport à la tangente (Prop I.8)",
+            "statement": "Si $f$ est convexe sur $I$ et dérivable en $a \\in I$, alors pour tout $x \\in I$ : $f(x) \\ge f'(a)(x-a) + f(a)$.",
+            "correct": [
+                "$f$ est convexe sur $I$",
+                "$f$ est dérivable uniquement au point $a$"
+            ],
+            "distractors": [
+                "$f$ doit être dérivable sur tout l'intervalle $I$",
+                "$f$ doit être de classe $C^1$ sur $I$",
+                "$f$ ne doit pas présenter de points anguleux"
+            ]
+        },
+        {
+            "name": "Inégalité de Jensen - Forme discrète (Prop II.3)",
+            "statement": "Si $f$ est convexe sur $I$, alors pour tous $x_1, \\dots, x_n \\in I$ et $\\lambda_1, \\dots, \\lambda_n \\in [0, 1]$ tels que $\\sum \\lambda_k = 1$, on a $f(\\sum \\lambda_k x_k) \\le \\sum \\lambda_k f(x_k)$. Quelle condition assure l'égalité ?",
+            "correct": [
+                "Si $f$ est strictement convexe, alors $x_1 = x_2 = \\dots = x_n$ (pour $\\lambda_k > 0$)"
+            ],
+            "distractors": [
+                "Si $f$ est simplement convexe, alors $x_1 = \\dots = x_n$",
+                "Si $f$ est dérivable, l'inégalité est toujours une égalité",
+                "L'égalité n'est possible que si $\\lambda_k = 1/n$ pour tout $k$"
+            ]
+        },
+        {
+            "name": "Inégalité de Hölder (Prop III.1)",
+            "statement": "Soient $p, q \\in \\mathbb{R}_+^*$ tels que $\\frac{1}{p} + \\frac{1}{q} = 1$. Pour $x, y \\in \\mathbb{R}^n$, on a $\\sum |x_k y_k| \\le (\\sum |x_k|^p)^{1/p} (\\sum |y_k|^q)^{1/q}$.",
+            "correct": [
+                "$p$ et $q$ sont des exposants conjugués ($\\frac{1}{p} + \\frac{1}{q} = 1$)",
+                "$p > 1$ et $q > 1$"
+            ],
+            "distractors": [
+                "$p = q = 2$ est la seule condition possible",
+                "$p + q = 1$",
+                "La fonction $f(x) = x^p$ doit être concave"
+            ]
+        },
+        {
+            "name": "Inégalité de Minkowski (Prop III.3)",
+            "statement": "Pour $x, y \\in \\mathbb{R}^n$, $(\\sum |x_k + y_k|^p)^{1/p} \\le (\\sum |x_k|^p)^{1/p} + (\\sum |y_k|^p)^{1/p}$.",
+            "correct": [
+                "$p \\ge 1$"
+            ],
+            "distractors": [
+                "$p > 0$",
+                "$0 < p < 1$",
+                "$p$ doit être un entier naturel"
+            ]
+        },
+        {
+            "name": "Inégalité de Jensen - Forme intégrale (Prop III.4)",
+            "statement": "Soit $g$ une fonction convexe sur $\\mathbb{R}$ et $f$ continue sur $[a, b]$. On a $g(\\frac{1}{b-a} \\int_a^b f(x)dx) \\le \\frac{1}{b-a} \\int_a^b g \\circ f(x)dx$.",
+            "correct": [
+                "$g$ est convexe sur $\\mathbb{R}$",
+                "$f$ est continue (ou intégrable) sur $[a, b]$"
+            ],
+            "distractors": [
+                "$g$ doit être de classe $C^2$",
+                "$f$ doit être une fonction croissante",
+                "L'intervalle $[a, b]$ doit être de longueur 1"
+            ]
+        }
+    ]
+}

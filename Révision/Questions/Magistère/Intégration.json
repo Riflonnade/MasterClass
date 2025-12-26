@@ -1,0 +1,142 @@
+{
+ "title": "Cours d'Intégration - Analyse",
+ "color": "blue",
+ "questions": [
+  {
+   "name": "Propriété d'une Tribu ($\\sigma$-algèbre)",
+   "statement": "Une famille $\\mathcal{A}$ de parties de $\\Omega$ est une tribu si elle contient $\\emptyset$, est stable par passage au complémentaire et...",
+   "correct": [
+    "Est stable par union dénombrable",
+    "Est stable par intersection dénombrable (conséquence)"
+   ],
+   "distractors": [
+    "Est stable par union finie seulement (Algèbre)",
+    "Est stable par union quelconque (Topologie)",
+    "Contient les singletons"
+   ]
+  },
+  {
+   "name": "Définition d'une Mesure Positive",
+   "statement": "Une application $\\mu: \\mathcal{A} \\to [0, +\\infty]$ est une mesure si $\\mu(\\emptyset)=0$ et...",
+   "correct": [
+    "Elle est $\\sigma$-additive (additivité dénombrable) pour des ensembles disjoints"
+   ],
+   "distractors": [
+    "Elle est finiment additive",
+    "$\\mu(A \\cup B) = \\mu(A) + \\mu(B)$ pour tous $A, B$",
+    "Elle est sous-additive"
+   ]
+  },
+  {
+   "name": "Théorème de la Convergence Monotone (Beppo-Levi)",
+   "statement": "Soit $(f_n)$ une suite de fonctions mesurables. Alors $\\int \\lim f_n d\\mu = \\lim \\int f_n d\\mu$ si :",
+   "correct": [
+    "La suite $(f_n)$ est croissante",
+    "Les fonctions $f_n$ sont positives"
+   ],
+   "distractors": [
+    "La suite $(f_n)$ est décroissante et minorée",
+    "Les fonctions $f_n$ sont intégrables",
+    "La suite converge uniformément"
+   ]
+  },
+  {
+   "name": "Lemme de Fatou",
+   "statement": "Soit $(f_n)$ une suite de fonctions mesurables positives. Alors :",
+   "correct": [
+    "$\\int (\\liminf f_n) d\\mu \\le \\liminf \\int f_n d\\mu$"
+   ],
+   "distractors": [
+    "$\\int (\\limsup f_n) d\\mu \\ge \\limsup \\int f_n d\\mu$",
+    "$\\int (\\lim f_n) d\\mu = \\lim \\int f_n d\\mu$",
+    "L'inégalité est stricte si $f_n$ n'est pas monotone"
+   ]
+  },
+  {
+   "name": "Théorème de la Convergence Dominée (Lebesgue)",
+   "statement": "Si $f_n \\to f$ $\\mu$-p.p., alors $\\int |f_n - f| d\\mu \\to 0$ et $\\int f_n \\to \\int f$ si :",
+   "correct": [
+    "Il existe $g \\in \\mathcal{L}^1$ telle que $|f_n| \\le g$ $\\mu$-p.p. pour tout $n$"
+   ],
+   "distractors": [
+    "Il existe une constante $M$ telle que $|f_n| \\le M$ (Domination uniforme)",
+    "Les fonctions $f_n$ sont intégrables",
+    "La convergence est uniforme"
+   ]
+  },
+  {
+   "name": "Théorème de Continuité des Intégrales à Paramètre",
+   "statement": "Soit $F(t) = \\int_X f(x,t) d\\mu(x)$. $F$ est continue en $t_0$ si $t \\mapsto f(x,t)$ est continue p.p. et :",
+   "correct": [
+    "Il existe $g \\in \\mathcal{L}^1(X)$ telle que $|f(x,t)| \\le g(x)$ pour $t$ voisin de $t_0$ (Domination locale)"
+   ],
+   "distractors": [
+    "$f$ est bornée par une constante",
+    "$f$ est continue par rapport aux deux variables $(x,t)$",
+    "$x \\mapsto f(x,t)$ est intégrable pour tout $t$"
+   ]
+  },
+  {
+   "name": "Théorème de Dérivation sous le signe Intégrale",
+   "statement": "Pour dériver $F(t) = \\int f(x,t) d\\mu(x)$, il faut une domination de la forme :",
+   "correct": [
+    "$|\\frac{\\partial f}{\\partial t}(x,t)| \\le g(x)$ avec $g \\in \\mathcal{L}^1$"
+   ],
+   "distractors": [
+    "$|f(x,t)| \\le g(x)$ avec $g \\in \\mathcal{L}^1$",
+    "$\\frac{\\partial f}{\\partial t}$ est bornée",
+    "La dérivée partielle est continue"
+   ]
+  },
+  {
+   "name": "Théorème de Fubini-Tonelli",
+   "statement": "Pour échanger l'ordre d'intégration $\\int_X (\\int_Y f d\\nu) d\\mu = \\int_Y (\\int_X f d\\mu) d\\nu$, il suffit que :",
+   "correct": [
+    "$f$ soit mesurable et positive",
+    "Les mesures soient $\\sigma$-finies"
+   ],
+   "distractors": [
+    "$f$ soit intégrable ($f \\in L^1$)",
+    "$f$ soit continue",
+    "Les espaces soient de mesure finie"
+   ]
+  },
+  {
+   "name": "Théorème de Fubini-Lebesgue",
+   "statement": "L'interversion des intégrales est valide pour $f$ à valeurs complexes si :",
+   "correct": [
+    "$\\int_X (\\int_Y |f| d\\nu) d\\mu < +\\infty$ (Intégrabilité absolue)",
+    "Les mesures sont $\\sigma$-finies"
+   ],
+   "distractors": [
+    "Les intégrales itérées existent simplement",
+    "$f$ est bornée",
+    "$f$ est mesurable"
+   ]
+  },
+  {
+   "name": "Inégalité de Hölder",
+   "statement": "Soient $p, q$ conjugués ($1/p + 1/q = 1$). Si $f \\in L^p$ et $g \\in L^q$, alors :",
+   "correct": [
+    "$fg \\in L^1$ et $\\|fg\\|_1 \\le \\|f\\|_p \\|g\\|_q$"
+   ],
+   "distractors": [
+    "$\\|fg\\|_2 \\le \\|f\\|_p \\|g\\|_q$",
+    "$\\int fg \\le (\\int f)(\\int g)$",
+    "Nécessite $p=2$ (Cauchy-Schwarz uniquement)"
+   ]
+  },
+  {
+   "name": "Théorème de Riesz-Fischer",
+   "statement": "Pour $1 \\le p \\le +\\infty$, l'espace $L^p(\\Omega, \\mathcal{A}, \\mu)$ est :",
+   "correct": [
+    "Un espace de Banach (Complet)"
+   ],
+   "distractors": [
+    "Un espace de Hilbert (Vrai seulement pour p=2)",
+    "Un espace de dimension finie",
+    "Uniquement un espace vectoriel normé (sans complétude)"
+   ]
+  }
+ ]
+}

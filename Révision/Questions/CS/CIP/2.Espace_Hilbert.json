@@ -1,0 +1,102 @@
+{
+  "title": "Espaces de Hilbert",
+  "color": "blue",
+  "questions": [
+    {
+      "name": "Proposition 1 : Inégalité de Cauchy-Schwarz",
+      "statement": "$|\\langle x,y \\rangle| \\le \\|x\\| \\|y\\|$",
+      "correct": [
+        "$X$ est un espace préhilbertien (muni d'un produit scalaire)"
+      ],
+      "distractors": [
+        "$X$ est un espace de Hilbert (la complétude n'est pas nécessaire)",
+        "$x$ et $y$ sont orthogonaux",
+        "$X$ est de dimension finie"
+      ]
+    },
+    {
+      "name": "Proposition 2 : Identité du parallélogramme",
+      "statement": "$\\|x+y\\|^2 + \\|x-y\\|^2 = 2(\\|x\\|^2 + \\|y\\|^2)$",
+      "correct": [
+        "$X$ est un espace préhilbertien"
+      ],
+      "distractors": [
+        "$X$ est un espace vectoriel normé quelconque (cette identité caractérise justement les normes issues d'un produit scalaire)",
+        "$X$ est complet"
+      ]
+    },
+    {
+      "name": "Théorème 5 : Projection sur un convexe fermé",
+      "statement": "Il existe un unique $y \\in C$ tel que $d(x,C) = \\|x-y\\|$ (noté $p_C(x)$).",
+      "correct": [
+        "$X$ est un espace de Hilbert (complet)",
+        "$C$ est un convexe fermé non vide"
+      ],
+      "distractors": [
+        "$X$ est un espace préhilbertien (l'existence requiert la complétude)",
+        "$C$ est un fermé quelconque (l'unicité requiert la convexité)",
+        "$C$ est un sous-espace vectoriel (cas particulier, trop restrictif)"
+      ]
+    },
+    {
+      "name": "Proposition 4 : Projection sur un sous-espace vectoriel fermé",
+      "statement": "$x - p_F(x) \\perp F$ et $X = F \\oplus F^\\perp$.",
+      "correct": [
+        "$X$ est un espace de Hilbert",
+        "$F$ est un sous-espace vectoriel fermé"
+      ],
+      "distractors": [
+        "$F$ est un sous-espace vectoriel quelconque (doit être fermé pour la somme directe)",
+        "$F$ est de dimension finie (suffisant mais pas nécessaire)",
+        "$X$ est un espace de Banach"
+      ]
+    },
+    {
+      "name": "Théorème 6 : Théorème de représentation de Riesz",
+      "statement": "Pour tout $u \\in X'$, il existe un unique $x_u \\in X$ tel que $\\forall x \\in X, u(x) = \\langle x, x_u \\rangle$.",
+      "correct": [
+        "$X$ est un espace de Hilbert",
+        "$u$ est une forme linéaire continue"
+      ],
+      "distractors": [
+        "$X$ est un espace préhilbertien",
+        "$u$ est une application linéaire quelconque (la continuité est cruciale)",
+        "$u$ est une forme bilinéaire"
+      ]
+    },
+    {
+      "name": "Proposition 5 : Existence de bases de Hilbert",
+      "statement": "$X$ admet une base de Hilbert (famille orthonormée totale dénombrable).",
+      "correct": [
+        "$X$ est un espace de Hilbert séparable"
+      ],
+      "distractors": [
+        "$X$ est un espace de Hilbert quelconque (la séparabilité est nécessaire pour une base dénombrable)",
+        "$X$ est de dimension finie"
+      ]
+    },
+    {
+      "name": "Théorème 9 : Égalité de Parseval / Décomposition",
+      "statement": "$x = \\sum_{n=0}^{\\infty} \\langle x, e_n \\rangle e_n$ et $\\|x\\|^2 = \\sum_{n=0}^{\\infty} |\\langle x, e_n \\rangle|^2$.",
+      "correct": [
+        "$(e_n)$ est une base de Hilbert de $X$"
+      ],
+      "distractors": [
+        "$(e_n)$ est une famille orthonormée (doit être totale/base)",
+        "$(e_n)$ est une base algébrique (les sommes infinies ne sont pas permises en algébrique)"
+      ]
+    },
+    {
+      "name": "Proposition 6 : Identité de Parseval (Séries de Fourier)",
+      "statement": "$\\frac{1}{2\\pi}\\int_0^{2\\pi} |f(t)|^2 dt = \\sum_{n \\in \\mathbb{Z}} |c_n(f)|^2$.",
+      "correct": [
+        "$f$ est continue par morceaux et $2\\pi$-périodique"
+      ],
+      "distractors": [
+        "$f$ est continue (trop fort)",
+        "$f$ est dérivable",
+        "La série de Fourier converge ponctuellement vers $f$"
+      ]
+    }
+  ]
+}

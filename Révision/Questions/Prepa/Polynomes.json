@@ -1,0 +1,125 @@
+{
+    "title": "Polynômes",
+    "color": "blue",
+    "questions": [
+        {
+            "name": "Proposition I.1 : Irréductibilité en degrés 2 et 3",
+            "statement": "Soit $\\mathbb{K}$ un corps et $P \\in \\mathbb{K}[X]$ tel que $\\deg(P) \\in \\{2, 3\\}$. $P$ est irréductible dans $\\mathbb{K}[X]$ si et seulement si :",
+            "correct": [
+                "$P$ n'admet pas de racine dans $\\mathbb{K}$",
+                "$\\mathbb{K}$ est un corps commutatif"
+            ],
+            "distractors": [
+                "$P$ n'admet pas de racine dans sa clôture algébrique",
+                "$\\deg(P) \\geq 2$",
+                "$P$ est un polynôme unitaire",
+                "$\\mathbb{K}$ est un anneau intègre quelconque"
+            ]
+        },
+        {
+            "name": "Proposition I.2 : Invariance du PGCD par extension de corps",
+            "statement": "Soient $\\mathbb{K} \\subset \\mathbb{L}$ deux corps et $(A, B) \\in (\\mathbb{K}[X] \\setminus \\{0\\})^2$. Les polynômes $A \\wedge B$ (PGCD) calculés dans $\\mathbb{L}[X]$ et dans $\\mathbb{K}[X]$ sont :",
+            "correct": [
+                "Identiques (à un facteur multiplicatif près)",
+                "Calculables par l'algorithme d'Euclide dans $\\mathbb{K}[X]$"
+            ],
+            "distractors": [
+                "Identiques seulement si $A$ et $B$ sont unitaires",
+                "Identiques seulement si $\\mathbb{L}$ est une extension finie de $\\mathbb{K}$",
+                "Différents si $\\mathbb{L}$ contient des racines que $\\mathbb{K}$ ne contient pas"
+            ]
+        },
+        {
+            "name": "Théorème II.1 : D'Alembert-Gauss",
+            "statement": "Les polynômes irréductibles de $\\mathbb{C}[X]$ sont exactement :",
+            "correct": [
+                "Les polynômes de degré 1",
+                "Les polynômes de la forme $a(X - \\lambda)$ avec $a, \\lambda \\in \\mathbb{C}, a \\neq 0$"
+            ],
+            "distractors": [
+                "Les polynômes dont le discriminant est négatif",
+                "Les polynômes n'admettant aucune racine réelle",
+                "Les polynômes de degré impair"
+            ]
+        },
+        {
+            "name": "Proposition II.3 : Localisation des racines",
+            "statement": "Soit $P = X^n + a_{n-1}X^{n-1} + \\dots + a_0 \\in \\mathbb{C}_n[X]$ un polynôme unitaire. Toute racine $z$ de $P$ vérifie :",
+            "correct": [
+                "$|z| \\leq 1 + \\max_{k \\in \\{0, \\dots, n-1\\}} |a_k|$"
+            ],
+            "distractors": [
+                "$|z| \\leq \\max_{k \\in \\{0, \\dots, n-1\\}} |a_k|$",
+                "$|z| \\leq 1 + \\sum_{k=0}^{n-1} |a_k|$ (Hypothèse plus faible mais inutile ici)",
+                "$|z| < 1$ si tous les $|a_k| < 1$"
+            ]
+        },
+        {
+            "name": "Proposition II.4 : Convergence dans $\\mathbb{C}_n[X]$",
+            "statement": "Soit $(P_k)$ une suite de polynômes de $\\mathbb{C}_n[X]$. La suite $(P_k)$ converge simplement vers $P$ si et seulement si :",
+            "correct": [
+                "Les coefficients de $P_k$ convergent vers ceux de $P$",
+                "La suite converge pour une norme quelconque car $\\mathbb{C}_n[X]$ est de dimension finie"
+            ],
+            "distractors": [
+                "La suite $(P_k)$ est de degré constant égal à $n$",
+                "La convergence est uniforme sur $\\mathbb{C}$",
+                "La suite des racines converge vers les racines de $P$ (sans condition de multiplicité)"
+            ]
+        },
+        {
+            "name": "Proposition III.1 : Irréductibles de $\\mathbb{R}[X]$",
+            "statement": "Un polynôme $P \\in \\mathbb{R}[X]$ est irréductible si et seulement si :",
+            "correct": [
+                "$\\deg(P) = 1$",
+                "$\\deg(P) = 2$ et son discriminant $\\Delta$ est strictement négatif"
+            ],
+            "distractors": [
+                "$\\deg(P) \\leq 2$",
+                "$P$ n'a pas de racine réelle",
+                "$P$ est de degré impair"
+            ]
+        },
+        {
+            "name": "Proposition III.3 : Propriétés des polynômes scindés sur $\\mathbb{R}$",
+            "statement": "Soit $P \\in \\mathbb{R}[X]$ un polynôme scindé. Quelles propriétés sont vraies ?",
+            "correct": [
+                "$P'$ est aussi scindé sur $\\mathbb{R}$",
+                "Pour tout $\\alpha \\in \\mathbb{R}$, $P + \\alpha P'$ est scindé sur $\\mathbb{R}$",
+                "$\\forall k \\in \\{1, \\dots, n-1\\}, a_k a_{k+2} \\leq a_{k+1}^2$ (si $P$ est unitaire)"
+            ],
+            "distractors": [
+                "Toute combinaison linéaire de deux polynômes scindés est scindée",
+                "Si $P$ est scindé, alors toutes ses racines sont simples (dissocié)",
+                "$P$ est scindé sur $\\mathbb{Q}$ si ses coefficients sont rationnels"
+            ]
+        },
+        {
+            "name": "Exercice (Critère d'Eisenstein) V.2",
+            "statement": "Soit $P = X^n + a_{n-1}X^{n-1} + \\dots + a_0 \\in \\mathbb{Z}[X]$. S'il existe un nombre premier $p$ tel que :",
+            "correct": [
+                "$p$ divise tous les $a_i$ pour $i \\in \\{0, \\dots, n-1\\}$",
+                "$p^2$ ne divise pas $a_0$",
+                "$p$ divise $a_0$"
+            ],
+            "distractors": [
+                "$p$ divise le coefficient dominant $a_n$",
+                "$p^2$ divise $a_0$",
+                "$P$ est scindé sur $\\mathbb{R}$"
+            ]
+        },
+        {
+            "name": "Lemme de Gauss (Exercice VI.1)",
+            "statement": "Soit $P \\in \\mathbb{Z}[X]$ un polynôme non constant. $P$ est irréductible dans $\\mathbb{Z}[X]$ si et seulement si :",
+            "correct": [
+                "$P$ est irréductible dans $\\mathbb{Q}[X]$ et son contenu $c(P)$ vaut 1",
+                "$P$ ne peut pas s'écrire $QR$ avec $\\deg(Q), \\deg(R) \\geq 1$ dans $\\mathbb{Z}[X]$"
+            ],
+            "distractors": [
+                "$P$ est irréductible dans $\\mathbb{R}[X]$",
+                "$P$ est unitaire",
+                "Le contenu de $P$ est un nombre premier $p$"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,105 @@
+{
+    "title": "Indépendance, conditionnement",
+    "color": "blue",
+    "questions": [
+        {
+            "name": "Proposition 2 : Indépendance des complémentaires",
+            "statement": "Si $A$ et $B$ sont deux événements indépendants, alors $A^c$ et $B$ sont indépendants.",
+            "correct": [
+                "$A$ et $B$ sont indépendants au sens de $\\mathbb{P}$"
+            ],
+            "distractors": [
+                "$A$ et $B$ sont disjoints ($A \\cap B = \\emptyset$)",
+                "$A$ est un événement négligeable",
+                "$\\mathbb{P}(A) + \\mathbb{P}(B) = 1$"
+            ]
+        },
+        {
+            "name": "Définition 3 : Indépendance mutuelle",
+            "statement": "Des événements $A_1, \\dots, A_n$ sont dits mutuellement indépendants si :",
+            "correct": [
+                "$\\forall I \\subset \\llbracket 1; n \\rrbracket, \\mathbb{P}(\\bigcap_{i \\in I} A_i) = \\prod_{i \\in I} \\mathbb{P}(A_i)$"
+            ],
+            "distractors": [
+                "$\\mathbb{P}(A_1 \\cap \\dots \\cap A_n) = \\mathbb{P}(A_1) \\dots \\mathbb{P}(A_n)$",
+                "$\\forall i \\neq j, \\mathbb{P}(A_i \\cap A_j) = \\mathbb{P}(A_i)\\mathbb{P}(A_j)$ (Indépendance deux à deux)",
+                "$\\forall i, \\mathbb{P}(A_i) > 0$"
+            ]
+        },
+        {
+            "name": "Proposition 4 : Indépendance de blocs",
+            "statement": "Soient $A_1, \\dots, A_n$ des événements mutuellement indépendants. Alors $\\bigcap_{i \\in I} A_i$ et $\\bigcap_{j \\in J} A_j$ sont indépendants si :",
+            "correct": [
+                "$I \\cap J = \\emptyset$",
+                "$A_1, \\dots, A_n$ sont mutuellement indépendants"
+            ],
+            "distractors": [
+                "$I \\cup J = \\llbracket 1; n \\rrbracket$",
+                "$A_1, \\dots, A_n$ sont seulement indépendants deux à deux",
+                "$\\mathbb{P}(\\bigcap_{i \\in I} A_i) \\neq 0$"
+            ]
+        },
+        {
+            "name": "Loi des probabilités composées",
+            "statement": "$\\mathbb{P}(\\bigcap_{i=1}^n A_i) = \\mathbb{P}(A_1)\\mathbb{P}(A_2 | A_1) \\dots \\mathbb{P}(A_n | A_1 \\cap \\dots \\cap A_{n-1})$",
+            "correct": [
+                "$\\mathbb{P}(\\bigcap_{k=1}^{n-1} A_k) > 0$"
+            ],
+            "distractors": [
+                "Les événements $(A_i)$ sont mutuellement indépendants",
+                "Les événements $(A_i)$ sont deux à deux disjoints",
+                "$n$ est un entier supérieur ou égal à 3"
+            ]
+        },
+        {
+            "name": "Formule des probabilités totales",
+            "statement": "$\\mathbb{P}(B) = \\sum_{n=0}^{+\\infty} \\mathbb{P}(B | A_n)\\mathbb{P}(A_n)$",
+            "correct": [
+                "$(A_n)_{n \\in \\mathbb{N}}$ est une partition de $E$",
+                "$\\forall n \\in \\mathbb{N}, \\mathbb{P}(A_n) > 0$"
+            ],
+            "distractors": [
+                "$B$ est indépendant de chaque $A_n$",
+                "La série $\\sum \\mathbb{P}(A_n)$ est absolument convergente",
+                "$B$ n'est pas un événement négligeable"
+            ]
+        },
+        {
+            "name": "Théorème 7 : Premier Lemme de Borel-Cantelli",
+            "statement": "$\\mathbb{P}(\\limsup A_n) = 1$ (l'événement est réalisé presque sûrement)",
+            "correct": [
+                "$(A_n)_{n \\in \\mathbb{N}}$ est une suite d'événements mutuellement indépendants",
+                "La série $\\sum \\mathbb{P}(A_n)$ diverge"
+            ],
+            "distractors": [
+                "$(A_n)_{n \\in \\mathbb{N}}$ est une suite d'événements deux à deux indépendants",
+                "La série $\\sum \\mathbb{P}(A_n)$ converge",
+                "$\\mathbb{P}(A_n)$ tend vers 1 quand $n \\to +\\infty$"
+            ]
+        },
+        {
+            "name": "Théorème 8 : Second Lemme de Borel-Cantelli",
+            "statement": "$\\mathbb{P}(\\limsup A_n) = 0$",
+            "correct": [
+                "La série $\\sum \\mathbb{P}(A_n)$ converge"
+            ],
+            "distractors": [
+                "$(A_n)_{n \\in \\mathbb{N}}$ est une suite d'événements mutuellement indépendants",
+                "$\\mathbb{P}(A_n)$ tend vers 0 quand $n \\to +\\infty$",
+                "$(A_n)_{n \\in \\mathbb{N}}$ est une suite décroissante d'événements"
+            ]
+        },
+        {
+            "name": "Définition 6 : Indépendance de tribus",
+            "statement": "Une famille $(\\mathcal{T}_i)_{i \\in I}$ de tribus est dite indépendante si :",
+            "correct": [
+                "Pour tout ensemble fini $J \\subset I$, toute famille $(A_j)_{j \\in J} \\in \\prod_{j \\in J} \\mathcal{T}_j$ est mutuellement indépendante"
+            ],
+            "distractors": [
+                "Les tribus sont deux à deux disjointes",
+                "Pour tout $i, \\mathcal{T}_i$ est engendrée par un événement presque sûr",
+                "L'union des tribus est encore une tribu"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+{
+    "title": "Comparaison de normes et espaces produits",
+    "color": "blue",
+    "questions": [
+        {
+            "name": "Proposition I.2 - Comparaison de finesse des normes",
+            "statement": "Soient $N_1$ et $N_2$ deux normes sur $E$. On suppose que $N_1$ est plus fine que $N_2$ (c'est-à-dire $N_2 \\leq C N_1$). Quelles propriétés sont alors vérifiées ?",
+            "correct": [
+                "Toute partie ouverte pour $N_2$ est ouverte pour $N_1$",
+                "Toute partie fermée pour $N_2$ est fermée pour $N_1$",
+                "Si $(x_n)$ converge vers $l$ pour $N_1$, alors elle converge vers $l$ pour $N_2$"
+            ],
+            "distractors": [
+                "Toute partie ouverte pour $N_1$ est ouverte pour $N_2$",
+                "Si $(x_n)$ converge vers $l$ pour $N_2$, alors elle converge vers $l$ pour $N_1$",
+                "L'espace $E$ est nécessairement de dimension finie"
+            ]
+        },
+        {
+            "name": "Proposition I.5 - Équivalence des normes en dimension finie",
+            "statement": "Sur un $\\mathbb{K}$-espace vectoriel $E$, toutes les normes sont équivalentes. Quelle est l'hypothèse minimale nécessaire ?",
+            "correct": [
+                "$E$ est de dimension finie"
+            ],
+            "distractors": [
+                "$E$ est un espace de Banach",
+                "Les normes sont issues d'un produit scalaire",
+                "$\\mathbb{K}$ est un corps algébriquement clos",
+                "$E$ est de dimension infinie"
+            ]
+        },
+        {
+            "name": "Proposition II.3 - Propriétés des projections canoniques",
+            "statement": "Soit $E = E_1 \\times \\dots \\times E_p$ muni de la métrique produit. Soit $\\pi_k$ la $k$-ième projection canonique. Quelles sont ses propriétés topologiques ?",
+            "correct": [
+                "$\\pi_k$ est 1-lipschitzienne",
+                "$\\pi_k$ est une application ouverte (l'image d'un ouvert est un ouvert)"
+            ],
+            "distractors": [
+                "$\\pi_k$ est une application fermée (l'image d'un fermé est un fermé)",
+                "$\\pi_k$ est une isométrie",
+                "$\\pi_k$ est bijective"
+            ]
+        },
+        {
+            "name": "Propositions II.4 à II.6 - Caractérisation de la convergence et continuité produit",
+            "statement": "Soit $f = (f_1, \\dots, f_p)$ une fonction à valeurs dans un espace produit $E = E_1 \\times \\dots \\times E_p$. Quelles propositions sont équivalentes à la continuité de $f$ en $a$ ?",
+            "correct": [
+                "Chaque composante $f_i$ est continue en $a$",
+                "Pour toute suite $(x_n)$ convergeant vers $a$, $(f_1(x_n), \\dots, f_p(x_n))$ converge vers $f(a)$"
+            ],
+            "distractors": [
+                "Au moins une des composantes $f_i$ est continue en $a$",
+                "Toutes les applications partielles de $f$ sont continues en $a$",
+                "Les espaces $E_i$ sont tous identiques"
+            ]
+        },
+        {
+            "name": "Proposition II.7 - Continuité des applications partielles",
+            "statement": "Soit $f: E_1 \\times \\dots \\times E_p \\to Y$. Si $f$ est continue en $a = (a_1, \\dots, a_p)$, alors ses applications partielles $f_{a,i}$ sont continues. L'implication réciproque est-elle vraie ?",
+            "correct": [
+                "Non, la continuité des applications partielles n'implique pas la continuité de la fonction"
+            ],
+            "distractors": [
+                "Oui, c'est une caractérisation de la continuité en dimension finie",
+                "Oui, si $f$ est une fonction de deux variables uniquement",
+                "Oui, à condition que $Y$ soit complet"
+            ]
+        },
+        {
+            "name": "Proposition II.16 - Nulité d'un polynôme à plusieurs variables",
+            "statement": "Soit $P \\in \\mathbb{K}[X_1, \\dots, X_n]$. Sous quelle condition $P$ est-il le polynôme nul ?",
+            "correct": [
+                "$\\tilde{P}$ s'annule sur un produit de parties infinies $A_1 \\times \\dots \\times A_n$"
+            ],
+            "distractors": [
+                "$\\tilde{P}$ s'annule sur une partie finie $A$ de cardinal supérieur au degré total de $P$",
+                "$\\tilde{P}$ s'annule sur la boule unité de $\\mathbb{K}^n$",
+                "$\\mathbb{K}$ doit être un corps fini"
+            ]
+        },
+        {
+            "name": "Lemme II.20 - Lemme de la moyenne pour les intégrales",
+            "statement": "Soient $f$ et $g$ deux fonctions sur $[a, b]$. Quelles sont les hypothèses pour que $\\int_a^b f(t)g(t)dt = f(c) \\int_a^b g(t)dt$ pour un certain $c \\in [a, b]$ ?",
+            "correct": [
+                "$f$ est continue sur $[a, b]$",
+                "$g$ est de signe constant sur $[a, b]$"
+            ],
+            "distractors": [
+                "$g$ est continue sur $[a, b]$",
+                "$f$ est de signe constant sur $[a, b]$",
+                "$f$ est de classe $\\mathcal{C}^1$",
+                "$\\int_a^b g(t)dt$ est strictement positive"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,109 @@
+{
+    "title": "Exponentielle d'une matrice",
+    "color": "blue",
+    "questions": [
+        {
+            "name": "Proposition I.1 - Convergence des séries d'endomorphismes",
+            "statement": "Soit $\\sum a_k z^k$ une série entière de rayon de convergence $R > 0$. La série $\\sum a_k u^k$ converge absolument dans $\\mathcal{L}(E)$ sous certaines conditions.",
+            "correct": [
+                "$\\|u\\| < R$",
+                "$E$ est un espace vectoriel normé de dimension finie",
+                "La norme d'opérateur est sous-multiplicative"
+            ],
+            "distractors": [
+                "$u$ est un endomorphisme inversible",
+                "La série $\\sum a_k$ doit être convergente",
+                "$u$ doit être diagonalisable",
+                "$R$ doit être égal à $+\\infty$"
+            ]
+        },
+        {
+            "name": "Proposition I.4 - Propriété fonctionnelle de l'exponentielle",
+            "statement": "Pour deux endomorphismes $u, v \\in \\mathcal{L}(E)$, on a $\\exp(u+v) = \\exp(u) \\circ \\exp(v)$ si une condition de commutation est respectée.",
+            "correct": [
+                "$[u, v] = 0$ (soit $u \\circ v = v \\circ u$)",
+                "Les séries définissant $\\exp(u)$ et $\\exp(v)$ sont absolument convergentes"
+            ],
+            "distractors": [
+                "$u$ et $v$ sont tous deux diagonalisables",
+                "$\\mathbb{K} = \\mathbb{C}$ est nécessaire",
+                "$u$ et $v$ sont des matrices symétriques",
+                "$\\exp(u)$ et $\\exp(v)$ sont commutatives sans que $u$ et $v$ ne le soient"
+            ]
+        },
+        {
+            "name": "Définition I.6 et Proposition I.7 - Le Logarithme d'un endomorphisme",
+            "statement": "L'application $\\log$ est définie sur $B(id_E, 1) \\cup \\text{Unip}(E)$. Identifiez les caractérisations et propriétés vraies.",
+            "correct": [
+                "$\\log(u) = \\sum_{k=1}^{\\infty} \\frac{(-1)^{k+1}}{k}(u-id_E)^k$",
+                "$\\exp(\\log(u)) = u$ pour tout $u \\in B(id_E, 1) \\cup \\text{Unip}(E)$",
+                "$\\log(u) \\in \\mathbb{K}[u]$"
+            ],
+            "distractors": [
+                "$\\log(u)$ est défini pour tout $u \\in GL_n(\\mathbb{C})$",
+                "$\\log(\\exp(u)) = u$ pour tout $u \\in \\mathcal{L}(E)$",
+                "$\\log(u)$ est toujours un endomorphisme nilpotent",
+                "$\\log(u)$ est continu sur $GL_n(\\mathbb{K})$"
+            ]
+        },
+        {
+            "name": "Proposition II.2 - Invariance par similitude",
+            "statement": "L'exponentielle d'une matrice conjuguée suit la relation $P \\exp(A) P^{-1} = \\exp(P A P^{-1})$.",
+            "correct": [
+                "$P \\in GL_n(\\mathbb{K})$",
+                "$A \\in \\mathcal{M}_n(\\mathbb{K})$",
+                "L'application $M \\mapsto P M P^{-1}$ est continue"
+            ],
+            "distractors": [
+                "$P$ doit être une matrice orthogonale",
+                "$P$ doit commuter avec $A$",
+                "$A$ doit être une matrice diagonale",
+                "La norme utilisée doit être la norme de Frobenius"
+            ]
+        },
+        {
+            "name": "Proposition II.4 - Déterminant et Spectre",
+            "statement": "Soit $A \\in \\mathcal{M}_n(\\mathbb{C})$. Quelles relations lient les caractéristiques de $A$ à celles de $\\exp(A)$ ?",
+            "correct": [
+                "$\\det(\\exp(A)) = e^{\\text{Tr}(A)}$",
+                "$\\text{Spec}(\\exp(A)) = \\{e^\\lambda \\mid \\lambda \\in \\text{Spec}(A)\\}$",
+                "$\\det(\\exp(A)) > 0$ si $A$ est une matrice réelle"
+            ],
+            "distractors": [
+                "$\\text{Tr}(\\exp(A)) = e^{\\text{Tr}(A)}$",
+                "$\\det(\\exp(A)) = \\exp(\\det(A))$",
+                "$A$ doit être diagonalisable pour que $\\det(\\exp(A)) = e^{\\text{Tr}(A)}$ soit vrai",
+                "$\\text{Spec}(\\exp(A))$ peut contenir la valeur $0$"
+            ]
+        },
+        {
+            "name": "Proposition II.5 - Préservation des propriétés structurelles",
+            "statement": "L'exponentielle conserve certaines propriétés géométriques ou algébriques de la matrice d'origine.",
+            "correct": [
+                "$A$ est diagonalisable $\\implies \\exp(A)$ est diagonalisable",
+                "$A$ est nilpotente $\\implies \\exp(A)$ est unipotente",
+                "$\\exp(A) \\in GL_n(\\mathbb{K})$ pour toute matrice $A$"
+            ],
+            "distractors": [
+                "$A$ est inversible $\\implies \\exp(A)$ est inversible",
+                "$\\exp(A)$ est diagonalisable $\\implies A$ est diagonalisable (dans $\\mathcal{M}_n(\\mathbb{R})$)",
+                "$A$ est nilpotente $\\implies \\exp(A)$ est nilpotente",
+                "$A$ est symétrique $\\implies \\exp(A)$ est orthogonale"
+            ]
+        },
+        {
+            "name": "Lemme II.3 - Exponentielle de matrices triangulaires",
+            "statement": "Pour une matrice $A = D + N$ (décomposition de Dunford) ou une matrice triangulaire.",
+            "correct": [
+                "Si $D = \\text{diag}(\\lambda_1, \\dots, \\lambda_n)$, alors $\\exp(D) = \\text{diag}(e^{\\lambda_1}, \\dots, e^{\\lambda_n})$",
+                "Si $N$ est strictement triangulaire supérieure, $\\exp(N) = \\sum_{k=0}^{n-1} \\frac{N^k}{k!}$",
+                "L'exponentielle d'une matrice triangulaire est une matrice triangulaire"
+            ],
+            "distractors": [
+                "$\\exp(A)$ est la matrice des exponentielles des coefficients $(e^{a_{i,j}})$",
+                "Si $A$ est triangulaire, ses coefficients extra-diagonaux sont $e^{a_{i,j}}$ pour $i < j$",
+                "La décomposition $\\exp(D+N) = \\exp(D)\\exp(N)$ est toujours vraie même si $DN \\neq ND$"
+            ]
+        }
+    ]
+}

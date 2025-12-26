@@ -1,0 +1,103 @@
+{
+    "title": "Limites et continuité",
+    "color": "blue",
+    "questions": [
+        {
+            "name": "Définition de la limite (I.1)",
+            "statement": "Soit $f$ une fonction de $A \\subset X$ dans $Y$. On dit que $f$ admet une limite $l \\in Y$ en $a \\in \\overline{A}$ selon $A$ si :",
+            "correct": [
+                "$\\forall V \\in \\mathcal{V}(l), \\exists U \\in \\mathcal{V}(a), f(U \\cap A) \\subset V$",
+                "$\\forall \\varepsilon > 0, \\exists \\eta > 0, \\forall x \\in A, d(a, x) < \\eta \\implies \\delta(f(x), l) < \\varepsilon$",
+                "$\\forall V \\in \\mathcal{V}(l), f^{-1}(V) \\cap A \\in \\{U \\cap A, U \\in \\mathcal{V}(a)\\}$"
+            ],
+            "distractors": [
+                "$\\forall U \\in \\mathcal{V}(a), \\exists V \\in \\mathcal{V}(l), f(U \\cap A) \\subset V$",
+                "$\\forall \\eta > 0, \\exists \\varepsilon > 0, \\forall x \\in A, d(a, x) < \\eta \\implies \\delta(f(x), l) < \\varepsilon$",
+                "$a$ doit nécessairement appartenir à $A$",
+                "La limite $l$ doit nécessairement appartenir à $f(A)$"
+            ]
+        },
+        {
+            "name": "Propriétés des limites (Proposition I.2)",
+            "statement": "Soit $f$ une fonction admettant une limite $l$ en $a$ selon $A$. Quelles propriétés sont alors vérifiées ?",
+            "correct": [
+                "Si $a \\in A$, alors nécessairement $f(a) = l$",
+                "La limite $l$ est unique dans l'espace métrique $Y$",
+                "$f$ est bornée au voisinage de $a$ dans $A$"
+            ],
+            "distractors": [
+                "Si $a \\in A$, $f$ peut avoir une limite $l \\neq f(a)$",
+                "$f$ est nécessairement continue sur un voisinage de $a$",
+                "La limite $l$ n'est unique que si $X = \\mathbb{R}$",
+                "$f$ est globalement bornée sur $A$"
+            ]
+        },
+        {
+            "name": "Caractérisation séquentielle (Proposition I.3)",
+            "statement": "Pour que $f$ possède une limite en $a$ selon $A$, il faut et il suffit que :",
+            "correct": [
+                "Pour toute suite $(x_n) \\in A^{\\mathbb{N}}$ convergeant vers $a$, la suite $(f(x_n))$ converge"
+            ],
+            "distractors": [
+                "Il existe au moins une suite $(x_n) \\to a$ telle que $(f(x_n))$ converge",
+                "Pour toute suite $(x_n) \\to a$, la suite $(f(x_n))$ est bornée",
+                "L'espace $Y$ est complet et $(f(x_n))$ est de Cauchy pour toute suite $(x_n) \\to a$"
+            ]
+        },
+        {
+            "name": "Composition de limites (Proposition I.4)",
+            "statement": "Soient $f: A \\to Y$ et $g: B \\to Z$. On suppose que $f$ admet une limite $b$ en $a$ selon $A$, et $g$ une limite $l$ en $b$ selon $B$. Pour affirmer que $g \\circ f$ tend vers $l$ en $a$, quelle hypothèse est indispensable ?",
+            "correct": [
+                "$f(A) \\subset B$"
+            ],
+            "distractors": [
+                "$g$ est continue en $b$",
+                "$f$ est continue en $a$",
+                "$b \\in B$",
+                "$f$ est injective"
+            ]
+        },
+        {
+            "name": "Continuité globale (Proposition II.5 et Exercice II.6)",
+            "statement": "Soit $f: X \\to Y$ une application. $f$ est continue sur $X$ si et seulement si :",
+            "correct": [
+                "L'image réciproque de tout ouvert de $Y$ est un ouvert de $X$",
+                "L'image réciproque de tout fermé de $Y$ est un fermé de $X$",
+                "$\\forall A \\subset X, f(\\overline{A}) \\subset \\overline{f(A)}$"
+            ],
+            "distractors": [
+                "L'image directe de tout ouvert de $X$ est un ouvert de $Y$",
+                "L'image directe de tout fermé de $X$ est un fermé de $Y$",
+                "$\\forall A \\subset X, \\overline{f(A)} \\subset f(\\overline{A})$",
+                "L'image réciproque de tout borné de $Y$ est un borné de $X$"
+            ]
+        },
+        {
+            "name": "Théorème de Heine (II.19)",
+            "statement": "Une fonction $f$ est uniformément continue sur $X$ si :",
+            "correct": [
+                "$f$ est continue et $X$ est un segment $[a, b]$"
+            ],
+            "distractors": [
+                "$f$ est continue et $X$ est un intervalle quelconque de $\\mathbb{R}$",
+                "$f$ est continue et bornée sur $X$",
+                "$f$ est continue et $X$ est un intervalle ouvert borné $]a, b[$",
+                "$f$ est de classe $\\mathcal{C}^1$ sur un intervalle quelconque"
+            ]
+        },
+        {
+            "name": "Applications lipschitziennes (Définition II.13)",
+            "statement": "Si $f: X \\to Y$ est $k$-lipschitzienne, alors :",
+            "correct": [
+                "$\\forall(x, y) \\in X^2, \\delta(f(x), f(y)) \\le k d(x, y)$",
+                "$f$ est uniformément continue sur $X$",
+                "Si $X$ est un intervalle de $\\mathbb{R}$ et $f$ est $\\mathcal{C}^1$, alors $|f'|$ est majorée par $k$"
+            ],
+            "distractors": [
+                "$f$ est nécessairement dérivable",
+                "Toute fonction uniformément continue est lipschitzienne",
+                "Le rapport de lipschitzianité $k$ est nécessairement strictement inférieur à 1"
+            ]
+        }
+    ]
+}

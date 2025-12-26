@@ -1,0 +1,78 @@
+{
+  "title": "Fonctions Caractéristiques et Vecteurs Gaussiens",
+  "color": "blue",
+  "questions": [
+    {
+      "name": "Définition 6 : Vecteur aléatoire gaussien",
+      "statement": "Un vecteur $X=(X_1, ..., X_N)$ est un vecteur gaussien.",
+      "correct": [
+        "Toute combinaison linéaire $\\sum \\lambda_j X_j$ suit une loi normale réelle (ou est constante)"
+      ],
+      "distractors": [
+        "Chaque composante $X_i$ suit une loi normale (Condition nécessaire mais non suffisante)",
+        "Le vecteur $X$ admet une densité de la forme $e^{-Q(x)}$ (Faux si la matrice de covariance est dégénérée)",
+        "Les composantes $X_i$ sont indépendantes"
+      ]
+    },
+    {
+      "name": "Théorème 7 : Indépendance des composantes gaussiennes",
+      "statement": "Les composantes $X_1, ..., X_N$ d'un vecteur sont indépendantes si et seulement si la matrice de covariance est diagonale (composantes non corrélées).",
+      "correct": [
+        "$X$ est un vecteur gaussien"
+      ],
+      "distractors": [
+        "Chaque $X_i$ est une variable gaussienne (Il faut que le vecteur conjoint soit gaussien)",
+        "$X$ admet une densité",
+        "Cette propriété est vraie pour tout vecteur aléatoire ayant des moments d'ordre 2"
+      ]
+    },
+    {
+      "name": "Proposition 8 : Existence de la densité d'un vecteur gaussien",
+      "statement": "La loi $\\mathcal{N}(\\mu, D)$ est absolument continue par rapport à la mesure de Lebesgue (admet une densité).",
+      "correct": [
+        "La matrice de covariance $D$ est inversible (non dégénérée, $\\det D \\neq 0$)"
+      ],
+      "distractors": [
+        "La matrice de covariance $D$ est symétrique positive (Vrai par définition, mais insuffisant pour la densité)",
+        "La moyenne $\\mu$ est nulle",
+        "Les composantes du vecteur sont indépendantes"
+      ]
+    },
+    {
+      "name": "Proposition 4 : Fonction caractéristique d'une somme",
+      "statement": "$\\varphi_{X_1 + \\dots + X_n}(t) = \\prod_{j=1}^n \\varphi_{X_j}(t)$",
+      "correct": [
+        "Les vecteurs aléatoires $X_1, \\dots, X_n$ sont indépendants"
+      ],
+      "distractors": [
+        "Les vecteurs sont gaussiens (Propriété vraie pour toute loi si indépendance)",
+        "Les vecteurs sont identiquement distribués",
+        "Les vecteurs sont non corrélés"
+      ]
+    },
+    {
+      "name": "Théorème 4 : Théorème d'inversion",
+      "statement": "$X$ admet une densité continue bornée donnée par la transformée de Fourier inverse de $\\varphi_X$.",
+      "correct": [
+        "La fonction caractéristique $\\varphi_X$ est intégrable ($L^1(\\mathbb{R}^N)$)"
+      ],
+      "distractors": [
+        "$X$ admet un moment d'ordre 2",
+        "$\\varphi_X$ est continue (Toujours vrai par définition)",
+        "$X$ est un vecteur gaussien (Condition suffisante mais pas nécessaire)"
+      ]
+    },
+    {
+      "name": "Proposition 15 : Régularité de la fonction caractéristique",
+      "statement": "La fonction caractéristique $\\varphi_X$ est de classe $C^n$.",
+      "correct": [
+        "$X$ admet un moment d'ordre $n$ ($X \\in L^n(\\Omega)$)"
+      ],
+      "distractors": [
+        "$X$ admet une densité de classe $C^n$",
+        "$\\varphi_X$ est à décroissance rapide",
+        "$n$ est un entier pair"
+      ]
+    }
+  ]
+}

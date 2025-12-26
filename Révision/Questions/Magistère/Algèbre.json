@@ -1,0 +1,240 @@
+{
+  "title": "Cours d'Algèbre 1 - L3MAG (Version Complète)",
+  "color": "blue",
+  "questions": [
+    {
+      "name": "Division Euclidienne sur N",
+      "statement": "Il existe un unique couple $(q,r)$ tel que $a=bq+r$ [cite: 137-138]",
+      "correct": [
+        "Hypothèse : $b \\neq 0$",
+        "Condition : $0 \\le r < b$"
+      ],
+      "distractors": [
+        "Condition : $0 \\le r \\le b$ (Le reste doit être strictement inférieur)",
+        "Hypothèse : $a \\ge b$ (Pas nécessaire, si a < b alors q=0)",
+        "Condition : $r$ divise $b$"
+      ]
+    },
+    {
+      "name": "Théorème de Lagrange",
+      "statement": "$Card(G) = Card(G/H) \\times Card(H)$ [cite: 357-358]",
+      "correct": [
+        "Hypothèse : $G$ est un groupe fini",
+        "Conséquence : L'ordre de tout élément divise l'ordre du groupe"
+      ],
+      "distractors": [
+        "Hypothèse : $G$ est abélien",
+        "Hypothèse : $H$ est distingué (Faux, vrai pour tout sous-groupe)",
+        "Réciproque : Si $d$ divise $|G|$, il existe un sous-groupe d'ordre $d$ (Faux en général)"
+      ]
+    },
+    {
+      "name": "Sous-groupes de Z/nZ",
+      "statement": "Pour tout diviseur $d$ de $n$, il existe un unique sous-groupe de cardinal $d$ [cite: 498]",
+      "correct": [
+        "Ce sous-groupe est cyclique",
+        "C'est l'ensemble des multiples de $n/d$ dans $\\mathbb{Z}/n\\mathbb{Z}$"
+      ],
+      "distractors": [
+        "Il existe $d$ sous-groupes d'ordre $d$",
+        "Ce sous-groupe est isomorphe à $\\mathbb{Z}/(n/d)\\mathbb{Z}$ (Piège sur l'ordre)"
+      ]
+    },
+    {
+      "name": "Groupe Quotient",
+      "statement": "On peut munir $G/H$ d'une structure de groupe telle que la projection soit un morphisme si et seulement si... [cite: 546]",
+      "correct": [
+        "$H$ est distingué dans $G$ ($H \\triangleleft G$)"
+      ],
+      "distractors": [
+        "$G$ est abélien (Condition suffisante mais pas nécessaire)",
+        "$H$ est contenu dans le centre $Z(G)$",
+        "$H$ est fini"
+      ]
+    },
+    {
+      "name": "Factorisation Canonique",
+      "statement": "Un morphisme $\\varphi: G \\to F$ induit un isomorphisme $\\bar{\\varphi}: G/Ker(\\varphi) \\to Im(\\varphi)$ [cite: 606-609]",
+      "correct": [
+        "Hypothèse : $\\varphi$ est un morphisme de groupes",
+        "L'application est bijective"
+      ],
+      "distractors": [
+        "L'isomorphisme est entre $G$ et $Im(\\varphi)$",
+        "Hypothèse : $G$ doit être fini",
+        "L'image est isomorphe à $G/Im(\\varphi)$"
+      ]
+    },
+    {
+      "name": "Équation aux classes",
+      "statement": "$Card(X) = \\sum Card(G)/Card(Stab(x))$ [cite: 665-666]",
+      "correct": [
+        "La somme porte sur un système de représentants des orbites",
+        "Hypothèse : $G$ agit sur un ensemble fini $X$"
+      ],
+      "distractors": [
+        "La somme porte sur tous les $x \\in X$",
+        "Hypothèse : L'action doit être transitive",
+        "La somme est égale à $|G|$"
+      ]
+    },
+    {
+      "name": "Théorèmes de Sylow (Conjugaison)",
+      "statement": "Les p-Sylows sont conjugués [cite: 710]",
+      "correct": [
+        "Tout p-Sylow est de la forme $gPg^{-1}$",
+        "Hypothèse : $G$ est un groupe fini"
+      ],
+      "distractors": [
+        "Les p-Sylows sont distingués (Faux sauf si $n_p=1$)",
+        "L'intersection de deux p-Sylows est vide",
+        "Ils sont conjugués seulement si $G$ est simple"
+      ]
+    },
+    {
+      "name": "Théorème de Bézout",
+      "statement": "$pgcd(a,b)=1 \\iff \\exists u,v \\in \\mathbb{Z}, au+bv=1$ [cite: 891-892]",
+      "correct": [
+        "Les coefficients $u, v$ sont dans $\\mathbb{Z}$"
+      ],
+      "distractors": [
+        "L'unicité du couple $(u,v)$ (Faux, infinité de solutions)",
+        "Si $au+bv=d$, alors $pgcd(a,b)=d$ (Faux, $d$ est juste un multiple du pgcd)"
+      ]
+    },
+    {
+      "name": "Petit Théorème de Fermat",
+      "statement": "$a^{p-1} \\equiv 1 \\pmod p$ [cite: 975-976]",
+      "correct": [
+        "Hypothèse : $p$ est premier",
+        "Hypothèse : $pgcd(a,p)=1$ (a non divisible par p)"
+      ],
+      "distractors": [
+        "Vrai pour tout entier $a$ (Faux si $p|a$, alors $a^p \\equiv a$)",
+        "Hypothèse : $p$ est un entier quelconque"
+      ]
+    },
+    {
+      "name": "Théorème des Restes Chinois",
+      "statement": "$\\mathbb{Z}/ab\\mathbb{Z} \\simeq \\mathbb{Z}/a\\mathbb{Z} \\times \\mathbb{Z}/b\\mathbb{Z}$ [cite: 950-951]",
+      "correct": [
+        "Hypothèse : $a \\wedge b = 1$ (Premiers entre eux)",
+        "C'est un isomorphisme d'anneaux"
+      ],
+      "distractors": [
+        "Hypothèse : $a$ et $b$ premiers",
+        "Hypothèse : $a$ ne divise pas $b$",
+        "C'est vrai pour tous $a,b$ (Faux, le produit ne serait pas cyclique)"
+      ]
+    },
+    {
+      "name": "Structure de (Z/nZ)*",
+      "statement": "$(\\mathbb{Z}/p^r\\mathbb{Z})^{\\times}$ est cyclique [cite: 1038-1039]",
+      "correct": [
+        "Hypothèse : $p$ premier impair",
+        "Vrai aussi pour $n=2, 4, p^r, 2p^r$"
+      ],
+      "distractors": [
+        "Vrai pour $p=2$ et $r \\ge 3$ (Faux, isomorphe à $\\mathbb{Z}/2 \\times \\mathbb{Z}/2^{r-2}$)",
+        "Toujours cyclique pour tout $n$",
+        "L'ordre est $p^r - 1$ (Faux, c'est $\\phi(p^r) = p^r - p^{r-1}$)"
+      ]
+    },
+    {
+      "name": "Théorème de la Base Adaptée",
+      "statement": "Il existe une base $(e_i)$ de $G$ et $d_1|...|d_s$ tq $(d_i e_i)$ base de $B$ [cite: 1201-1202]",
+      "correct": [
+        "Hypothèse : $G$ abélien libre de rang fini",
+        "Les entiers $d_i$ sont uniques (facteurs invariants)"
+      ],
+      "distractors": [
+        "Hypothèse : $G$ est un espace vectoriel",
+        "Hypothèse : $B$ est un facteur direct",
+        "Les $d_i$ sont premiers entre eux"
+      ]
+    },
+    {
+      "name": "Structure des GATF",
+      "statement": "$A \\simeq \\mathbb{Z}^r \\oplus \\bigoplus \\mathbb{Z}/d_i\\mathbb{Z}$ [cite: 1306-1308]",
+      "correct": [
+        "Condition : $d_1 | d_2 | ... | d_s$",
+        "Hypothèse : $A$ groupe abélien de type fini"
+      ],
+      "distractors": [
+        "Les $d_i$ sont des puissances de nombres premiers (C'est la décomposition primaire, pas invariants)",
+        "$A$ est sans torsion (Alors $s=0$)",
+        "$r$ dépend du choix de la base (Faux, $r$ est unique)"
+      ]
+    },
+    {
+      "name": "Lemme de Cauchy Abélien",
+      "statement": "Si $p$ divise $|G|$, il existe un élément d'ordre $p$ [cite: 1380-1381]",
+      "correct": [
+        "Hypothèse : $G$ abélien fini (Le cours le prouve dans ce cadre)",
+        "$p$ est premier"
+      ],
+      "distractors": [
+        "Il existe un élément d'ordre $n$ pour tout diviseur $n$ (Faux)",
+        "Hypothèse : $G$ est cyclique"
+      ]
+    },
+    {
+      "name": "Décomposition en cycles",
+      "statement": "Toute permutation se décompose en produit de cycles à supports disjoints [cite: 1466-1467]",
+      "correct": [
+        "Unicité à l'ordre près",
+        "Les cycles à supports disjoints commutent"
+      ],
+      "distractors": [
+        "Décomposition en transpositions est unique (Faux)",
+        "Les cycles doivent avoir la même longueur"
+      ]
+    },
+    {
+      "name": "Simplicité de An",
+      "statement": "Le groupe alterné $\\mathcal{A}_n$ est simple [cite: 1608]",
+      "correct": [
+        "Hypothèse : $n \\ge 5$"
+      ],
+      "distractors": [
+        "Hypothèse : $n \\ge 3$ (Faux pour 4)",
+        "Hypothèse : $n$ est premier",
+        "Vrai pour tout groupe symétrique"
+      ]
+    },
+    {
+      "name": "Cardinaux Groupes Linéaires",
+      "statement": "$|GL_n(\\mathbb{F}_q)| = \\prod_{i=0}^{n-1} (q^n - q^i)$ [cite: 1689]",
+      "correct": [
+        "$q$ est le cardinal d'un corps fini (puissance d'un premier)"
+      ],
+      "distractors": [
+        "$|SL_n| = |GL_n|$ (Faux, divisé par $q-1$)",
+        "$|PGL_n| = |GL_n|/q$ (Faux, divisé par le centre)"
+      ]
+    },
+    {
+      "name": "Isomorphismes Exceptionnels",
+      "statement": "$PGL_2(\\mathbb{F}_3) \\simeq \\mathcal{S}_4$ [cite: 1721]",
+      "correct": [
+        "$PSL_2(\\mathbb{F}_3) \\simeq \\mathcal{A}_4$"
+      ],
+      "distractors": [
+        "$PGL_2(\\mathbb{F}_3) \\simeq \\mathcal{A}_5$",
+        "$GL_2(\\mathbb{F}_2) \\simeq \\mathcal{S}_4$ (Faux, $\\mathcal{S}_3$)"
+      ]
+    },
+    {
+      "name": "Automorphismes de Sn",
+      "statement": "$Aut(\\mathcal{S}_n) = Int(\\mathcal{S}_n)$ [cite: 1789]",
+      "correct": [
+        "Hypothèse : $n \\neq 6$"
+      ],
+      "distractors": [
+        "Vrai pour tout $n$",
+        "Faux pour $n=2$ (Vrai car $S_2$ abélien, $Int$ trivial, $Aut$ trivial)",
+        "Seulement pour $n$ impair"
+      ]
+    }
+  ]
+}

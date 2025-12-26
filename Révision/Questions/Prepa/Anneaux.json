@@ -1,0 +1,137 @@
+{
+    "title": "Théorie des Anneaux et Idéaux",
+    "color": "blue",
+    "questions": [
+        {
+            "name": "Caractérisation de l'idéal trivial",
+            "statement": "Soit $I$ un idéal à gauche (resp. droite, bilatère) de $A$. On a $I = A$ si et seulement si :",
+            "correct": [
+                "L'intersection de $I$ avec le groupe des inversibles $U(A)$ est non vide",
+                "$1_A \\in I$"
+            ],
+            "distractors": [
+                "L'anneau $A$ est un corps",
+                "L'idéal $I$ est maximal",
+                "L'anneau $A$ est commutatif"
+            ]
+        },
+        {
+            "name": "Description interne de l'idéal engendré",
+            "statement": "Soit $X \\subset A$ une partie non vide. L'idéal engendré par $X$, noté $I(X)$, est l'ensemble des éléments $x$ de la forme $\\sum_{i=1}^n a_i x_i$. Quelles sont les hypothèses nécessaires pour cette forme ?",
+            "correct": [
+                "L'anneau $A$ est commutatif",
+                "$(a_1, \\dots, a_n) \\in A^n$ et $(x_1, \\dots, x_n) \\in X^n$"
+            ],
+            "distractors": [
+                "La partie $X$ doit être finie",
+                "L'anneau $A$ est intègre",
+                "L'idéal $I(X)$ est principal"
+            ]
+        },
+        {
+            "name": "Propriétés des images d'idéaux par morphisme",
+            "statement": "Soit $f \\in Hom_{anneau}(A, B)$ et $I$ un idéal de $A$. À quelle condition $f(I)$ est-il un idéal de $B$ ?",
+            "correct": [
+                "$f$ est un morphisme surjectif",
+                "$B$ est l'image directe de $A$ par $f$ (i.e., $Im(f)=B$)"
+            ],
+            "distractors": [
+                "$f$ est un morphisme injectif",
+                "$I$ est un idéal maximal",
+                "$A$ et $B$ sont des corps"
+            ]
+        },
+        {
+            "name": "Lien entre idéal maximal et premier",
+            "statement": "Soit $I$ un idéal d'un anneau $A$. On considère la proposition : 'Si $I$ est maximal, alors $I$ est premier'.",
+            "correct": [
+                "Cette proposition est toujours vraie dans un anneau commutatif unitaire",
+                "$I$ est maximal $\\iff A/I$ est un corps $\\implies A/I$ est intègre $\\iff I$ est premier"
+            ],
+            "distractors": [
+                "La réciproque est toujours vraie dans un anneau commutatif",
+                "L'anneau $A$ doit être principal",
+                "L'anneau $A$ doit être intègre"
+            ]
+        },
+        {
+            "name": "Propriétés de l'élément premier et irréductible",
+            "statement": "Tout élément premier est irréductible. Sous quelle hypothèse la réciproque est-elle vraie ?",
+            "correct": [
+                "L'anneau $A$ est principal (ou plus généralement factoriel)",
+                "$A$ est un anneau intègre où tout idéal est de la forme $\\langle a \\rangle$"
+            ],
+            "distractors": [
+                "L'anneau $A$ est un corps",
+                "L'anneau $A$ est simplement intègre",
+                "L'anneau $A$ est noethérien"
+            ]
+        },
+        {
+            "name": "Théorème de Bézout dans les anneaux principaux",
+            "statement": "Soit $A$ un anneau principal. Deux éléments $a, b \\in A$ sont dits 'premiers entre eux' ($a \\wedge b = 1$) si et seulement si :",
+            "correct": [
+                "$\\exists (u, v) \\in A^2, au + bv = 1$",
+                "$\\langle a \\rangle + \\langle b \\rangle = A$"
+            ],
+            "distractors": [
+                "$a$ et $b$ sont des éléments irréductibles distincts",
+                "L'anneau $A$ est un anneau euclidien",
+                "$a$ ou $b$ est un élément inversible de $A$"
+            ]
+        },
+        {
+            "name": "Caractérisation de l'anneau quotient",
+            "statement": "Soit $A$ un anneau commutatif et $I$ un idéal de $A$. Quelles sont les équivalences vraies concernant la structure de $A/I$ ?",
+            "correct": [
+                "$A/I$ est un corps $\\iff I$ est maximal",
+                "$A/I$ est intègre $\\iff I$ est premier",
+                "$A/I$ est réduit $\\iff I$ est radical"
+            ],
+            "distractors": [
+                "$A/I$ est principal $\\iff A$ est principal",
+                "$A/I$ est un corps $\\iff I$ est premier",
+                "$A/I$ est intègre $\\iff I$ est maximal"
+            ]
+        },
+        {
+            "name": "Théorème Chinois",
+            "statement": "Soient $I$ et $J$ deux idéaux d'un anneau commutatif $A$. Le morphisme $\\phi : A/(I \\cap J) \\to A/I \\times A/J$ est un isomorphisme si :",
+            "correct": [
+                "$I + J = A$ (idéaux étrangers)",
+                "Il existe $i \\in I$ et $j \\in J$ tels que $i + j = 1$"
+            ],
+            "distractors": [
+                "$I \\cap J = \\{0\\}$",
+                "$A$ est un anneau principal",
+                "$I$ et $J$ sont des idéaux maximaux"
+            ]
+        },
+        {
+            "name": "Existence d'idéaux maximaux (Théorème de Krull)",
+            "statement": "Dans tout anneau commutatif unitaire $A$, tout idéal strict $I$ est contenu dans au moins un idéal maximal. Quelle est la condition sine qua non ?",
+            "correct": [
+                "L'anneau $A$ doit être unitaire",
+                "L'idéal $I$ doit être un idéal strict ($I \\neq A$)"
+            ],
+            "distractors": [
+                "L'anneau $A$ doit être noethérien",
+                "L'anneau $A$ doit être intègre",
+                "L'anneau $A$ doit être de caractéristique nulle"
+            ]
+        },
+        {
+            "name": "Lemme de Gauss",
+            "statement": "Soit $A$ un anneau principal. Si $a \\mid bc$ et $a \\wedge b = 1$, alors $a \\mid c$. Cette propriété découle de :",
+            "correct": [
+                "L'existence d'une relation de Bézout $au + bv = 1$",
+                "La factorialité de l'anneau $A$"
+            ],
+            "distractors": [
+                "La simple intégrité de l'anneau $A$",
+                "Le fait que $b$ soit inversible",
+                "La finitude de l'anneau $A$"
+            ]
+        }
+    ]
+}

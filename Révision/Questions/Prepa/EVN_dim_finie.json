@@ -1,0 +1,142 @@
+{
+    "title": "Espaces vectoriels normés de dimension finie",
+    "color": "blue",
+    "questions": [
+        {
+            "name": "Équivalence des normes",
+            "statement": "Toutes les normes sur l'espace vectoriel $E$ sont équivalentes.",
+            "correct": [
+                "E est un espace vectoriel de dimension finie",
+                "E est isomorphe à $\\mathbb{R}^n$"
+            ],
+            "distractors": [
+                "E est un espace de Banach",
+                "E est un espace vectoriel de dimension quelconque muni d'une base",
+                "E est complet"
+            ]
+        },
+        {
+            "name": "Convergence et composantes (Proposition II.1)",
+            "statement": "Soit $(u_p)$ une suite de $E$. La convergence de $(u_p)$ vers $l$ est équivalente à la convergence de chacune de ses composantes dans une base $(e_1, \\dots, e_n)$.",
+            "correct": [
+                "E est de dimension finie",
+                "La base $(e_1, \\dots, e_n)$ est fixée"
+            ],
+            "distractors": [
+                "La norme utilisée doit être la norme infinie $\\|.\\|_\\infty$",
+                "E doit être un espace de Hilbert",
+                "La suite $(u_p)$ doit être bornée"
+            ]
+        },
+        {
+            "name": "Théorème de Bolzano-Weierstraß (III.1)",
+            "statement": "Toute suite $(u_p)$ bornée de $E$ admet au moins une valeur d'adhérence.",
+            "correct": [
+                "E est un espace vectoriel normé de dimension finie"
+            ],
+            "distractors": [
+                "E est un espace de Banach",
+                "E est complet",
+                "La suite $(u_p)$ est une suite de Cauchy"
+            ]
+        },
+        {
+            "name": "Compacité en dimension finie (Corollaire III.2)",
+            "statement": "Une partie $A$ de $E$ est compacte si et seulement si elle est fermée et bornée.",
+            "correct": [
+                "E est de dimension finie"
+            ],
+            "distractors": [
+                "E est un espace métrique complet",
+                "A est une partie convexe",
+                "E est un espace de Hilbert"
+            ]
+        },
+        {
+            "name": "Complétude (Proposition III.3)",
+            "statement": "L'espace vectoriel normé $(E, \\|. \\|)$ est complet.",
+            "correct": [
+                "E est de dimension finie"
+            ],
+            "distractors": [
+                "E est muni d'une norme euclidienne",
+                "Toutes les suites de $E$ sont bornées",
+                "E est un sous-espace dense d'un espace de Banach"
+            ]
+        },
+        {
+            "name": "Convergence absolue et convergence (Corollaire III.4)",
+            "statement": "Si la série $\\sum \\|u_p\\|$ converge, alors la série $\\sum u_p$ converge.",
+            "correct": [
+                "E est de dimension finie",
+                "E est un espace complet (Banach)"
+            ],
+            "distractors": [
+                "La suite $(u_p)$ est décroissante",
+                "E est un espace de dimension quelconque muni d'une norme équivalente à la norme 1"
+            ]
+        },
+        {
+            "name": "Théorème du point fixe (Proposition III.5)",
+            "statement": "Soit $A$ une partie de $E$ et $f: A \\to A$ une application $q$-contractante. $f$ possède un unique point fixe.",
+            "correct": [
+                "A est une partie fermée de E",
+                "E est de dimension finie (donc complet)",
+                "q appartient à $]0, 1[$"
+            ],
+            "distractors": [
+                "f est 1-lipschitzienne",
+                "A est une partie bornée de E",
+                "f est une application linéaire"
+            ]
+        },
+        {
+            "name": "Fermeture des sous-espaces (Proposition III.6)",
+            "statement": "Soit $E$ un sous-espace vectoriel d'un espace vectoriel normé $(F, \\|. \\|)$. $E$ est fermé dans $F$.",
+            "correct": [
+                "E est de dimension finie"
+            ],
+            "distractors": [
+                "F est de dimension finie",
+                "E est un hyperplan de F",
+                "F est complet"
+            ]
+        },
+        {
+            "name": "Théorème de Riesz (III.7)",
+            "statement": "La boule unité fermée $B_f(0, 1)$ est compacte.",
+            "correct": [
+                "L'espace vectoriel normé est de dimension finie"
+            ],
+            "distractors": [
+                "L'espace est un espace de Banach",
+                "L'espace est complet",
+                "L'espace est muni d'un produit scalaire"
+            ]
+        },
+        {
+            "name": "Continuité des applications linéaires (Proposition IV.2)",
+            "statement": "Toute application linéaire $u$ de $E$ dans $F$ est continue.",
+            "correct": [
+                "L'espace de départ E est de dimension finie"
+            ],
+            "distractors": [
+                "L'espace d'arrivée F est de dimension finie",
+                "u est une application injective",
+                "E et F sont complets"
+            ]
+        },
+        {
+            "name": "Continuité des applications multilinéaires (Corollaire IV.3)",
+            "statement": "Toute application multilinéaire $f$ de $E^p$ dans $F$ est continue.",
+            "correct": [
+                "L'espace E est de dimension finie"
+            ],
+            "distractors": [
+                "p est égal à 1",
+                "F est de dimension finie",
+                "f est une forme n-linéaire alternée"
+            ]
+        }
+    ]
+}

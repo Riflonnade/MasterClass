@@ -1,0 +1,71 @@
+{
+    "title": "Couples de variables aléatoires",
+    "color": "blue",
+    "questions": [
+        {
+            "name": "Calcul des lois marginales",
+            "statement": "$\\forall x \\in \\mathbb{R}^d, \\mathbb{P}(X = x) = \\sum_{y \\in Y(\\Omega)} \\mathbb{P}([X = x] \\cap [Y = y])$",
+            "correct": [
+                "X et Y sont des variables aléatoires discrètes",
+                "La famille ([Y = y])_{y \\in Y(\\Omega)} est un système complet d'événements"
+            ],
+            "distractors": [
+                "X et Y sont indépendantes",
+                "X et Y suivent la même loi",
+                "X et Y sont à valeurs dans $\\mathbb{R}$ exclusivement (d=1)"
+            ]
+        },
+        {
+            "name": "Produit de convolution et loi de la somme",
+            "statement": "$\\mathcal{L}_{X+Y} = \\mathcal{L}_X \\star \\mathcal{L}_Y$",
+            "correct": [
+                "X et Y sont des variables aléatoires indépendantes",
+                "X et Y sont des variables aléatoires discrètes à valeurs dans $\\mathbb{N}$"
+            ],
+            "distractors": [
+                "X et Y sont identiquement distribuées",
+                "X et Y sont à valeurs dans $\\mathbb{N}^*$",
+                "X et Y suivent une loi de Poisson"
+            ]
+        },
+        {
+            "name": "Stabilité de la loi de Poisson",
+            "statement": "Si $X \\sim \\mathcal{P}(\\lambda)$ et $Y \\sim \\mathcal{P}(\\mu)$, alors $X+Y \\sim \\mathcal{P}(\\lambda + \\mu)$",
+            "correct": [
+                "X et Y sont indépendantes",
+                "$\\lambda > 0$ et $\\mu > 0$"
+            ],
+            "distractors": [
+                "$\\lambda = \\mu$",
+                "X et Y sont identiquement distribuées",
+                "X et Y sont définies sur le même espace probabilisé et sont corrélées"
+            ]
+        },
+        {
+            "name": "Somme de variables Binomiales",
+            "statement": "Si $X \\sim \\mathcal{B}(n, p)$ et $Y \\sim \\mathcal{B}(m, p)$, alors $X+Y \\sim \\mathcal{B}(n+m, p)$",
+            "correct": [
+                "X et Y sont indépendantes",
+                "Le paramètre de succès $p$ est identique pour $X$ et $Y$"
+            ],
+            "distractors": [
+                "n = m",
+                "X et Y sont identiquement distribuées",
+                "p peut être différent si $n=m$"
+            ]
+        },
+        {
+            "name": "Indépendance de variables aléatoires discrètes",
+            "statement": "X et Y sont indépendantes si et seulement si :",
+            "correct": [
+                "$\\forall (i, j) \\in X(\\Omega) \\times Y(\\Omega), \\mathbb{P}([X=i] \\cap [Y=j]) = \\mathbb{P}(X=i)\\mathbb{P}(Y=j)$",
+                "La loi conjointe est le produit des lois marginales : $\\mathcal{L}_{(X,Y)} = \\mathcal{L}_X \\otimes \\mathcal{L}_Y$"
+            ],
+            "distractors": [
+                "$\\mathcal{L}_{X+Y} = \\mathcal{L}_X \\star \\mathcal{L}_Y$ (propriété nécessaire mais non suffisante en général)",
+                "$X(\\Omega) = Y(\\Omega)$",
+                "$E(XY) = E(X)E(Y)$ (nécessaire mais non suffisante pour l'indépendance de variables discrètes quelconques)"
+            ]
+        }
+    ]
+}

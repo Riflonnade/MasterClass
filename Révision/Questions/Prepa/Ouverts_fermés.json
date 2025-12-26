@@ -1,0 +1,113 @@
+{
+    "title": "Ouverts et fermés dans les espaces métriques",
+    "color": "blue",
+    "questions": [
+        {
+            "name": "Proposition I.2 : Stabilité des ouverts",
+            "statement": "Soit $(O_i)_{i \\in I}$ une famille d'ouverts d'un espace métrique $X$. Quelles sont les propriétés de stabilité vraies pour cette famille ?",
+            "correct": [
+                "L'union quelconque $\\bigcup_{i \\in I} O_i$ est un ouvert",
+                "Si $I$ est un ensemble fini, l'intersection $\\bigcap_{i \\in I} O_i$ est un ouvert",
+                "L'ensemble vide $\\emptyset$ et l'espace $X$ sont des ouverts"
+            ],
+            "distractors": [
+                "L'intersection quelconque $\\bigcap_{i \\in I} O_i$ est toujours un ouvert",
+                "L'union d'ouverts n'est ouverte que si la famille est finie",
+                "Si $I$ est dénombrable, l'intersection est nécessairement un ouvert"
+            ]
+        },
+        {
+            "name": "Proposition I.4 : Propriété de séparation (Hausdorff)",
+            "statement": "Soient $a$ et $b$ deux points distincts d'un espace métrique $X$. Quelle propriété sur leurs voisinages est garantie ?",
+            "correct": [
+                "Il existe un voisinage $U$ de $a$ et un voisinage $V$ de $b$ tels que $U \\cap V = \\emptyset$",
+                "Il existe deux boules ouvertes disjointes centrées en $a$ et $b$ respectivement"
+            ],
+            "distractors": [
+                "Tout voisinage de $a$ rencontre tout voisinage de $b$",
+                "Il existe un voisinage $U$ de $a$ qui contient $b$",
+                "L'intersection de tous les voisinages de $a$ est l'ensemble $\\{a, b\\}$"
+            ]
+        },
+        {
+            "name": "Proposition II.2 : Caractérisation séquentielle des fermés",
+            "statement": "Soit $F$ une partie de $X$. À quelle condition $F$ est-il fermé ?",
+            "correct": [
+                "Pour toute suite $(x_n)_{n \\in \\mathbb{N}}$ d'éléments de $F$ convergeant vers $l \\in X$, on a $l \\in F$",
+                "Son complémentaire $X \\setminus F$ est un ouvert"
+            ],
+            "distractors": [
+                "Toute suite d'éléments de $F$ est convergente dans $F$",
+                "Toute suite de $F$ admet une valeur d'adhérence dans $F$",
+                "Pour toute suite $(x_n)$ de $F$, sa limite appartient à $X$"
+            ]
+        },
+        {
+            "name": "Proposition III.1 : Topologie induite",
+            "statement": "Soit $A$ une partie de $X$ et $O \\subset A$. Quelles sont les caractérisations de '$O$ est un ouvert de $A$' pour la distance induite ?",
+            "correct": [
+                "Il existe un ouvert $\\Omega$ de $X$ tel que $O = A \\cap \\Omega$",
+                "Pour tout $a \\in O$, il existe $r > 0$ tel que $B(a, r) \\cap A \\subset O$"
+            ],
+            "distractors": [
+                "$O$ doit être un ouvert de $X$",
+                "$O$ est la trace d'un fermé de $X$ sur $A$",
+                "L'adhérence de $O$ dans $X$ est incluse dans $A$"
+            ]
+        },
+        {
+            "name": "Proposition IV.2 : Propriétés de l'intérieur",
+            "statement": "Soit $A$ une partie d'un espace métrique $X$. Quelles affirmations concernant l'intérieur $\\mathring{A}$ sont correctes ?",
+            "correct": [
+                "$\\mathring{A}$ est le plus grand ouvert inclus dans $A$",
+                "$\\mathring{A}$ est l'union de tous les ouverts inclus dans $A$",
+                "$x \\in \\mathring{A} \\iff \\exists \\epsilon > 0, B(x, \\epsilon) \\subset A$"
+            ],
+            "distractors": [
+                "$\\mathring{A}$ est le plus petit ouvert contenant $A$",
+                "L'intérieur d'un fermé est toujours non vide",
+                "$\\mathring{A} = A$ pour toute partie $A$ de $X$"
+            ]
+        },
+        {
+            "name": "Proposition V.2 : Propriétés de l'adhérence",
+            "statement": "Soit $A$ une partie de $X$. Identifiez les caractérisations de l'adhérence $\\overline{A}$.",
+            "correct": [
+                "$\\overline{A}$ est le plus petit fermé contenant $A$",
+                "$x \\in \\overline{A} \\iff \\forall \\epsilon > 0, B(x, \\epsilon) \\cap A \\neq \\emptyset$",
+                "$X \\setminus \\overline{A} = \\text{Int}(X \\setminus A)$"
+            ],
+            "distractors": [
+                "$\\overline{A}$ est l'intersection de tous les ouverts contenant $A$",
+                "$x \\in \\overline{A} \\iff \\exists \\epsilon > 0, B(x, \\epsilon) \\cap A \\neq \\emptyset$",
+                "L'adhérence d'un ouvert est toujours l'espace $X$ tout entier"
+            ]
+        },
+        {
+            "name": "Proposition VI.2 : Caractérisations de la densité",
+            "statement": "Soient $A$ et $B$ deux parties de $X$. On dit que $B$ est dense dans $A$ si :",
+            "correct": [
+                "$A \\subset \\overline{B}$",
+                "Tout élément de $A$ est limite d'une suite d'éléments de $B$",
+                "Pour tout $a \\in A$ et tout $\\epsilon > 0$, $B(a, \\epsilon) \\cap B \\neq \\emptyset$"
+            ],
+            "distractors": [
+                "$B \\subset A$ et $\\overline{B} = A$",
+                "L'intérieur de $B$ est égal à $A$",
+                "Tout point de $B$ est un point d'accumulation de $A$"
+            ]
+        },
+        {
+            "name": "Proposition VI.9 : Théorème de Bolzano-Weierstrass (variante)",
+            "statement": "Sous quelles conditions un ensemble $A$ admet-il nécessairement un point d'accumulation ?",
+            "correct": [
+                "$X$ est de dimension finie et $A$ est borné et infini"
+            ],
+            "distractors": [
+                "$A$ est un ensemble infini quelconque",
+                "$A$ est un ensemble fermé et borné en dimension infinie",
+                "$A$ est un ensemble dénombrable dense"
+            ]
+        }
+    ]
+}

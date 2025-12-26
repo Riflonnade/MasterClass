@@ -1,0 +1,86 @@
+{
+  "title": "Probabilités - Variables Aléatoires et Lois",
+  "color": "blue",
+  "questions": [
+    {
+      "name": "Théorème 6 : Caractérisation d'une fonction de répartition",
+      "statement": "$F: \\mathbb{R} \\to [0,1]$ est la fonction de répartition d'une probabilité sur $\\mathbb{R}$ si et seulement si...",
+      "correct": [
+        "$F$ est croissante",
+        "$F$ est continue à droite",
+        "$\\lim_{x \\to -\\infty} F(x) = 0$ et $\\lim_{x \\to +\\infty} F(x) = 1$"
+      ],
+      "distractors": [
+        "$F$ est continue à gauche (Propriété fausse, c'est à droite)",
+        "$F$ est strictement croissante (Faux, elle peut être constante sur des intervalles)",
+        "$F$ est continue sur $\\mathbb{R}$ (Faux, elle peut avoir des sauts aux atomes)",
+        "$F$ est dérivable partout"
+      ]
+    },
+    {
+      "name": "Théorème 8 : Convergence Dominée",
+      "statement": "$\\lim_{n \\to \\infty} \\mathbb{E}(X_n) = \\mathbb{E}(X)$",
+      "correct": [
+        "$(X_n)$ converge simplement vers $X$ presque sûrement",
+        "Il existe $Z \\in L^1(\\Omega)$ positive telle que $|X_n| \\le Z$ p.s."
+      ],
+      "distractors": [
+        "Il existe une constante $M$ telle que $|X_n| \\le M$ p.s. (Condition suffisante mais trop restrictive, $Z$ est une fonction)",
+        "La suite $(X_n)$ est croissante (Ceci concerne la Convergence Monotone)",
+        "Les $X_n$ sont positives (Pas nécessaire pour la convergence dominée)"
+      ]
+    },
+    {
+      "name": "Proposition 4 : Inégalité de Markov",
+      "statement": "$\\mathbb{P}(|X| \\ge a) \\le \\frac{\\mathbb{E}(|X|)}{a}$",
+      "correct": [
+        "$X \\in L^1(\\Omega)$ (X admet une espérance)",
+        "$a > 0$"
+      ],
+      "distractors": [
+        "$X$ est une variable aléatoire bornée",
+        "$X$ est nécessairement positive (L'inégalité s'applique à $|X|$)",
+        "$a \\ge 0$ (Division par zéro si a=0)"
+      ]
+    },
+    {
+      "name": "Proposition 5 : Inclusion des espaces $L^p$",
+      "statement": "L'inclusion $L^q(\\Omega) \\subset L^p(\\Omega)$ est vérifiée.",
+      "correct": [
+        "La mesure de probabilité est finie (Toujours vrai pour une probabilité $\\mathbb{P}(\\Omega)=1$)",
+        "$1 \\le p \\le q$"
+      ],
+      "distractors": [
+        "$p \\ge q$ (L'inclusion est inversée pour les mesures finies)",
+        "La mesure est la mesure de Lebesgue sur $\\mathbb{R}$ (Mesure infinie, l'inclusion n'est pas automatique)",
+        "Les variables sont indépendantes"
+      ]
+    },
+    {
+      "name": "Théorème 10 : Théorème de Transfert (Cas à densité)",
+      "statement": "$\\mathbb{E}(h(X)) = \\int_{\\mathbb{R}} h(x)f_X(x)dx$",
+      "correct": [
+        "$X$ est une variable aléatoire réelle à densité $f_X$",
+        "$\\int |h(x)|f_X(x)dx < \\infty$ (ou $h$ positive)"
+      ],
+      "distractors": [
+        "$h$ est une fonction continue bornée (Trop restrictif, la mesurabilité suffit sous condition d'intégrabilité)",
+        "$h$ est dérivable",
+        "$X$ suit une loi normale"
+      ]
+    },
+    {
+      "name": "Proposition 6 : Propriétés de la variance",
+      "statement": "Inégalité de Bienaymé-Tchebychev : $\\mathbb{P}(|X - \\mathbb{E}(X)| \u2265 a) \u2264 \\frac{\\text{Var}(X)}{a^2}$",
+      "correct": [
+        "$X \\in L^2(\\Omega)$ (X admet un moment d'ordre 2)",
+        "$a > 0$"
+      ],
+      "distractors": [
+        "$X$ suit une loi symétrique",
+        "$X \\in L^1(\\Omega)$ suffisant (Il faut l'existence de la variance)",
+        "L'inégalité est stricte"
+      ]
+    }
+  ]
+}

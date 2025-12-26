@@ -1,0 +1,258 @@
+{
+  "title": "Calcul différentiel et Géométrie différentielle",
+  "color": "blue",
+  "questions": [
+  {
+  "name": "Théorème des valeurs intermédiaires (variable réelle)",
+  "statement": "Soit $f:I\\rightarrow\\mathbb{R}$ continue. Alors $f(I)$ est un intervalle. Si de plus $f$ est injective, alors $f$ est strictement monotone et $f^{-1}: f(I)\\rightarrow I$ est continue. [cite: 1928-1930]",
+  "correct": [
+  "$f$ est continue sur un intervalle $I$",
+  "$f$ est injective (pour la monotonie et la continuité de la réciproque)"
+  ],
+  "distractors": [
+  "$f$ est dérivable",
+  "$f$ est de classe $C^1$",
+  "$I$ est un segment compact"
+  ]
+  },
+  {
+  "name": "Caractérisation de l'uniforme continuité",
+  "statement": "$f:I\\rightarrow\\mathbb{R}$ est uniformément continue si et seulement s'il existe un module de continuité $\\eta$ tel que $|f(x)-f(y)|\\le\\eta(|x-y|)$. [cite: 1935-1936]",
+  "correct": [
+  "$\\eta$ est continue en 0 et $\\eta(0)=0$",
+  "$f$ est définie sur un intervalle $I$"
+  ],
+  "distractors": [
+  "$I$ est compact",
+  "$\\eta$ est dérivable",
+  "$f$ est lipschitzienne"
+  ]
+  },
+  {
+  "name": "Théorème des fonctions implicites (Dim 2)",
+  "statement": "Si $f(p)=0$ et $\\partial_{2}f(p)\\ne0$, alors localement $f(x,y)=0 \\iff y=g(x)$. [cite: 2048-2050]",
+  "correct": [
+  "$f$ est de classe $C^k$ ($k \\ge 1$)",
+  "$\\partial_{2}f(p) \\neq 0$"
+  ],
+  "distractors": [
+  "$\\partial_{1}f(p) \\neq 0$",
+  "L'existence de $g$ est globale sur $\\mathbb{R}$",
+  "$g$ est seulement continue (elle est $C^k$)"
+  ]
+  },
+  {
+  "name": "Longueur d'une courbe paramétrée",
+  "statement": "Si $a<b<c$ et $\\gamma:[a,c]\\rightarrow\\mathbb{R}^{N}$ est $C^1$, alors $l(\\gamma)=l(\\gamma|_{[a,b]})+l(\\gamma|_{[b,c]})$. [cite: 2146-2147]",
+  "correct": [
+  "$\\gamma$ est de classe $C^1$"
+  ],
+  "distractors": [
+  "$\\gamma$ est seulement continue",
+  "$\\gamma$ est une immersion",
+  "$\\gamma$ est paramétrée par la longueur d'arc"
+  ]
+  },
+  {
+  "name": "Reparamétrage par la longueur d'arc",
+  "statement": "Soit $\\gamma:I\\rightarrow\\mathbb{R}^{N}$ de classe $C^1$. Si $\\gamma$ est une immersion, alors elle peut être reparamétrée par la longueur d'arc. [cite: 2227-2228]",
+  "correct": [
+  "$\\gamma$ est une immersion ($c'(t) \\neq 0$)"
+  ],
+  "distractors": [
+  "$\\gamma$ est injective",
+  "$\\gamma$ est de classe $C^2$",
+  "$\\gamma$ est bornée"
+  ]
+  },
+  {
+  "name": "Formule de la courbure",
+  "statement": "$\\kappa(s)=\\frac{\\det(\\gamma'(t),\\gamma''(t))}{|\\!|\\gamma'(t)|\\!|^{3}}$ où $s=\\lambda(t)$. [cite: 2266-2268]",
+  "correct": [
+  "$\\gamma$ est une immersion plane"
+  ],
+  "distractors": [
+  "$\\gamma$ est paramétrée par la longueur d'arc (dénominateur vaudrait 1)",
+  "Le dénominateur est $|\\!|\\gamma'(t)|\\!|^{2}$",
+  "$\\gamma$ est dans $\\mathbb{R}^3$"
+  ]
+  },
+  {
+  "name": "Complétude d'un sous-espace métrique",
+  "statement": "Soit $(X,d)$ un espace métrique complet et $F\\subset X$. $(F,d|_{F\\times F})$ est complet si et seulement si... [cite: 2370-2371]",
+  "correct": [
+  "$F$ est fermé dans $X$"
+  ],
+  "distractors": [
+  "$F$ est ouvert dans $X$",
+  "$F$ est borné",
+  "$F$ est compact (Condition suffisante mais pas nécessaire)"
+  ]
+  },
+  {
+  "name": "Prolongement des applications uniformément continues",
+  "statement": "Une application $\\varphi:D\\rightarrow Y$ admet un unique prolongement continu $\\overline{\\varphi}:\\overline{D}\\rightarrow Y$. [cite: 2388-2390]",
+  "correct": [
+  "$Y$ est complet",
+  "$\\varphi$ est uniformément continue sur $D$"
+  ],
+  "distractors": [
+  "$X$ est complet",
+  "$\\varphi$ est simplement continue",
+  "$\\varphi$ est bornée"
+  ]
+  },
+  {
+  "name": "Continuité des applications linéaires",
+  "statement": "Pour $T:E\\rightarrow F$ linéaire, la continuité est équivalente à : [cite: 2438-2445]",
+  "correct": [
+  "T est continue en 0",
+  "T est bornée sur la boule unité",
+  "T est lipschitzienne"
+  ],
+  "distractors": [
+  "E est de dimension finie",
+  "T est bijective",
+  "T transforme les ouverts en ouverts"
+  ]
+  },
+  {
+  "name": "Complétude des applications linéaires continues",
+  "statement": "$(\\mathcal{L}(E,F), |||\\cdot|||)$ est un espace de Banach si : [cite: 2592-2593]",
+  "correct": [
+  "$(F, |\\!|\\cdot|\\!|_F)$ est un espace de Banach"
+  ],
+  "distractors": [
+  "$(E, |\\!|\\cdot|\\!|_E)$ est un espace de Banach",
+  "E et F sont de dimension finie",
+  "Toutes les applications linéaires de E dans F sont continues"
+  ]
+  },
+  {
+  "name": "Théorème du point fixe de Banach",
+  "statement": "Une application $T:X\\rightarrow X$ admet un unique point fixe si... [cite: 2760-2761]",
+  "correct": [
+  "$(X,d)$ est complet",
+  "$T$ est $k$-contractante avec $0\\le k < 1$"
+  ],
+  "distractors": [
+  "$T$ est strictement contractante ($d(Tx,Ty) < d(x,y)$)",
+  "$X$ est compact",
+  "$T$ est 1-lipschitzienne"
+  ]
+  },
+  {
+  "name": "Théorème fondamental du calcul différentiel",
+  "statement": "L'application $F(x):=\\int_{x_{0}}^{x}f(t)dt$ est une primitive de $f$ de classe $C^1$. [cite: 3134-3138]",
+  "correct": [
+  "$f$ est continue sur $J$"
+  ],
+  "distractors": [
+  "$f$ est de classe $C^1$",
+  "$f$ est réglée",
+  "L'espace d'arrivée $E$ est de dimension finie"
+  ]
+  },
+  {
+  "name": "Théorème des accroissements finis (Inégalité)",
+  "statement": "$|\\!|f(b)-f(a)|\\!|_{F}\\le \\sup_{t\\in[0,1]}|\\!|df_{ta+(1-t)(b)}|\\!|\\!|\\times|\\!|b-a|\\!|_{E}$ [cite: 3383-3385]",
+  "correct": [
+  "Le segment $[a,b]$ est contenu dans $U$",
+  "$f$ est différentiable sur $U$"
+  ],
+  "distractors": [
+  "Il existe $c \\in [a,b]$ tel que $f(b)-f(a) = df_c(b-a)$ (Égalité fausse en Banach)",
+  "$U$ est convexe (Trop fort, le segment suffit)",
+  "$f$ est de classe $C^1$"
+  ]
+  },
+  {
+  "name": "Différentielle d'une application composée",
+  "statement": "$d(g\\circ f)_{a}=dg_{f(a)}\\circ df_{a}$ [cite: 3323-3326]",
+  "correct": [
+  "$f$ différentiable en $a$",
+  "$g$ différentiable en $f(a)$"
+  ],
+  "distractors": [
+  "$dg_{a} \\circ df_{a}$",
+  "$df_{a} \\circ dg_{f(a)}$ (Problème d'ordre)",
+  "$f$ et $g$ de classe $C^1$"
+  ]
+  },
+  {
+  "name": "Formule de Taylor avec reste intégral",
+  "statement": "$f(b)=\\sum_{j=0}^{k}\\frac{f^{(j)}(a)}{j!}(b-a)^{j}+\\frac{1}{k!}\\int_{a}^{b}(b-t)^{k}f^{(k+1)}(t)dt$ [cite: 3189-3191]",
+  "correct": [
+  "$f$ est de classe $C^{k+1}$"
+  ],
+  "distractors": [
+  "$f$ est de classe $C^k$",
+  "$f$ est $(k+1)$ fois dérivable (sans continuité de la dérivée)",
+  "$f$ est analytique"
+  ]
+  },
+  {
+  "name": "Inversibilité dans une algèbre de Banach",
+  "statement": "L'ensemble $A^{\\times}$ des éléments inversibles est un ouvert. [cite: 3651-3652]",
+  "correct": [
+  "A est une algèbre de Banach (complète)"
+  ],
+  "distractors": [
+  "A est une algèbre normée quelconque",
+  "A est commutative",
+  "A est de dimension finie"
+  ]
+  },
+  {
+  "name": "Différentielle de l'application inverse",
+  "statement": "$dInv_{a}(h)=-a^{-1}ha^{-1}$ [cite: 3681-3683]",
+  "correct": [
+  "$a \\in A^{\\times}$",
+  "A est une algèbre de Banach"
+  ],
+  "distractors": [
+  "$-a^{-2}h$ (Faux si non commutatif)",
+  "$a^{-1}ha^{-1}$ (Erreur de signe)",
+  "$Inv$ est linéaire"
+  ]
+  },
+  {
+  "name": "Théorème d'inversion locale",
+  "statement": "$f$ est un $C^1$-difféomorphisme local au voisinage de $a$. [cite: 3750-3752]",
+  "correct": [
+  "$f$ est de classe $C^1$",
+  "$df_a$ est un isomorphisme (bijectif, bicontinu)"
+  ],
+  "distractors": [
+  "$df_a$ est injectif",
+  "$df_a$ est surjectif",
+  "$f$ est de classe $C^2$"
+  ]
+  },
+  {
+  "name": "Théorème des fonctions implicites (Banach)",
+  "statement": "On peut expliciter localement $y=f(x)$ tel que $\\varphi(x,y)=0$ si : [cite: 3828-3830]",
+  "correct": [
+  "$\\varphi$ est de classe $C^1$",
+  "$d_2\\varphi_{(a,b)}$ est un isomorphisme de $F$ sur $G$"
+  ],
+  "distractors": [
+  "$d_1\\varphi_{(a,b)}$ est un isomorphisme",
+  "$\\varphi$ est linéaire",
+  "L'existence est globale"
+  ]
+  },
+  {
+  "name": "Théorème de symétrie de Schwarz",
+  "statement": "$d^{2}f_{a}(u,v)=d^{2}f_{a}(v,u)$ [cite: 4035-4037]",
+  "correct": [
+  "$f$ est 2 fois différentiable en $a$ (au sens $C^1$ et $df$ différentiable en a)"
+  ],
+  "distractors": [
+  "$f$ doit être de classe $C^2$ (Hypothèse plus forte que nécessaire)",
+  "$E$ est de dimension finie",
+  "$f$ est polynômiale"
+  ]
+  }
+  ]
+ }

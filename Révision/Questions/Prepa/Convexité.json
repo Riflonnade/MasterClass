@@ -1,0 +1,108 @@
+{
+    "title": "Convexité",
+    "color": "blue",
+    "questions": [
+        {
+            "name": "Lemme I.2 : Stabilité par combinaisons convexes",
+            "statement": "Soit $C$ une partie de $E$. Pour tout $p \\in \\mathbb{N}^*$, pour tout $(z_1, \\dots, z_p) \\in C^p$ et pour tout $(\\lambda_1, \\dots, \\lambda_p) \\in \\mathbb{R}^{+p}$ tel que $\\sum_{k=1}^p \\lambda_k = 1$, on a $\\sum_{k=1}^p \\lambda_k z_k \\in C$.",
+            "correct": [
+                "$C$ est une partie convexe",
+                "Les coefficients $\\lambda_k$ sont tous positifs ou nuls",
+                "La somme des coefficients $\\lambda_k$ est égale à 1"
+            ],
+            "distractors": [
+                "$E$ est un espace de dimension finie",
+                "$C$ est une partie compacte",
+                "Les coefficients $\\lambda_k$ sont strictement positifs",
+                "$C$ est une partie fermée"
+            ]
+        },
+        {
+            "name": "Proposition I.3 : Propriétés de l'enveloppe convexe",
+            "statement": "L'enveloppe convexe d'une partie $A$, notée $conv(A)$, possède les caractérisations suivantes :",
+            "correct": [
+                "C'est l'intersection de tous les ensembles convexes contenant $A$",
+                "C'est le plus petit ensemble convexe (au sens de l'inclusion) contenant $A$",
+                "C'est l'ensemble des combinaisons convexes d'éléments de $A$ : $\\{ \\sum_{k=1}^p \\lambda_k x_k \\mid p \\in \\mathbb{N}^*, x_k \\in A, \\lambda_k \\ge 0, \\sum \\lambda_k = 1 \\}$"
+            ],
+            "distractors": [
+                "C'est l'adhérence de l'ensemble $A$",
+                "C'est l'ensemble des combinaisons linéaires d'éléments de $A$",
+                "C'est l'union de tous les segments $[x, y]$ avec $x, y \\in A$",
+                "C'est le plus petit ensemble fermé contenant $A$"
+            ]
+        },
+        {
+            "name": "Exercice I.5 : Théorème de Carathéodory",
+            "statement": "Soit $E$ un espace vectoriel de dimension $d$. Tout élément de $conv(A)$ peut s'écrire comme combinaison convexe d'au plus $n$ éléments de $A$.",
+            "correct": [
+                "$n = d + 1$",
+                "$E$ est de dimension finie $d$"
+            ],
+            "distractors": [
+                "$n = d$",
+                "$n = 2d$",
+                "$A$ doit être une partie bornée",
+                "$A$ doit être une partie convexe",
+                "$E$ peut être de dimension infinie"
+            ]
+        },
+        {
+            "name": "Exercice I.6 : Compacité de l'enveloppe convexe",
+            "statement": "Si $K$ est une partie de $E$, alors $conv(K)$ est une partie compacte de $E$.",
+            "correct": [
+                "$K$ est une partie compacte",
+                "$E$ est un espace vectoriel de dimension finie"
+            ],
+            "distractors": [
+                "$K$ est une partie fermée quelconque",
+                "$E$ est un espace de Banach de dimension infinie",
+                "$K$ est une partie convexe et bornée",
+                "$K$ est une partie ouverte"
+            ]
+        },
+        {
+            "name": "Exercice II.1 : Projection sur un convexe fermé",
+            "statement": "Soit $C$ une partie de $E$ et $a \\in E$. Il existe un unique $b \\in C$ tel que $d(a, C) = \\|a - b\\|$. On note $b = p_C(a)$.",
+            "correct": [
+                "$E$ est un espace euclidien",
+                "$C$ est une partie convexe",
+                "$C$ est une partie fermée non vide"
+            ],
+            "distractors": [
+                "$E$ est un espace vectoriel normé quelconque",
+                "$C$ est une partie bornée",
+                "$C$ est un sous-espace vectoriel",
+                "$a$ doit être à l'extérieur de $C$"
+            ]
+        },
+        {
+            "name": "Exercice II.1.2 : Caractérisation de la projection",
+            "statement": "Soit $b \\in C$. $b = p_C(a)$ si et seulement si :",
+            "correct": [
+                "$\\forall x \\in C, \\langle a - b, x - b \\rangle \\le 0$",
+                "$C$ est convexe fermé non vide dans un espace euclidien"
+            ],
+            "distractors": [
+                "$\\forall x \\in C, \\langle a - b, x - b \\rangle = 0$",
+                "$\\forall x \\in C, \\langle a - b, x - b \\rangle \\ge 0$",
+                "$\\forall x \\in C, \\|a - x\\| \\le \\|a - b\\|$"
+            ]
+        },
+        {
+            "name": "Exercice II.2 : Séparation stricte",
+            "statement": "Il existe un hyperplan affine séparant strictement $C$ et le point $a$.",
+            "correct": [
+                "$C$ est un convexe fermé non vide",
+                "$a \\notin C$",
+                "$E$ est un espace euclidien"
+            ],
+            "distractors": [
+                "$C$ est un convexe ouvert non vide",
+                "$a \\in C$",
+                "$a$ appartient à la frontière de $C$",
+                "$C$ est une partie quelconque fermée"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,95 @@
+{
+    "title": "Systèmes linéaires",
+    "color": "blue",
+    "questions": [
+        {
+            "name": "Propriétés de l'ensemble des solutions",
+            "statement": "Soit $A \\in \\mathcal{M}_{m,n}(\\mathbb{K})$, $B \\in \\mathbb{K}^m$ et $\\mathcal{S}$ l'ensemble des solutions du système $AX=B$. Quelles affirmations sont correctes ?",
+            "correct": [
+                "$\\mathcal{S}$ est un sous-espace affine de $\\mathbb{K}^n$ parallèle à $\\text{Ker}(A)$ s'il est non vide",
+                "$\\mathcal{S} \\neq \\emptyset \\iff B \\in \\text{Im}(A)$",
+                "La dimension de l'espace des solutions du système homogène associé est $n - \\text{rg}(A)$"
+            ],
+            "distractors": [
+                "$\\mathcal{S}$ est toujours un sous-espace vectoriel de $\\mathbb{K}^n$",
+                "$\\mathcal{S}$ est non vide si et seulement si $\\text{rg}(A) = m$",
+                "La dimension de $\\mathcal{S}$ est $m - \\text{rg}(A)$ quand il est non vide",
+                "Si $B \\neq 0$, alors $\\mathcal{S}$ ne peut pas être un sous-espace vectoriel"
+            ]
+        },
+        {
+            "name": "Théorème des Systèmes de Cramer",
+            "statement": "Soit $A \\in \\mathcal{M}_n(\\mathbb{K})$. Quelles conditions sont équivalentes au fait que $(S) : AX=B$ soit un système de Cramer ?",
+            "correct": [
+                "$\\det(A) \\neq 0$",
+                "Pour tout $B \\in \\mathbb{K}^n$, le système possède exactement une solution",
+                "La seule solution de $AX=0$ est $X=0$",
+                "L'application linéaire $f_A : X \\mapsto AX$ est surjective"
+            ],
+            "distractors": [
+                "Le système est homogène ($B=0$)",
+                "La matrice $A$ est symétrique",
+                "Le rang de $A$ est égal à $m$ avec $m \\neq n$",
+                "Le système possède au moins une solution pour un $B$ particulier"
+            ]
+        },
+        {
+            "name": "Lemme d'Hadamard",
+            "statement": "Soit $A = (a_{i,j}) \\in \\mathcal{M}_n(\\mathbb{C})$. Selon le lemme d'Hadamard, $A$ est inversible si :",
+            "correct": [
+                "$\\forall i \\in \\llbracket 1, n \\rrbracket, |a_{i,i}| > \\sum_{j \\neq i} |a_{i,j}|$",
+                "La matrice est à diagonale strictement dominante par colonnes"
+            ],
+            "distractors": [
+                "$\\forall i \\in \\llbracket 1, n \\rrbracket, |a_{i,i}| \\geq \\sum_{j \\neq i} |a_{i,j}|$",
+                "Tous les coefficients diagonaux sont strictement positifs",
+                "$\\sum_{i=1}^n |a_{i,i}| > \\sum_{i \\neq j} |a_{i,j}|$",
+                "La trace de la matrice est non nulle"
+            ]
+        },
+        {
+            "name": "Caractérisations des Valeurs Propres",
+            "statement": "Soit $A \\in \\mathcal{M}_n(\\mathbb{K})$ et $\\lambda \\in \\mathbb{K}$. Quelles assertions caractérisent le fait que $\\lambda$ soit une valeur propre de $A$ ?",
+            "correct": [
+                "Le système $(A - \\lambda I_n)X = 0$ admet une solution $X \\neq 0$",
+                "$\\det(A - \\lambda I_n) = 0$",
+                "$\\text{Ker}(f_A - \\lambda \\text{Id}) \\neq \\{0\\}$"
+            ],
+            "distractors": [
+                "$\\lambda$ est un coefficient de la diagonale de $A$",
+                "Le système $(A - \\lambda I_n)X = B$ possède une solution unique pour tout $B$",
+                "$A - \\lambda I_n$ est une matrice de rang $n$",
+                "$\\lambda$ est inversible dans $\\mathbb{K}$"
+            ]
+        },
+        {
+            "name": "Propriétés des Matrices de Permutation",
+            "statement": "Soit $\\sigma \\in \\mathcal{S}_n$ et $P_\\sigma = (\\delta_{i,\\sigma(j)})$ la matrice de permutation associée. Quelles propriétés sont vraies ?",
+            "correct": [
+                "$\\det(P_\\sigma) = \\varepsilon(\\sigma)$",
+                "$P_\\sigma P_{\\sigma'} = P_{\\sigma \\circ \\sigma'}$",
+                "$P_\\sigma^{-1} = P_{\\sigma^{-1}}$",
+                "Multiplier $A$ à gauche par $P_\\sigma$ permute les lignes de $A$"
+            ],
+            "distractors": [
+                "$\\det(P_\\sigma) = 1$ pour toute permutation $\\sigma$",
+                "Multiplier $A$ à droite par $P_\\sigma$ revient à appliquer $\\sigma^{-1}$ aux lignes",
+                "$P_\\sigma$ est toujours une matrice symétrique",
+                "Le rang de $P_\\sigma$ dépend de la signature de $\\sigma$"
+            ]
+        },
+        {
+            "name": "Formule de Cramer",
+            "statement": "Dans un système de Cramer $AX=B$ de taille $n$, la $k$-ième coordonnée du vecteur solution est donnée par :",
+            "correct": [
+                "$x_k = \\frac{\\det(C_1, \\dots, C_{k-1}, B, C_{k+1}, \\dots, C_n)}{\\det(A)}$"
+            ],
+            "distractors": [
+                "$x_k = \\frac{\\det(A)}{\\det(C_1, \\dots, B, \\dots, C_n)}$",
+                "$x_k = \\det(A) \\cdot \\det(B)$",
+                "$x_k = \\frac{\\text{rg}(A)}{\\det(A)}$",
+                "$x_k = \\frac{\\det(B, C_2, \\dots, C_n)}{\\det(A)}$ pour tout $k$"
+            ]
+        }
+    ]
+}

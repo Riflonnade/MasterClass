@@ -1,0 +1,84 @@
+{
+ "title": "Intégration par rapport à une mesure",
+ "color": "blue",
+ "questions": [
+  {
+   "name": "Théorème 2 : Mesure de Lebesgue",
+   "statement": "Il existe une unique mesure $\\lambda$ sur $\\mathbb{R}$ telle que $\\lambda([a,b])=b-a$.",
+   "correct": [
+    "La mesure est définie sur la tribu borélienne $\\mathcal{B}(\\mathbb{R})$ [cite: 1520]",
+    "La mesure est à valeurs dans $[0, \\infty]$ [cite: 1520]"
+   ],
+   "distractors": [
+    "La mesure est définie sur l'ensemble des parties $\\mathcal{P}(\\mathbb{R})$ (La tribu des parties est trop grande pour l'unicité/existence standard)",
+    "La mesure est finie sur $\\mathbb{R}$ (Faux, $\\lambda(\\mathbb{R}) = \\infty$)",
+    "La mesure est définie uniquement sur les intervalles ouverts"
+   ]
+  },
+  {
+   "name": "Proposition 2 : Propriétés de l'intégrale positive",
+   "statement": "Si $f, g$ sont mesurables positives, alors...",
+   "correct": [
+    "Si $f \\le g$, alors $\\int f d\\mu \\le \\int g d\\mu$ [cite: 1673]",
+    "Si $f=g$ $\\mu$-presque partout, alors $\\int f d\\mu = \\int g d\\mu$ [cite: 1674]"
+   ],
+   "distractors": [
+    "Si $\\int f d\\mu = \\int g d\\mu$, alors $f=g$ presque partout (Faux, sauf cas particuliers ou intégrales sur tout sous-ensemble)",
+    "Si $f < g$ strictement, alors $\\int f d\\mu < \\int g d\\mu$ (Faux si l'ensemble de différence est de mesure nulle)"
+   ]
+  },
+  {
+   "name": "Théorème 6 : Convergence Monotone (Beppo-Levi)",
+   "statement": "$\\lim_{n\\to\\infty} \\int f_n d\\mu = \\int \\lim_{n\\to\\infty} f_n d\\mu$",
+   "correct": [
+    "La suite $(f_n)$ est une suite de fonctions mesurables [cite: 1690]",
+    "La suite $(f_n)$ est croissante [cite: 1690]",
+    "Les fonctions sont à valeurs dans $[0, \\infty]$ [cite: 1690]"
+   ],
+   "distractors": [
+    "La suite $(f_n)$ est décroissante (Nécessite d'autres conditions ou le théorème de convergence dominée)",
+    "Les fonctions $f_n$ sont intégrables (Pas nécessaire, l'intégrale peut valoir $+\\infty$)",
+    "La suite $(f_n)$ converge uniformément"
+   ]
+  },
+  {
+   "name": "Théorème 7 : Lemme de Fatou",
+   "statement": "$\\int \\liminf f_n d\\mu \\le \\liminf \\int f_n d\\mu$",
+   "correct": [
+    "Les fonctions $f_n$ sont mesurables [cite: 1731]",
+    "Les fonctions $f_n$ sont à valeurs dans $[0, \\infty]$ (Positives) [cite: 1731]"
+   ],
+   "distractors": [
+    "Les fonctions $f_n$ forment une suite croissante (C'est l'hypothèse de la convergence monotone)",
+    "Il existe une fonction dominante intégrable $g$ (C'est l'hypothèse de la convergence dominée)",
+    "L'inégalité est dans l'autre sens : $\\int \\liminf f_n d\\mu \\ge \\liminf \\int f_n d\\mu$ (Faux)"
+   ]
+  },
+  {
+   "name": "Proposition 5 : Propriétés de l'espace L1",
+   "statement": "Si $f \\in \\mathcal{L}^1(\\Omega, \\mathfrak{F}, \\mu)$, quelles propriétés sont vérifiées ?",
+   "correct": [
+    "$|\\int f d\\mu| \\le \\int |f| d\\mu$ [cite: 1759]",
+    "L'application $f \\mapsto \\int f d\\mu$ est une forme linéaire [cite: 1760]"
+   ],
+   "distractors": [
+    "$\\int |f| d\\mu \\le |\\int f d\\mu|$ (Inégalité triangulaire inversée)",
+    "Si $f$ et $g$ sont dans $\\mathcal{L}^1$, alors $fg \\in \\mathcal{L}^1$ (Faux en général, c'est vrai pour $\\mathcal{L}^2$)",
+    "$\\int f d\\mu < \\infty$ implique que $f$ est bornée"
+   ]
+  },
+  {
+   "name": "Théorème 9 : Convergence Dominée",
+   "statement": "$\\lim_{n} \\int f_n d\\mu = \\int f d\\mu$ et $f \\in \\mathcal{L}^1$",
+   "correct": [
+    "Convergence simple presque partout de $(f_n)$ vers $f$ [cite: 1770]",
+    "Il existe $g$ intégrable telle que $|f_n| \\le g$ presque partout [cite: 1771]"
+   ],
+   "distractors": [
+    "Il existe une constante $M$ telle que $|f_n| \\le M$ (Insuffisant si la mesure de l'espace est infinie)",
+    "La suite $(f_n)$ est monotone (Confusion avec la convergence monotone)",
+    "Les fonctions $f_n$ sont positives (Pas nécessaire pour la convergence dominée)"
+   ]
+  }
+ ]
+}

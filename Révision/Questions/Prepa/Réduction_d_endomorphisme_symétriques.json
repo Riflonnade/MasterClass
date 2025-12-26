@@ -1,0 +1,97 @@
+{
+    "title": "Réduction d'endomorphismes symétriques",
+    "color": "blue",
+    "questions": [
+        {
+            "name": "Proposition I.2 : Caractérisation matricielle des endomorphismes symétriques",
+            "statement": "Soit $u \\in \\mathcal{L}(E)$. L'endomorphisme $u$ est symétrique si et seulement si sa matrice dans une base $\\beta$ est symétrique.",
+            "correct": [
+                "$\\beta$ est une base orthonormée de $E$",
+                "$\\forall x, y \\in E, \\langle u(x), y \\rangle = \\langle x, u(y) \\rangle$"
+            ],
+            "distractors": [
+                "$\\beta$ est une base quelconque de $E$",
+                "$u$ est un endomorphisme inversible",
+                "La matrice de $u$ est diagonale dans $\\beta$"
+            ]
+        },
+        {
+            "name": "Théorème II.1 : Stabilité de l'orthogonal",
+            "statement": "Soit $u \\in S(E)$ un endomorphisme symétrique et $F$ un sous-espace vectoriel de $E$. Si $F$ est stable par $u$, alors $F^\\perp$ est stable par $u$.",
+            "correct": [
+                "$u$ est un endomorphisme symétrique",
+                "$u(F) \\subset F$"
+            ],
+            "distractors": [
+                "$u$ est un endomorphisme quelconque",
+                "$F$ et $F^\\perp$ sont de même dimension",
+                "$u$ est une isométrie de $E$"
+            ]
+        },
+        {
+            "name": "Théorème II.1 : Orthogonalité des sous-espaces propres",
+            "statement": "Si $\\lambda$ et $\\mu$ sont deux valeurs propres distinctes de $u$, alors $E_\\lambda \\perp E_\\mu$.",
+            "correct": [
+                "$u$ est un endomorphisme symétrique",
+                "$\\lambda \\neq \\mu$"
+            ],
+            "distractors": [
+                "$u$ est un endomorphisme diagonalisable",
+                "$u$ est une projection orthogonale",
+                "$\\lambda$ et $\\mu$ sont des réels positifs"
+            ]
+        },
+        {
+            "name": "Théorème Spectral (Théorème II.1)",
+            "statement": "Tout endomorphisme symétrique d'un espace vectoriel euclidien est diagonalisable dans une base orthonormée.",
+            "correct": [
+                "$E$ est un espace vectoriel euclidien (dimension finie)",
+                "$u$ est un endomorphisme symétrique"
+            ],
+            "distractors": [
+                "$E$ est un espace hermitien",
+                "$u$ est un endomorphisme normal",
+                "$u$ est une symétrie ($u^2 = Id$)"
+            ]
+        },
+        {
+            "name": "Corollaire du Théorème Spectral : Matrices",
+            "statement": "Pour $A \\in \\mathcal{M}_n(\\mathbb{R})$, $A$ est symétrique si et seulement s'il existe $O$ et $\\Delta$ telles que $A = O\\Delta O^T$.",
+            "correct": [
+                "$O$ est une matrice orthogonale ($O \\in O_n(\\mathbb{R})$)",
+                "$\\Delta$ est une matrice diagonale réelle"
+            ],
+            "distractors": [
+                "$O$ est une matrice inversible quelconque",
+                "$\\Delta$ est une matrice triangulaire supérieure",
+                "$A$ est une matrice à coefficients positifs"
+            ]
+        },
+        {
+            "name": "Proposition III.1 : Extremums du quotient de Rayleigh",
+            "statement": "Soit $u \\in S(E)$ et $\\lambda_1, \\dots, \\lambda_n$ ses valeurs propres ordonnées $\\lambda_1 \\le \\dots \\le \\lambda_n$. Alors $\\min_{\\|x\\|=1} \\langle u(x), x \\rangle = \\lambda_1$.",
+            "correct": [
+                "$u$ est un endomorphisme symétrique",
+                "Le minimum est pris sur la sphère unité (ou $x \\neq 0$ avec normalisation)"
+            ],
+            "distractors": [
+                "$u$ est un endomorphisme positif",
+                "$x$ est nécessairement un vecteur propre associé à $\\lambda_1$",
+                "$u$ est une isométrie"
+            ]
+        },
+        {
+            "name": "Lemme III.3 : Invariance du rang par extension de corps",
+            "statement": "Si $\\mathbb{K} \\subset \\mathbb{L}$ sont deux corps et $A \\in \\mathcal{M}_n(\\mathbb{K})$, alors $rg_\\mathbb{K}(A) = rg_\\mathbb{L}(A)$.",
+            "correct": [
+                "$\\mathbb{K}$ est un sous-corps de $\\mathbb{L}$",
+                "$A$ est une matrice à coefficients dans le corps de base $\\mathbb{K}$"
+            ],
+            "distractors": [
+                "$\\mathbb{K}$ et $\\mathbb{L}$ doivent être $\\mathbb{R}$ et $\\mathbb{C}$",
+                "$A$ doit être une matrice symétrique",
+                "$A$ doit être une matrice inversible"
+            ]
+        }
+    ]
+}
